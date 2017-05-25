@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_main_activity_total"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@id/layout_yunying_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@id/img_activity_yunying_close"
+            android:layout_width="25.0dip"
+            android:layout_height="45.5dip"
+            android:layout_above="@id/img_activity_yunying_big"
+            android:layout_alignRight="@id/img_activity_yunying_big"
+            android:layout_marginRight="1.0dip"
+            android:src="@drawable/btn_ad_main_closed" />
+
+        <ImageView
+            android:id="@id/img_activity_yunying_big"
+            android:layout_width="256.0dip"
+            android:layout_height="368.0dip"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="45.5dip"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/layout_yunying_activity_mesh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:visibility="invisible">
+
+        <!--<com.ganji.android.ui.MeshAnimationView
+            android:id="@id/mesh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" />-->
+    </RelativeLayout>
+</FrameLayout>

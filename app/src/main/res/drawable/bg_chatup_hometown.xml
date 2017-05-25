@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#59000000" />
+    <corners android:topLeftRadius="14.0dip" android:topRightRadius="@dimen/chatup_card_radius" android:bottomLeftRadius="14.0dip" android:bottomRightRadius="0.0dip" />
+    <size android:height="28.0dip" />
+</shape>
