@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dimen_12dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:id="@id/roommate_jushi" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/roommate_num_sex" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="right" android:id="@id/roommate_career" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/img_right_arrow" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginLeft="@dimen/dimen_5dp" android:src="@drawable/ic_pub_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</LinearLayout>

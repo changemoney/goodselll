@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wuba.wbsdkwrapper.ui.PicturePreview android:gravity="center" android:background="@drawable/transparent_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/control_bar" android:background="@color/top_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/filter_manager_top_weight">
+        <ImageView android:id="@id/left_btn" android:paddingLeft="@dimen/filter_top_paddingleft" android:paddingRight="@dimen/filter_top_paddingleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/filter_top_margin" android:src="@drawable/photoedit_effects_cancel" android:minWidth="@dimen/filter_top_minwidth" android:minHeight="@dimen/filter_top_minheight" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/middle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/TopBarText" />
+        <ImageView android:id="@id/right_btn" android:paddingLeft="@dimen/filter_top_paddingleft" android:paddingRight="@dimen/filter_top_paddingleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/filter_top_margin" android:src="@drawable/photoedit_effects_save" android:minWidth="@dimen/filter_top_minwidth" android:minHeight="@dimen/filter_top_minheight" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/photo_view" android:padding="@dimen/pic_preview_photo_view_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_below="@id/control_bar" />
+</com.wuba.wbsdkwrapper.ui.PicturePreview>

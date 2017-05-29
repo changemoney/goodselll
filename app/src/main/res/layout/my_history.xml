@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/white_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/my_browse_history" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/color_white_turn_grey" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/high_gray" android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="浏览历史" />
+                    </LinearLayout>
+                    <View android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/my_use_history" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/color_white_turn_grey" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/high_gray" android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="使用历史" />
+                    </LinearLayout>
+                    <View android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/my_evaluate_history" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/color_white_turn_grey" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/high_gray" android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="评价历史" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

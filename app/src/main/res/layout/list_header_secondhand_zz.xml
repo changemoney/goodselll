@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_zz" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_more" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多商家信息" android:drawableRight="@drawable/arrow_right" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10dp" />
+</LinearLayout>

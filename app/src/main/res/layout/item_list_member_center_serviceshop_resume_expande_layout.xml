@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/group_bt_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/expandPunchButton" android:background="@drawable/bg_memcenter_expand_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/expandPunchImageview" android:background="@drawable/ic_expand_menu_punch" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff818181" android:id="@id/expandPunchTextview" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打卡" />
+        </LinearLayout>
+        <View android:id="@id/expandPunchView" android:background="#ffd9d9d9" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/expand_refresh_button" android:background="@drawable/bg_memcenter_expand_left" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/expand_refresh_imageview" android:background="@drawable/ic_expand_menu_refresh" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff818181" android:id="@id/expand_refresh_textview" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刷新" />
+        </LinearLayout>
+        <View android:id="@id/expandrefreshView" android:background="#ffd9d9d9" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/expand_top_button" android:background="@drawable/bg_expand_menu_gray" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/expand_top_imageview" android:background="@drawable/ic_expand_menu_top" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff818181" android:id="@id/expand_top_textview" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="置顶" />
+        </LinearLayout>
+        <View android:id="@id/expandtopView" android:background="#ffd9d9d9" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/expand_modify_button" android:background="@drawable/bg_memcenter_expand_mid" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/expand__modify_imageview" android:background="@drawable/ic_expand_menu_edit" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff818181" android:id="@id/expand__modify_textview" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改" />
+        </LinearLayout>
+        <View android:id="@id/expandreModifyView" android:background="#ffd9d9d9" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/expand_more_button" android:background="@drawable/bg_memcenter_expand_right" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/expand_more_imageview" android:background="@drawable/ic_expand_menu_more" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff818181" android:id="@id/more_button_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/one_bt_layout" android:background="@drawable/bg_expand_menu_gray_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/expand_delete_one_button" android:background="@drawable/bg_expand_menu_gray" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/delete_one_button_imageview" android:background="@drawable/ic_expand_menu_delete" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff818181" android:id="@id/delete_one_button_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" />
+        </LinearLayout>
+        <View android:background="#ffd9d9d9" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mContactCustomerService2" android:background="@drawable/bg_expand_menu_gray" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/expand_delete_imageview" android:background="@drawable/ic_expand_menu_customerservice" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff818181" android:id="@id/tvContactCustomerService" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系客服" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

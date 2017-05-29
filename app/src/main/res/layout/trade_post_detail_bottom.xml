@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/trade_post_detail_bottom_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gj="http://schemas.android.com/apk/res-auto">
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" />
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/post_detail_bottom_user" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="104.0dip" android:layout_height="76.0dip" android:layout_alignParentTop="true">
+        <com.ganji.android.ui.RoundedRectangleView android:id="@id/outer" android:layout_width="47.0dip" android:layout_height="47.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" gj:backColor="#fff3f3f3" />
+        <com.ganji.android.ui.RoundedRectangleView android:id="@id/inner" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="1.0dip" android:layout_centerHorizontal="true" gj:backColor="#ffffffff" />
+        <com.ganji.android.ui.CircleImageView android:id="@id/bottom_user_icon" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/img_default_head" android:layout_centerHorizontal="true" />
+        <com.ganji.android.ui.RoundedRectangleView android:id="@id/outer_bottom_user_agent" android:layout_width="43.0dip" android:layout_height="18.0dip" android:layout_marginTop="36.0dip" android:layout_centerHorizontal="true" gj:backColor="#ffffffff" />
+        <com.ganji.android.ui.RoundedRectangleView android:id="@id/bottom_user_agent" android:layout_width="41.0dip" android:layout_height="16.0dip" android:layout_marginTop="37.0dip" android:layout_centerHorizontal="true" gj:type="1" gj:textColor="#ffffffff" gj:textSize="10.0dip" gj:backColor="#ff2cc2f9" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:ellipsize="end" android:id="@id/bottom_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:maxLines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:id="@id/trade_post_detail_bottom_divider" android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="34.0dip" android:layout_marginTop="33.0dip" android:layout_toRightOf="@id/post_detail_bottom_user" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/trade_post_detail_bottom_divider" android:layout_alignParentRight="true">
+        <RelativeLayout android:id="@id/post_detail_bottom_message" android:background="@drawable/post_detail_footer_green" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/post_detail_bottom_message_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_common_message" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:id="@id/msg_im_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="微聊" android:layout_toRightOf="@id/post_detail_bottom_message_icon" />
+            </LinearLayout>
+            <ImageView android:id="@id/post_detail_im_online" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_fc_zaixian" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/post_detail_bottom_call" android:background="@drawable/post_detail_footer_orange" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/post_detail_bottom_call_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_common_phone" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="联系TA" android:layout_toRightOf="@id/post_detail_bottom_call_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

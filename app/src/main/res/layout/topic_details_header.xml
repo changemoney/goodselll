@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/topic_details_header_lay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/gray_161616" android:gravity="center_vertical" android:id="@id/topic_details_header_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="14.5dip" android:layout_marginTop="11.5dip" android:layout_marginRight="15.5dip" android:text="新媒体女性独家面访被男记者性侵报社实习生：没有意识到强奸" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/topic_details_header_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="@dimen/dimen_12dp" android:layout_marginBottom="@dimen/dimen_15dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/topic_details_header_lay_vote" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_marginBottom="12.5dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/gray_161616" android:gravity="center_vertical" android:id="@id/topic_details_header_vote_red" android:background="@drawable/bubble_vote_red" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="惩处记者,还新闻界清白!" android:singleLine="false" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/gray_161616" android:gravity="center_vertical" android:id="@id/topic_details_header_vote_blue" android:background="@drawable/bubble_vote_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="女孩子是自愿上的,如果没有想法怎么能那么容易被骗." android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#fff56d5f" android:id="@id/topic_details_header_txt_redcount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="4444票" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="21.0dip" android:layout_height="12.5dip" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip" android:src="@drawable/ic_vote_vs" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff5fa2df" android:gravity="right" android:id="@id/topic_details_header_txt_bluecount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="400票" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.5dip">
+                <ImageView android:id="@id/topic_details_header_img_vote_progress_blue" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:src="#ff5fa2df" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/topic_details_header_img_vote_progress_red" android:background="#fff56d5f" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginLeft="30.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/topic_details_header_txt_vote_progress_blue" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="48%" android:layout_toRightOf="@id/topic_details_header_img_vote_progress_red" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/topic_details_header_txt_vote_progress_red" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:text="52%" android:layout_toLeftOf="@id/topic_details_header_txt_vote_progress_blue" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/topic_details_header_btu_vote_red" android:background="@drawable/btn_topic_details_votd_red_selector" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/gray_676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="支持" android:layout_below="@id/topic_details_header_btu_vote_red" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageButton android:id="@id/topic_details_header_btu_vote_blue" android:background="@drawable/btn_topic_details_vote_blue_selector" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/gray_676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="支持" android:layout_below="@id/topic_details_header_btu_vote_red" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:focusable="true" android:layout_width="@dimen/common_item_size" android:layout_height="@dimen/common_item_size" android:layout_marginLeft="@dimen/common_item_marginleft" android:layout_marginRight="@dimen/common_item_marginright"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wuba.api.editor.effects.EffectStateView android:id="@id/effects_state" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/item_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/download" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/wb_ic_download" android:scaleType="center" android:layout_centerInParent="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/downloading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="100" android:indeterminateDrawable="@drawable/progress_change" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </com.wuba.api.editor.effects.EffectStateView>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/item_icon_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="right" android:id="@id/new_add" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_new_add_margintop" android:layout_marginRight="@dimen/common_new_add_marginright" />
+    <TextView android:textSize="@dimen/sdk_camara_filter_txt" android:textColor="@color/wb_camera_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/item_tag" android:background="@color/ganji_filter_bg_normal" android:paddingBottom="@dimen/effect_text_paddingbottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="裁剪" android:maxEms="5" android:singleLine="true" />
+</FrameLayout>

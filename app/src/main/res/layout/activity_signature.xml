@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <EditText android:textSize="15.0dip" android:textColor="#ff404040" android:textColorHint="#ffbfbfbf" android:gravity="center|left|top" android:id="@id/signature_view" android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="12.0dip" android:hint="一句话介绍自己,让志趣相投的人找到你" android:maxLength="30" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:layout_gravity="right" android:id="@id/text_number_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:text="0/30" />
+</LinearLayout>

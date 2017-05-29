@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_panel" android:background="@drawable/bg_custom_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="@color/dialog_title_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="对话框标题" />
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cancel_text_btn" android:background="@drawable/title_text_button_bg" android:paddingLeft="@dimen/g_widget_margin" android:paddingRight="@dimen/g_widget_margin" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:text="取消" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:orientation="vertical" android:id="@id/lv_data" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="@drawable/divider" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/dialog_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/lv_data">
+                <View android:id="@id/custom_divider" android:background="@drawable/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/create_resume" android:background="@drawable/selector_post_resume_detail" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                    <ImageView android:id="@id/btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/create_resume" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/high_gray" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="创建简历" android:singleLine="true" />
+                </LinearLayout>
+                <View android:id="@id/divider_below_create_resume" android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/gray" android:ellipsize="end" android:gravity="center" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="2.0dip" android:text="3天内有相似好工作自动投递" android:singleLine="true" />
+                    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/TextView01" android:layout_centerVertical="true">
+                        <include android:id="@id/agency_toggle" layout="@layout/ui_switch_view" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

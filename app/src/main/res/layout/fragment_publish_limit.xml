@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/limit_content_back" android:background="@color/black_b2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/limit_content" android:background="@drawable/bg_rect_white" android:paddingLeft="30.0dip" android:paddingTop="40.0dip" android:paddingRight="30.0dip" android:paddingBottom="30.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pub_limit_guid_image" />
+            <TextView android:textSize="22.0dip" android:textColor="@color/bg_titlebar_center_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="真实身份认证" />
+            <TextView android:textSize="@dimen/m_text" android:textColor="@color/bg_titlebar_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="12.0dip" android:text="为共建真是可信的赶集网\n您需要进行身份认证后才能发布信息" />
+            <FrameLayout android:id="@id/zhima_cert_button" android:background="@drawable/btn_round_white" android:layout_width="190.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dimen_15dp">
+                <TextView android:textSize="@dimen/b_b_text" android:textColor="@color/gray_161616" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="芝麻认证" android:drawableLeft="@drawable/pub_limit_btn_zhima" android:drawablePadding="@dimen/dimen_10dp" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/renlian_cert_button" android:background="@drawable/btn_round_white" android:layout_width="190.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dimen_15dp">
+                <TextView android:textSize="@dimen/b_b_text" android:textColor="@color/gray_161616" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人脸认证" android:drawableLeft="@drawable/pub_limit_btn_qr" android:drawablePadding="@dimen/dimen_10dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/btn_close_limit" android:background="@drawable/bg_yunying" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/button_close" android:layout_alignTop="@id/limit_content" android:layout_alignRight="@id/limit_content" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/leftTextheight">
+        <TextView android:id="@id/pub_label" style="@style/ui_item_left_lable_style" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View style="@style/ui_item_vertical_divider_line" />
+            <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:gravity="center|left" android:id="@id/pub_onclick_lable" android:background="@drawable/spinner2_bg" android:paddingLeft="13.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/pub_divider" />
+            <include layout="@layout/pub_errorview" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

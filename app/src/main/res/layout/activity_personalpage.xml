@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/default_loading_container" />
+    <RelativeLayout android:id="@id/content_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ganji.android.ui.GJCustomListView android:id="@id/listview" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" android:layout_above="@id/bottom" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include layout="@layout/person_footer" />
+        </RelativeLayout>
+        <include layout="@layout/titlebar_person" />
+    </RelativeLayout>
+</LinearLayout>

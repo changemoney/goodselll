@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:minHeight="50.0dip">
+        <TextView android:id="@id/pub_label" style="@style/pub_perfect_resume_label" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/text_color_pub_input" android:textColorHint="@color/g_light_grey" android:id="@id/pub_input" android:background="@null" android:paddingLeft="9.0dip" android:paddingRight="13.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:singleLine="true" />
+            <View android:id="@id/pub_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

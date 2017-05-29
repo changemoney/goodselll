@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/right_failed_send" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_failed_send" android:layout_centerVertical="true" />
+    <TextView android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/right_failed_send" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/play_img_layout" android:background="@drawable/msg_right_talk" android:layout_width="@dimen/im_voice_min_width" android:layout_height="@dimen/im_voice_height" android:layout_toRightOf="@id/duration">
+        <ImageView android:id="@id/play_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/im_voice_margin_right_left" android:src="@drawable/ic_right_sound3" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <include layout="@layout/im_send_down_progress" />
+    </RelativeLayout>
+</RelativeLayout>

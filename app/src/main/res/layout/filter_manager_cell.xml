@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/filter_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:id="@id/filter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camara_filter_mamage_margin" android:layout_marginBottom="@dimen/camara_filter_mamage_margin" android:layout_alignBottom="@id/filter_image" android:layout_alignParentLeft="true" style="@style/filter_item_text_manage" />
+    <ImageView android:id="@id/selected_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/filter_selected_image_marginright" android:layout_marginBottom="@dimen/filter_selected_image_marginbottom" android:layout_alignBottom="@id/filter_image" android:layout_alignParentRight="true" />
+</RelativeLayout>

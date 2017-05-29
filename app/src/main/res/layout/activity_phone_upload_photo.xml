@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffafafa" style="@style/ui_parent_Full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/auto_get_focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/verify_layout" android:visibility="visible" style="@style/ui_parent_Full">
+        <include layout="@layout/titlebar" />
+        <ScrollView android:layout_weight="1.0" style="@style/ui_parent_Full" />
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/g_widget_margin" style="@style/ui_parent_Full">
+            <TextView android:textSize="@dimen/g_text_size_x_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="验证码输入" />
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/g_widget_margin">
+                <EditText android:textSize="@dimen/textSize" android:textColor="@color/g_dark_grey" android:layout_gravity="left" android:id="@id/verify_code" android:background="@drawable/g_input_bg" android:hint="输入电脑上的验证码" android:numeric="integer" android:layout_weight="1.0" style="@style/ui_parent_SingleLine" />
+                <Button android:textSize="@dimen/g_text_size_x_large" android:textColor="@color/text_color_gray_turn_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/verify_code_ok" android:background="@drawable/g_white_btn" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/g_widget_margin" android:text="确定" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/g_text_size_x_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/g_widget_margin_2x" android:layout_marginBottom="@dimen/g_widget_margin" android:text="二维码扫描" />
+            <Button android:textSize="@dimen/g_text_size_x_large" android:textColor="@color/white" android:id="@id/setup_qr_code_scan" android:background="@drawable/g_green_btn2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="启动二维码扫描" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <View android:layout_gravity="center_vertical" android:background="#ffebebeb" android:layout_width="0.0dip" android:layout_height="2.0px" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/g_text_size_x_large" android:textColor="@color/g_dark_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机传图三部曲" />
+                <View android:layout_gravity="center_vertical" android:background="#ffebebeb" android:layout_width="0.0dip" android:layout_height="2.0px" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/introduct_image1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_upload_introductions" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/upload_layout" android:visibility="gone" style="@style/ui_parent_Full">
+        <include android:id="@id/title_layout" layout="@layout/titlebar" />
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/g_widget_margin" android:layout_below="@id/title_layout" style="@style/ui_parent_Full">
+            <TextView android:textSize="@dimen/g_text_size_x_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的验证码已确认" />
+            <TextView android:textSize="25.0dip" android:textColor="#fffc7f00" android:gravity="center_horizontal" android:id="@id/qr_code_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/g_widget_margin" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/qr_code_image" android:visibility="gone" android:layout_width="@dimen/g_item_height_medium" android:layout_height="@dimen/g_item_height_medium" android:layout_marginTop="@dimen/g_widget_margin" />
+            <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="@dimen/g_widget_margin" />
+            <View android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <TextView android:textSize="@dimen/g_text_size_x_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/g_widget_margin" android:layout_marginBottom="@dimen/g_widget_margin" android:text="选择的图片" />
+            <GridView android:id="@id/grid_view" android:paddingBottom="@dimen/g_item_height_small" android:scrollbars="none" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="4" style="@style/ui_parent_Full" />
+        </LinearLayout>
+        <LinearLayout android:layout_alignParentBottom="true" style="@style/ui_component_PublishPanel">
+            <Button android:textSize="@dimen/textSize" android:textColor="@color/white" android:id="@id/upload_toggle" android:background="@drawable/g_green_btn2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="开始上传" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

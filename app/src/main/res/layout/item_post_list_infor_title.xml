@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/infor_section_icon" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/icon_infor_category" />
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff404040" android:gravity="center_vertical" android:id="@id/infor_section_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="资讯" android:layout_toRightOf="@id/infor_section_icon" />
+    </LinearLayout>
+    <View android:id="@id/house_devide_line" android:background="#ffd8d8d8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

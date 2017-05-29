@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/g_dark_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/house_price_tittle" layout="@layout/titlebar" />
+    <ListView android:id="@id/recommend_houses" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/g_dark_white" android:dividerHeight="15.0dip" />
+    <com.ganji.android.house.ui.HouseLoadDataViewWrapper android:id="@id/load_data_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/gray_161616" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/wc_topic_item_txt_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="14.5dip" android:layout_marginTop="11.5dip" android:layout_marginRight="15.5dip" android:text="新媒体女性独家面访被男记者性侵报社实习生：没有意识到强奸" android:maxLines="2" android:layout_weight="1.0" />
+    <ImageView android:id="@id/wc_topic_item_img_big" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.5dip" android:layout_marginRight="15.0dip" android:src="@drawable/post_list_noimg" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:id="@id/wc_topic_item_vote" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/gray_161616" android:gravity="center_vertical" android:id="@id/wc_topic_item_vote_red" android:background="@drawable/bubble_vote_red" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="惩处记者,还新闻界清白!" android:singleLine="false" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/gray_161616" android:gravity="center_vertical" android:id="@id/wc_topic_item_vote_blue" android:background="@drawable/bubble_vote_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="女孩子是自愿上的,如果没有想法怎么能那么容易被骗." android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="11.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#fff56d5f" android:id="@id/wc_topic_item_txt_redcount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="14.5dip" android:text="4444票90%" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff5fa2df" android:gravity="right" android:id="@id/wc_topic_item_txt_bluecount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.5dip" android:text="400票10%" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+            <ProgressBar android:id="@id/wc_topic_item_img_vote_progress" android:background="@drawable/wc_topic_item_progress_main" android:layout_width="fill_parent" android:layout_height="10.0dip" android:max="100" android:progress="50" style="@style/StyleProgressBarMini" /> />
+</RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_15dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_676767" android:id="@id/wc_topic_item_txt_commentnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginRight="14.0dip" android:text="2568" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/wc_topic_item_img_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/jigongba_btn_comment_nor" android:layout_toLeftOf="@id/wc_topic_item_txt_commentnum" />
+    </RelativeLayout>
+</LinearLayout>

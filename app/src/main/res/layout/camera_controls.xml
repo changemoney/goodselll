@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_shutter_switcher" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/controls" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/CameraControls" />
+    <RelativeLayout android:id="@id/bottom_bar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/filter_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/camera_bottom_bar" />
+        <include android:id="@id/camera_bottom_bar" android:layout_width="fill_parent" android:layout_height="@dimen/camera_bottom_bar_height" android:layout_alignParentBottom="true" layout="@layout/camera_bottom_bar" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/camera_top_bar" android:background="@color/camera_filter_top_black_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/camera_top_bar_height" android:layout_marginLeft="@dimen/top_bar_marginLeft" android:layout_marginRight="@dimen/top_bar_marginRight">
+            <com.wuba.camera.ui.RotateImageView android:id="@id/switch_camera_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_switch_cam" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <include layout="@layout/camera_flash" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/myListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:verticalSpacing="@dimen/g_widget_margin" android:numColumns="2" android:divider="#00000000" android:dividerHeight="0.0px" />
+</LinearLayout>

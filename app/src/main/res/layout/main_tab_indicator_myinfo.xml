@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/icon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/icon" android:background="@drawable/main_fragment_tab_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/tab_personal_centre_bg" android:scaleType="center" />
+    </LinearLayout>
+    <FrameLayout android:paddingTop="2.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/myinfo_msg_count" android:background="@drawable/ic_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </FrameLayout>
+</RelativeLayout>

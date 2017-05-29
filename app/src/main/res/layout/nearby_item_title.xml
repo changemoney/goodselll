@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="77.0dip" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff404040" android:id="@id/nearby_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="附近" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/nearby_item_title" android:layout_alignTop="@id/nearby_item_title" android:layout_alignBottom="@id/nearby_item_title">
+        <ImageView android:id="@id/nearby_life_icon" android:background="@drawable/nearby_icon_card_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ff808080" android:id="@id/nearby_item_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="这里的标题目前是没有的,嗯!" android:layout_below="@id/nearby_item_title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

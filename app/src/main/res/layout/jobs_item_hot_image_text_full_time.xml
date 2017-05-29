@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/jobs_item_hot_image_text" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_job_main_border" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/item_image" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:id="@id/item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+    <View android:id="@id/item_divider" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" />
+    <View android:layout_width="3.0dip" android:layout_height="fill_parent" />
+</LinearLayout>

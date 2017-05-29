@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.publish.ui.PubJobPhoneInputSelectView android:id="@id/pub_job_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写" pub:key="phone" pub:label="手机号码" pub:checkString="11#@#@#3#@#@#^1[34578]\\d{9}$" pub:reslayout="@layout/publish_input_phone" pub:isRequired="true" />
+    <include android:id="@id/pub_job_phone_and_code_divider" layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubJobCodeInputSelectView android:id="@id/pub_job_code" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="" pub:key="code" pub:label="验证码" pub:isRequired="true" pub:error="请输入验证码" />
+</LinearLayout>

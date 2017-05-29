@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/one_part_item_icon_section" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <ImageView android:id="@id/one_part_item_section_icon" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="16.0dip" android:gravity="center_vertical" android:id="@id/one_part_item_section_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="热门" android:layout_toRightOf="@id/one_part_item_section_icon" />
+        </LinearLayout>
+        <GridView android:id="@id/one_part_item_section_gridview" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:listSelector="#00000000" android:layout_below="@id/one_part_item_icon_section" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/divider_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/mRelativeLayoutHistory" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <ImageView android:id="@id/category_history_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/g_widget_margin" android:src="@drawable/close_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/history_record_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/category_history_clear" android:layout_alignParentLeft="true">
+                <ImageView android:id="@id/history_title" android:background="@drawable/cate_browsed_history" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:background="@drawable/divider_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <include android:id="@id/one_part_divider" layout="@layout/item_section_divider" />
+</LinearLayout>

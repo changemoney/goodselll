@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/life_item_tab" android:background="@drawable/divider_at_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/btn_ellipse_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <RelativeLayout android:id="@id/rlLeftBackground" android:background="@drawable/btn_ellipse_green" android:layout_width="100.0dip" android:layout_height="35.0dip" />
+        <RelativeLayout android:id="@id/rlRightBackground" android:background="@drawable/btn_ellipse_green" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_toRightOf="@id/rlLeftBackground" />
+        <RelativeLayout android:gravity="center" android:id="@id/mNearbyItem" android:layout_width="100.0dip" android:layout_height="35.0dip">
+            <com.ganji.android.comp.widgets.BoldTextView android:textSize="16.0dip" android:textColor="@color/text_color_high_gray_turn_green" android:gravity="center" android:id="@id/mTVNearby" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="附近" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/mMyXiaoQuItem" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_toRightOf="@id/mNearbyItem">
+            <com.ganji.android.comp.widgets.BoldTextView android:textSize="16.0dip" android:textColor="@color/text_color_high_gray_turn_green" android:id="@id/mTVMyCommunity" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的小区" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

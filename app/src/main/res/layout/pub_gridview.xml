@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.android.publish.ui.MGridView android:id="@id/template_publish_grid_view" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_15dp" android:listSelector="@null" android:horizontalSpacing="7.5dip" android:verticalSpacing="7.5dip" android:numColumns="3" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tipsLay" android:background="@drawable/bg_turn_grey" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_margin="@dimen/dimen_15dp">
+        <TextView android:textSize="12.0dip" android:textColor="@color/gray_999999" android:gravity="center" android:id="@id/mTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传照片" android:drawableTop="@drawable/icon_add_photo_top" android:drawablePadding="@dimen/dimen_5dp" />
+    </LinearLayout>
+    <TextView android:textColor="@color/text_error_color" android:id="@id/pub_error" android:paddingLeft="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/template_publish_grid_view" />
+</FrameLayout>

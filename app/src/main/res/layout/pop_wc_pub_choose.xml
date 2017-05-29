@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pub_select_avator" android:layout_width="180.0dip" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pub_select_avator_linear1" android:background="@drawable/btn_avatar_chooseup_nor" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:id="@id/pub_select_avator_image1" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/dimen_15dp" android:src="@drawable/avator_avator_default" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff161616" android:gravity="center_vertical" android:id="@id/pub_select_avator_txt1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip" android:text="昵称" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pub_select_avator_linear2" android:background="@drawable/btn_avatar_choosedown_press" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:id="@id/pub_select_avator_image2" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/dimen_15dp" android:src="@drawable/avator_avator_default" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff39bc30" android:gravity="center_vertical" android:id="@id/pub_select_avator_txt2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip" android:text="昵称" />
+    </LinearLayout>
+</LinearLayout>

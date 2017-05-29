@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:gravity="center_vertical" android:id="@id/item_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/paddingLeft" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="条目名" android:layout_weight="5.0" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/g_orange" android:gravity="center|right" android:id="@id/item_price" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/paddingRight" android:text="价格价格价格价格" android:singleLine="true" android:layout_weight="3.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/input_title_tv" style="@style/ui_item_left_lable_style" />
+    <View android:id="@id/input_line_v" android:minHeight="@dimen/minLineVertical" android:layout_toRightOf="@id/input_title_tv" style="@style/ui_item_vertical_divider_line" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/input_line_v">
+        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/g_light_grey" android:gravity="center_vertical" android:id="@id/input_content_tv" android:background="@drawable/spinner2_bg" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/leftTextheight" />
+        <include layout="@layout/item_input_errorview" />
+    </RelativeLayout>
+</RelativeLayout>

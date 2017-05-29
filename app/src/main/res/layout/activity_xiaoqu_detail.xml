@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <include layout="@layout/postdetail_deletedtips_layout" />
+    <com.ganji.android.ui.ScrollViewExtend android:id="@id/detail_xiaoqu_scroll_view" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/item_post_detail_title_style2" />
+            <include layout="@layout/item_post_detail_xiaoqu_house_num2" />
+            <LinearLayout android:orientation="vertical" android:id="@id/xiaoqu_other_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <include layout="@layout/item_post_detail_xiaoqu_peitao" />
+            </LinearLayout>
+            <include layout="@layout/item_post_detail_basic_info_xiaoqu" />
+            <LinearLayout android:orientation="vertical" android:id="@id/xiaoqu_peitao_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/item_post_detail_xiaoqu_peitao2" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/detail_xiaoqu_peitao_more" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_fc_zhankai_selector" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/item_post_detail_xiaoqu_trend" />
+            <include layout="@layout/item_post_detail_recommend_style2" />
+            <include layout="@layout/item_post_detail_blank" />
+        </LinearLayout>
+    </com.ganji.android.ui.ScrollViewExtend>
+    <include layout="@layout/default_loading_container" />
+</LinearLayout>

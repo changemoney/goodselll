@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chargeCount" android:background="@drawable/bg_charge_coupon_item" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.5dip" android:text="" android:layout_toLeftOf="@id/charge_right" android:layout_centerVertical="true" android:layout_toStartOf="@id/charge_right" />
+        <ImageView android:id="@id/charge_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/house_information_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/divider" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="59.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

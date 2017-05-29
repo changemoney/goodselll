@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fw_favor_item" android:padding="@dimen/dimen_5dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/wf_favor_info" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/wf_favor_item_factory" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/wf_favor_item_aggregate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/wf_favor_item_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="13.0dip" android:textColor="#ff39bc30" android:gravity="center" android:id="@id/tv_follow_state" android:background="@drawable/selector_factory_follow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="+ 关注" android:layout_below="@id/wf_favor_info" />
+</RelativeLayout>

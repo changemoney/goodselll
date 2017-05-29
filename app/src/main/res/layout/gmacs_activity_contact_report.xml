@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/contact_report_reason_height" android:layout_marginTop="@dimen/contact_remark_first_separator_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/report_reason" style="@style/style_remark_text_content" />
+    <EditText android:textSize="14.0dip" android:textColor="@color/gray_808080" android:gravity="center|left" android:id="@id/et_report_info" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" style="@style/style_remark_info" />
+</LinearLayout>

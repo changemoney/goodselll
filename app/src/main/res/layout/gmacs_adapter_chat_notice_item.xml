@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_post_title_item" android:paddingTop="@dimen/im_chat_notice_paddingTop" android:paddingBottom="@dimen/im_chat_notice_paddingBottom" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/chat_time_text_color" android:layout_gravity="center" android:id="@id/time" android:background="@drawable/gmacs_chat_time_background" android:paddingLeft="6.0dip" android:paddingTop="1.0dip" android:paddingRight="6.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/im_chat_msg_item_time_margin_content" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_chat_notice_margin_left" android:layout_marginTop="3.0dip" android:layout_marginRight="@dimen/im_chat_notice_margin_right" android:layout_below="@id/time" android:layout_centerHorizontal="true" />
+</RelativeLayout>

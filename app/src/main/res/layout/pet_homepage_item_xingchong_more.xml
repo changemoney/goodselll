@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@color/bg_pet_home_item_normal" android:layout_width="fill_parent" android:layout_height="168.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:gravity="center" android:orientation="vertical" android:id="@id/txt_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="更多信息" android:drawableRight="@drawable/ic_pet_morepets" android:drawablePadding="4.0dip" android:layout_centerHorizontal="true" />
+    <View android:id="@id/xingchong_layout" android:background="@drawable/bg_pet_home_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

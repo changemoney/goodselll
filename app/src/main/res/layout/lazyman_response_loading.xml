@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/response_loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/response_loading_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/response_loading_bg" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/response_loading_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_response_loading_person" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/b_b_text" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="正在匹配相符的经纪人..." android:layout_below="@id/response_loading_bg" android:layout_centerHorizontal="true" />
+</RelativeLayout>

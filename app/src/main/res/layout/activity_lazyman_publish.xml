@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/back_view" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lazyman_img_publish_guide" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/lazyman_guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="填写租房意向" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房博士帮你快速找到放心房" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/lazyman_bg_publish" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioGroup android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/radio_category_group" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                        <RadioButton android:id="@id/radio_category_zhengzu" android:background="@drawable/btn_rect_tab_left" android:text="整租" style="@style/public_request_category_style" />
+                        <RadioButton android:id="@id/radio_category_hezu" android:background="@drawable/btn_rect_tab_right" android:text="合租" style="@style/public_request_category_style" />
+                    </RadioGroup>
+                </FrameLayout>
+                <include layout="@layout/default_loading_container" />
+                <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/close_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/button_close" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

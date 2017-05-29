@@ -37,10 +37,10 @@
         android:background="#99000000"
         android:visibility="invisible">
 
-        <!--<com.ganji.android.ui.MeshAnimationView
+        <com.ganji.android.ui.MeshAnimationView
             android:id="@id/mesh"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:visibility="visible" />-->
+            android:visibility="visible" />
     </RelativeLayout>
 </FrameLayout>

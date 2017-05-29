@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_city_listview_item" android:background="@drawable/default_list_bg_no_divider" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/city_text_color" android:gravity="center_vertical" android:id="@id/activity_city_listview_item_textview" android:paddingLeft="12.0dip" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/city_item_divider" android:layout_width="fill_parent" android:layout_height="0.75dip" android:layout_marginLeft="12.0dip" />
+</LinearLayout>

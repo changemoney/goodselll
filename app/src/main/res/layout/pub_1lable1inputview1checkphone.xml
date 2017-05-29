@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/mobilephone_inputphone_layout" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/leftTextheight">
+        <TextView android:text="手机号码" style="@style/ui_item_left_lable_style" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" style="@style/ui_item_vertical_divider_line" />
+            <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/pub_input" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/paddingLeft5" android:minHeight="@dimen/leftTextheight" android:singleLine="false" android:maxLength="11" android:layout_toLeftOf="@id/mobilephone_authorized_layout" android:layout_toRightOf="@id/pub_divider" android:inputType="phone" />
+            <LinearLayout android:gravity="center" android:id="@id/mobilephone_authorized_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:minHeight="@dimen/leftTextheight" android:layout_alignParentRight="true">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/g_green_btn2" android:layout_width="wrap_content" android:layout_height="20.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/mobilephone_icon" />
+                    <TextView android:textSize="13.0dip" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="已认证" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/pub_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/mobilephone_getyan_layout" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/pub_margin_divider" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="@dimen/leftfeedboxTextheight">
+            <TextView android:id="@id/auth_lable" android:layout_height="fill_parent" android:text="手机认证" style="@style/ui_item_left_lable_style" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:layout_alignTop="@id/pub_input1" android:layout_alignBottom="@id/pub_input1" style="@style/ui_item_vertical_divider_line" />
+                <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/pub_inputcode" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/paddingLeft5" android:singleLine="false" android:layout_toLeftOf="@id/mobilephone_getyanNum_layout" android:layout_toRightOf="@id/pub_divider" android:inputType="phone" />
+                <LinearLayout android:gravity="center" android:id="@id/mobilephone_getyanNum_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/g_green" android:gravity="center" android:id="@id/getYanNum" android:background="@drawable/bg_receive_phone_num" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingRight="5.0dip" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取验证码" />
+                </LinearLayout>
+                <View android:id="@id/pub_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input1" android:layout_alignBottom="@id/pub_input1" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textColor="@color/g_light_grey" android:gravity="center" android:id="@id/tip" android:background="@color/pub_pic_gray" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="认证手机后会有更多企业主动联系您！" />
+    </LinearLayout>
+</LinearLayout>

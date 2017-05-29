@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_selector_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_group_avator" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="12.0dip" layout="@layout/circle_layout" />
+    <TextView android:textSize="@dimen/m_text" android:textColor="@color/white" android:gravity="center" android:id="@id/join_button" android:background="@drawable/g_green_btn2" android:clickable="true" android:layout_width="64.0dip" android:layout_height="24.0dip" android:layout_marginRight="12.0dip" android:text="申请加入" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/layout_group_body" android:paddingTop="@dimen/view_padding_top" android:paddingRight="@dimen/view_padding_right" android:paddingBottom="@dimen/view_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/join_button" android:layout_toRightOf="@id/layout_group_avator" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/b_b_text" android:textColor="@color/black_gray" android:ellipsize="end" android:id="@id/tv_line1_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/s_text" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_line2_01" android:background="@drawable/bg_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/all_view_margin_bottom" android:layout_below="@id/tv_line1_01" />
+        <TextView android:textSize="@dimen/m_text" android:textColor="@color/light_gray" android:id="@id/tv_line2_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/all_view_margin_left" android:layout_toRightOf="@id/tv_line2_01" android:layout_below="@id/tv_line1_01" android:layout_alignBaseline="@id/tv_line2_01" />
+    </RelativeLayout>
+    <View android:layout_toRightOf="@id/layout_group_avator" android:layout_alignParentBottom="true" style="@style/DottedLine" />
+</RelativeLayout>

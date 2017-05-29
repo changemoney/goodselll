@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/leftTextheight">
+        <TextView android:id="@id/pub_label" style="@style/ui_item_left_lable_style" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View style="@style/ui_item_vertical_divider_line" />
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/pub_label_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:layout_toRightOf="@id/pub_divider">
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/pub_label1" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="14.0dip" android:text="第" />
+                <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/pub_input" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:id="@id/pub_label2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="层，共" />
+                <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/pub_input1" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/pub_label3" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="11.0dip" android:text="层" />
+            </LinearLayout>
+            <include layout="@layout/pub_errorview" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

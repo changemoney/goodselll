@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/publishtitle" layout="@layout/titlebar" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="298.5dip" android:layout_height="382.5dip" android:layout_marginLeft="38.5dip" android:layout_marginTop="30.0dip" android:layout_marginRight="38.5dip" android:src="@drawable/bg_used_post_guide" />
+        <View android:id="@id/bottom_stub" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:baselineAligned="false" android:layout_above="@id/bottom_stub">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_personal" android:background="@drawable/bg_post_detail_footer_green" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="7.5dip" android:layout_weight="1.0">
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人发布" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_company" android:background="@drawable/bg_post_detail_footer_green" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:layout_weight="1.0">
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商家发布" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="18.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="37.5dip" android:text="请先选择发布身份" android:layout_above="@id/bottom_bar" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

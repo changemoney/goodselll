@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="369.0dip">
+        <com.ganji.android.information.ui.ScrollTabView android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/arrow_lv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignBottom="@id/tab_divider" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zixun_img" />
+            <ImageView android:background="@color/white" android:layout_width="12.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:id="@id/tab_divider" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tabs" />
+        <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_lv" android:layout_below="@id/tab_divider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_lv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:gravity="center" android:id="@id/change" android:background="@drawable/bg_item_jump_entry_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="换一批" android:layout_weight="1.0" />
+                <View android:layout_gravity="center" android:background="#fff3f3f3" android:layout_width="1.0px" android:layout_height="20.0dip" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:gravity="center" android:id="@id/total" android:background="@drawable/bg_item_jump_entry_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="查看更多" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

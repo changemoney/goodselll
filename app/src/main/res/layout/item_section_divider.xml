@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/item_section_divider"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/divider_bg"
+        android:visibility="visible" />
+
+    <View
+        android:id="@id/item_section_spacing"
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dip"
+        android:background="@drawable/g_dark_white" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/divider_bg"
+        android:visibility="visible" />
+</LinearLayout>

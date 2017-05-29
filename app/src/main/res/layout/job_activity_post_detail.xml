@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_layout_total_all" android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <FrameLayout android:id="@id/job_post_detail_layout_total" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/default_loading_container" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="        在赶集账号进行充值操作后，可以在【个人中心】查看您当前的余额数目，余额可以用来对您的帖子进行“置顶”操作，方便更多人看到您的信息！" android:lineSpacingExtra="5.0dip" />
+            </LinearLayout>
+            <View android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_margin="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="5.0">
+                <TextView android:textSize="14.0dip" android:textStyle="bold" android:id="@id/pay_explain_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温馨提示：" />
+                <TextView android:textSize="14.0dip" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\n1、若出现已成功充值的提示，但金额未到帐，可能是网络或系统繁忙导致，我们会在2个工作日内核对后为您充值。 \n2、在充值时请仔细确认充值的金额和账户，以免为充值错误。 \n3、在充值过程中如出现网页错误或打开缓慢时，请先查询银行或者相关支付方式的交易记录，检查扣款是否成功，然后查看赶集帐户是否已成功充值。若没有确认，请不要反复刷新页面，以防止重复购买。 \n4、充值成功后，不可退款或兑换成现金。 \n5、如有任何疑问也可直接联系赶集客服：" android:lineSpacingExtra="5.0dip" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/orange" android:id="@id/pay_explain_call_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="010-59013666" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

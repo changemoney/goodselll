@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guanzhu_img_def" />
+    <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/gray_B3B3B3" android:id="@id/txt_guanzhu_nor_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:text="打工路艰难,寂寞人难行" />
+    <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/gray_B3B3B3" android:id="@id/txt_guanzhu_nor_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还没有工友关注你呢" />
+    <Button android:textSize="@dimen/dimen_14sp" android:textColor="#ff39bc30" android:id="@id/btn_guanzhu_nor" android:background="@drawable/btn_guanzhu_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/mini_margin_20" android:layout_marginRight="@dimen/dimen_10dp" android:text="立即发帖吸引工友" />
+</LinearLayout>

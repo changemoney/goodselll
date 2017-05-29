@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/list_item_bg" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/g_item_height_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dirIcon" android:layout_width="@dimen/g_item_height_medium" android:layout_height="@dimen/g_item_height_medium" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_dark_grey" android:gravity="center|left" android:id="@id/dirName" android:paddingLeft="@dimen/paddingLeft" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Camera" android:layout_below="@id/dirIcon" />
+    <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:gravity="center|left" android:id="@id/count" android:paddingLeft="@dimen/paddingLeft" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_5dp" android:src="@drawable/ic_right_arrow" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_5dp">
+        <TextView android:textSize="12.0dip" android:textColor="@color/gray_676767" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="猜你想讨论的工厂" android:layout_weight="1.0" />
+        <ImageView android:id="@id/pop_pub_feed_company_cancel" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/btn_vote_closed" />
+    </LinearLayout>
+    <com.ganji.im.community.view.FlowWrapLayout android:id="@id/pub_popwindow_flow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+    <View android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

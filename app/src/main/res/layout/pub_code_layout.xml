@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/pub_header_gradient" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_above="@id/pub_layout_code" />
+    <EditText android:textSize="25.0dip" android:textColor="#ff333333" android:textColorHint="#99999999" android:gravity="center" android:id="@id/pub_phone_edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="请输入验证码" android:singleLine="true" android:digits="\ 1234567890" android:textCursorDrawable="@drawable/pub_cursor_green" />
+    <FrameLayout android:id="@id/pub_layout_code" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/pub_phone_edit">
+        <TextView android:textSize="16.0dip" android:textColorHint="#ff333333" android:gravity="center|left" android:layout_gravity="left" android:id="@id/pub_phone_hint" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:hint="请输入11位手机号" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/txt_phone_code" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="重新发送" />
+    </FrameLayout>
+</RelativeLayout>

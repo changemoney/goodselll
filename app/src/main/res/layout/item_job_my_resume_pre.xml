@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_job_resume_bar" android:layout_width="fill_parent" android:layout_height="95.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:text="我的简历" android:layout_below="@id/icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

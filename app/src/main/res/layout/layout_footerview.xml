@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <View android:background="#ffd8d8d8" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:id="@id/tv_show_register_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加入老乡说" />
+        <View android:background="#ffd8d8d8" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

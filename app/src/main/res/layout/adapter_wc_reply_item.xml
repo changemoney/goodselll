@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wc_reply_view" android:paddingTop="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ganji.im.view.CircleImageView2 android:id="@id/wc_reply_avatar" android:layout_width="@dimen/dimen_wc_avatar_width" android:layout_height="@dimen/dimen_wc_avatar_width" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_15dp" android:src="@drawable/avator_avator_default" />
+        <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/gray_161616" android:gravity="center" android:id="@id/wc_reply_title" android:paddingLeft="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小鲜肉陈学" android:layout_toRightOf="@id/wc_reply_avatar" android:layout_alignTop="@id/wc_reply_avatar" />
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_676767" android:id="@id/wc_reply_time" android:paddingLeft="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刚刚" android:layout_toRightOf="@id/wc_reply_avatar" android:layout_below="@id/wc_reply_title" />
+        <TextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/gray_161616" android:ellipsize="end" android:id="@id/wc_reply_content" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="" android:maxLines="5" android:maxLength="140" android:layout_toRightOf="@id/wc_reply_avatar" android:layout_below="@id/wc_reply_time" android:lineSpacingExtra="3.0dip" />
+    </RelativeLayout>
+    <View android:id="@id/wc_reply_divider" android:background="@color/divider_line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0_5dp" android:layout_marginLeft="63.0dip" android:layout_marginTop="@dimen/dimen_15dp" />
+</LinearLayout>

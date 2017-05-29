@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_post_detail_contact_findroommate" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gj="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_post_detail_contact_user_layout_findroommate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="30.0dip">
+        <RelativeLayout android:id="@id/item_post_detail_contact_user_findroommate" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ganji.android.ui.RoundedRectangleView android:id="@id/outer_findroommate" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="25.0dip" android:layout_centerHorizontal="true" gj:backColor="#fff3f3f3" />
+            <com.ganji.android.ui.RoundedRectangleView android:id="@id/inner_findroommate" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginTop="26.0dip" android:layout_centerHorizontal="true" gj:backColor="#ffffffff" />
+            <com.ganji.android.ui.CircleImageView2 android:id="@id/post_detail_user_icon_findroommate" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="28.0dip" android:src="@drawable/img_default_head" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/gray_161616" android:id="@id/post_detail_person_findroommate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:maxLines="1" android:layout_below="@id/post_detail_user_icon_findroommate" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_below="@id/post_detail_person_findroommate" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/post_detail_findroommate_sexIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:id="@id/post_detail_findroommate_xingzuo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:id="@id/post_detail_findroommate_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:id="@id/post_detail_findroommate_career" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/post_detail_findroommate_label_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:id="@id/post_detail_findroommate_label_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TA的标签" android:layout_centerHorizontal="true" />
+                <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/post_detail_findroommate_label_text" android:layout_centerVertical="true" />
+                <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/post_detail_findroommate_label_text" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.ganji.android.house.ui.TagFlowView android:id="@id/post_detail_findroommate_label_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/post_detail_findroommate_skill_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:id="@id/post_detail_findroommate_skill_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TA的技能" android:layout_centerHorizontal="true" />
+                <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/post_detail_findroommate_skill_text" android:layout_centerVertical="true" />
+                <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/post_detail_findroommate_skill_text" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.ganji.android.house.ui.TagFlowView android:id="@id/post_detail_findroommate_skill_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/post_detail_findroommate_roommatetag_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:id="@id/post_detail_findroommate_roommatetag_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对室友的要求" android:layout_centerHorizontal="true" />
+                <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/post_detail_findroommate_roommatetag_text" android:layout_centerVertical="true" />
+                <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/post_detail_findroommate_roommatetag_text" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.ganji.android.house.ui.TagFlowView android:id="@id/post_detail_findroommate_roommatetag_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

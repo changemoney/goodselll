@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/gmacs_floating_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/audio_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/audio_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gmacs_ic_audio_minimize" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff00bdfd" android:id="@id/chat_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/audio_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/jobs_activity_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/jobs_item_tab" />
+    <FrameLayout android:id="@id/jobs_main_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

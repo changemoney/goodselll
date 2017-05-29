@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/publishtitle" layout="@layout/titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:textColor="@color/g_yellow" android:gravity="center" android:id="@id/tips_text" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="1/10" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="室友信息" style="@style/pub_form_center_title" />
+                <ImageButton android:layout_gravity="center|right" android:id="@id/btn_del_roommate" android:background="@drawable/bg_yunying" android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_5dp" android:src="@drawable/btn_del_roommate" />
+            </FrameLayout>
+            <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.ganji.android.publish.ui.PubSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="roommate_jushi_in" pub:label="室友居室" pub:tip="必须选择一项！" pub:isRequired="true" pub:isChecked="false" />
+            <include layout="@layout/pub_margin_divider" />
+            <com.ganji.android.publish.ui.PubSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="jushi_number_in" pub:label="居室人数" pub:tip="必须选择一项！" pub:isRequired="true" pub:isChecked="false" />
+            <include layout="@layout/pub_margin_divider" />
+            <com.ganji.android.publish.ui.PubSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="roommate_sex_in" pub:label="室友性别" pub:tip="必须选择一项！" pub:isRequired="true" pub:isChecked="false" />
+            <include layout="@layout/pub_margin_divider" />
+            <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="roommate_career_in" pub:label="室友职业" pub:tip="请选择！" pub:isRequired="true" pub:showType="text_picker" />
+            <LinearLayout android:orientation="horizontal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+                <Button android:gravity="center" android:id="@id/enter_button" android:text="保存" android:layout_weight="1.0" style="@style/ui_component_PublishPanel_Button_free" />
+                <Button android:gravity="center" android:id="@id/next_button" android:layout_marginLeft="15.0dip" android:text="保存并继续添加" android:layout_weight="1.0" style="@style/ui_component_PublishPanel_Button_free" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

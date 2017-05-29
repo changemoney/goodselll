@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/house_fraun_tip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+        <ImageView android:id="@id/guard_close" android:background="@drawable/bg_yunying" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/button_close" android:layout_alignRight="@id/guide_content" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/guide_content" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:paddingBottom="25.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/guard_close">
+            <TextView android:textSize="@dimen/b_text" android:textColor="@color/price_orange" android:gravity="center" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这些都是骗子" />
+            <TextView android:textSize="@dimen/m_text" android:textColor="@color/bg_titlebar_text_color" android:gravity="center" android:id="@id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="“不方便看房，请先交定金”\n“房东人在外地”\n“邮寄合同和证件给我”" android:lineSpacingExtra="6.0dip" />
+            <TextView android:textSize="@dimen/m_text" android:textColor="@color/bg_titlebar_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="在实地看房签约前，" />
+            <TextView android:textSize="@dimen/m_text" android:textColor="@color/price_orange" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不要支付任何费用！" />
+            <Button android:textSize="@dimen/b_text" android:textColor="@color/white" android:id="@id/guard_know_button" android:background="@drawable/bg_post_detail_footer_green" android:paddingLeft="70.0dip" android:paddingRight="70.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="我知道了" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

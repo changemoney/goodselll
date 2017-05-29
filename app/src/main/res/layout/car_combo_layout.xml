@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.publish.ui.PubComboLayoutView android:id="@id/pub_car_combo" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="[请选择,请填写,请填写]" pub:key="[license_year_math,road_haul,price]" pub:label="[上牌时间,行驶里程,售卖价格]" pub:isRequires="[true,true,true]" pub:error="[请选择,最多2位小数且2位整数,最多4位整数且2位小数]" pub:showType="[wheel,keyboard,keyboard]" pub:isComboHeader="true" pub:checkStringArr="[%[1-9]([0-9])?|[0-9]\\.[1-9][0-9]{0,1}|[0-9]\\.[0-9][1-9]|[1-9][0-9]{0,1}\\.[1-9][0-9]{0,1}|[1-9][0-9]{0,1}\\.[0-9][0-9]%[1-9][0-9]{2,7}]" />
+    <View android:background="@drawable/pub_header_gradient" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_above="@id/pub_car_divider" />
+    <View android:id="@id/pub_car_divider" android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/pub_car_combo" />
+    <TextView android:textSize="16.0dip" android:textColorHint="#ff333333" android:gravity="center" android:id="@id/pub_car_combo_hint" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/pub_car_divider" />
+</RelativeLayout>

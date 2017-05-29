@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <FrameLayout android:id="@id/frame_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/mapview_panel" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/normal_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ganji.android.comp.post.filter.QuickFilterBar android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/quick_filter_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/location_bar" android:background="@drawable/divider_at_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/location_bar_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:ellipsize="end" android:id="@id/location_bar_txt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:text="北京海淀上地八维学校" android:layout_weight="1.0" />
+                <ImageView android:id="@id/location_bar_btn" android:layout_width="42.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_refresh_normal" android:scaleType="center" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/no_message" android:background="@drawable/divider_at_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="@dimen/g_text_size_small" android:id="@id/no_message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/adapter_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.ganji.android.ui.InformationListview android:id="@id/infor_list" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
+                <com.ganji.android.ui.PullToRefreshGJListView android:id="@id/pull_list" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ffececec" android:dividerHeight="1.0px" />
+                <com.ganji.android.comp.widgets.pullrefresh.PullToRefreshCustom android:id="@id/waterfall" android:layout_width="fill_parent" android:layout_height="fill_parent" ptr:ptrRefreshableViewLayout="@layout/waterfall" ptr:ptrScrollableId="@id/waterfall" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+                <com.ganji.android.comp.widgets.pullrefresh.PullToRefreshCustom android:id="@id/pull_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" ptr:ptrRefreshableViewLayout="@layout/gridview" ptr:ptrScrollableId="@id/gridview" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+            <include layout="@layout/default_loading_container" />
+        </LinearLayout>
+        <View android:id="@id/mask" android:background="#33000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/float_button_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/float_btn_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/float_garield_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lazyman_find_house" android:scaleType="fitXY" />
+                <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/send_resume_btn" android:background="@drawable/bg_float_resume_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:text="投递\n简历" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/float_filter_button_container" android:background="@drawable/divider_at_top" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_below="@id/float_btn_lv">
+                <RelativeLayout android:background="@drawable/btn_ellipse_grey" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View android:id="@id/float_movable" android:background="@drawable/btn_ellipse_green" android:layout_width="84.0dip" android:layout_height="33.0dip" />
+                    <TextView android:textColor="@color/gray_turn_white" android:gravity="center" android:id="@id/float_city_btn" android:layout_width="84.0dip" android:layout_height="33.0dip" android:text="全城" />
+                    <TextView android:textColor="@color/gray_turn_white" android:gravity="center" android:id="@id/float_local_btn" android:layout_width="84.0dip" android:layout_height="33.0dip" android:text="附近" android:layout_toRightOf="@id/float_city_btn" />
+                    <TextView android:textColor="@color/gray_turn_white" android:gravity="center" android:id="@id/float_map_btn" android:layout_width="84.0dip" android:layout_height="33.0dip" android:text="地图" android:layout_toRightOf="@id/float_local_btn" />
+                    <TextView android:textColor="@color/gray_turn_white" android:gravity="center" android:id="@id/float_job_high_quality_btn" android:layout_width="84.0dip" android:layout_height="33.0dip" android:text="放心企业" android:layout_toRightOf="@id/float_map_btn" />
+                    <TextView android:textColor="@color/gray_turn_white" android:gravity="center" android:id="@id/float_pets_imageStyle_btn" android:layout_width="84.0dip" android:layout_height="33.0dip" android:text="图片" android:layout_toRightOf="@id/float_job_high_quality_btn" />
+                    <TextView android:textColor="@color/gray_turn_white" android:gravity="center" android:id="@id/float_pets_listStyle_btn" android:layout_width="84.0dip" android:layout_height="33.0dip" android:text="列表" android:layout_toRightOf="@id/float_pets_imageStyle_btn" />
+                    <TextView android:textColor="@color/gray_turn_white" android:gravity="center" android:id="@id/float_car_postlist_all_btn" android:layout_width="100.0dip" android:layout_height="33.0dip" android:text="全部车辆" android:layout_toRightOf="@id/float_pets_listStyle_btn" />
+                    <TextView android:textColor="@color/gray_turn_white" android:gravity="center" android:id="@id/float_car_postlist_haoche_btn" android:layout_width="100.0dip" android:layout_height="33.0dip" android:text="个人好车" android:layout_toRightOf="@id/float_car_postlist_all_btn" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

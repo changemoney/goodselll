@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/dialog_operator_item_wigth" android:layout_height="@dimen/dialog_operator_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/b_text" android:textColor="@color/high_gray" android:gravity="center_vertical" android:id="@id/item_content" android:paddingLeft="10.0dip" android:layout_width="@dimen/dialog_operator_item_wigth" android:layout_height="@dimen/dialog_operator_item_height" android:text="删除消息" />
+    <View android:id="@id/item_divider" android:background="@drawable/divider" android:layout_width="@dimen/dialog_operator_item_wigth" android:layout_height="2.0px" />
+</LinearLayout>

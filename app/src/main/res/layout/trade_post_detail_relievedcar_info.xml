@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/lable_sale" android:layout_width="87.0dip" android:layout_height="40.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="限时免费" />
+            <TextView android:textSize="8.0dip" android:textColor="#ffffb880" android:id="@id/check_pre_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="原价：500元" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="95.0dip" android:layout_height="79.0dip" android:src="@drawable/img_guanfangjiance" />
+    <TextView android:textSize="15.0dip" android:textColor="#ff161616" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="车辆检测服务" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="买二手车不放心？赶集官方检测给您保障！" />
+    <LinearLayout android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="38.0dip" android:paddingRight="15.0dip" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/icon_check" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dip" android:text="110项检测" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/icon_appraiser" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dip" android:text="专业评估师" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/icon_condition" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dip" android:text="车况全掌控" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <TextView android:textSize="15.0dip" android:textColor="#ff161616" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="申请电话" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:id="@id/check_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    <TextView android:textSize="15.0dip" android:textColor="#ff161616" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="检测地址" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:gravity="center_horizontal" android:id="@id/check_address" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/check_now" android:background="@drawable/post_detail_footer_green" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_common_phone" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="立即免费申请检测" />
+    </LinearLayout>
+</LinearLayout>

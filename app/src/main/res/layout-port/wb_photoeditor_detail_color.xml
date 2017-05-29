@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/photoeditor_effect_color" android:layout_width="fill_parent" android:layout_height="@dimen/photoeditor_effect_color_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wuba.api.editor.effects.EffectsMenuButton android:gravity="center" android:orientation="vertical" android:id="@id/edit_color_type_brightness" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_color_brightness" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_brightness" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+    <com.wuba.api.editor.effects.EffectsMenuButton android:gravity="center" android:orientation="vertical" android:id="@id/edit_color_type_contrast" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_color_contrast" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_contrast" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+    <com.wuba.api.editor.effects.EffectsMenuButton android:gravity="center" android:orientation="vertical" android:id="@id/edit_color_type_saturation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_color_saturation" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_saturation" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+    <com.wuba.api.editor.effects.EffectsMenuButton android:gravity="center" android:orientation="vertical" android:id="@id/edit_color_type_temperature" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_color_temperataure" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_temperature" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+    <com.wuba.api.editor.effects.EffectsMenuButton android:gravity="center" android:orientation="vertical" android:id="@id/edit_color_type_tone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_color_tone" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_tone" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+</LinearLayout>

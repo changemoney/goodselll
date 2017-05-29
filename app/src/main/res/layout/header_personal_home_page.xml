@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_hight" />
+    <com.ganji.im.view.CircleImageView2 android:layout_gravity="center_horizontal" android:id="@id/header_personal_avatar" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/workers_user_head" app:civ_border_width="0.5px" app:civ_border_color="#ffd8d8d8" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/header_personal_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/person_info_white" android:gravity="center_horizontal" android:id="@id/header_personal_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/header_personal_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" />
+            <TextView android:textColor="@color/person_info_white" android:id="@id/header_personal_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_below="@id/header_personal_info">
+            <TextView android:textColor="@color/person_info_white" android:gravity="center_horizontal" android:id="@id/header_personal_company" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#11000000" android:paddingTop="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/header_personal_follow_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/person_info_white" android:gravity="center" android:id="@id/header_personal_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/person_info_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注的人" />
+        </LinearLayout>
+        <View android:background="@color/person_info_view_white" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_5dp" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/header_personal_favors_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/person_info_white" android:gravity="center" android:id="@id/header_personal_favors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/person_info_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="圈子" />
+        </LinearLayout>
+        <View android:background="@color/person_info_view_white" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_5dp" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/header_personal_fans_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/person_info_white" android:gravity="center" android:id="@id/header_personal_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/person_info_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_signature" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="24.0dip">
+        <ImageView android:id="@id/iv_icon_pencil" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_personal_write" />
+        <TextView android:textSize="12.0dip" android:textColor="#ccffffff" android:id="@id/tv_signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="写个签名，让大家更了解你" />
+    </LinearLayout>
+</LinearLayout>

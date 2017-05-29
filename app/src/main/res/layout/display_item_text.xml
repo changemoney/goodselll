@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/g_dark_grey" android:gravity="center" android:id="@id/display_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Galaxy Nexus" android:layout_weight="1.0" />
+</LinearLayout>

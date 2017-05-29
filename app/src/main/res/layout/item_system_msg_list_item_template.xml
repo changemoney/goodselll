@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/helper_bg" android:paddingTop="15.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="#ff404040" android:layout_gravity="center_vertical" android:id="@id/tv_template_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="妞妞添加您为好友" />
+        <ImageView android:id="@id/iv_template_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/operate_img_bg" android:scaleType="centerCrop" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff9a9a9a" android:layout_gravity="center_vertical" android:id="@id/tv_template_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="交个朋友吧" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/success_layout" android:background="@drawable/helper_buttom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_buttom_line" android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_color" android:gravity="center" android:id="@id/to_chat" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="竞选群主" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_garield_main" android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_secondhand_tag_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/garield_logo" android:background="@drawable/lazyman_house_top_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/g_green" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/g_item_height_small" android:layout_marginLeft="10.0dip" android:text="请选择您的找房需求" />
+                <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/garield_buy_house" android:background="@drawable/bg_item_center" android:layout_width="fill_parent" android:layout_height="@dimen/g_item_height_medium">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ic_buy_normal" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/dark_gray1" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="买房" />
+                </LinearLayout>
+                <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/garield_rent_house" android:background="@drawable/bg_item_center" android:layout_width="fill_parent" android:layout_height="@dimen/g_item_height_medium">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ic_rent_normal" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/dark_gray1" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="整租" />
+                </LinearLayout>
+                <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/garield_hezu_house" android:background="@drawable/bg_item_center" android:layout_width="fill_parent" android:layout_height="@dimen/g_item_height_medium">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ic_hezu_normal" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/dark_gray1" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@drawable/bg_item_center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="合租" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0dip" android:textColor="@color/medium_gray" android:gravity="center" android:id="@id/garield_tip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/layout_msg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_divider" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/input_bar" android:background="@color/white" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/send_emoji_button" android:background="@drawable/btn_wc_send_emoji" android:visibility="visible" android:layout_width="@dimen/dimen_wc_edit_height" android:layout_height="@dimen/dimen_wc_edit_height" android:layout_marginLeft="@dimen/dimen_3dp" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/send_avator_lay" android:layout_width="@dimen/dimen_wc_edit_height" android:layout_height="@dimen/dimen_wc_edit_height" android:layout_marginLeft="@dimen/dimen_3dp" android:layout_marginRight="@dimen/dimen_3dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_avatar" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/send_avator" android:layout_width="@dimen/dimen_wc_edit_height" android:layout_height="@dimen/dimen_wc_edit_height" android:src="@drawable/avator_avator_default" />
+        </RelativeLayout>
+        <EditText android:textSize="@dimen/dimen_14sp" android:textColor="@color/gray_161616" android:textColorHint="@color/gray_B3B3B3" android:id="@id/et_msg" android:background="@drawable/bg_inputbox" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="2.0dip" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_wc_edit_height" android:maxLines="4" android:maxLength="1000" android:layout_weight="1.0" android:imeOptions="actionDone" />
+        <Button android:enabled="false" android:textSize="@dimen/b_b_text" android:textColor="@color/text_wc_send_btn" android:id="@id/btn_send" android:background="@drawable/btn_wc_msg_send" android:layout_width="65.0dip" android:layout_height="@dimen/dimen_wc_edit_height" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:text="发送" />
+    </LinearLayout>
+    <View style="@style/DottedLine" />
+    <com.ganji.im.view.emoji.FaceRelativeLayout android:id="@id/FaceRelativeLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/face_layout" android:background="#fff6f5f5" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <View style="@style/DottedLine" />
+            <HorizontalScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/scroll_bar" android:layout_width="wrap_content" android:layout_height="40.0dip" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </com.ganji.im.view.emoji.FaceRelativeLayout>
+</LinearLayout>

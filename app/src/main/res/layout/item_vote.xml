@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/discover_hot_talk_width" android:layout_height="128.0dip">
+        <ImageView android:id="@id/bgIv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <RelativeLayout android:background="@drawable/selector_bg_hot_talk" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="13.0dip" android:textColor="@color/white" android:id="@id/signTv" android:background="@drawable/ic_red_badge" android:paddingLeft="10.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="投票" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/signTv">
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/titleCenterTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/voteNumTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:lines="1" android:maxLength="12" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:background="@drawable/bg_btn_vote" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip" android:text="立即投票" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

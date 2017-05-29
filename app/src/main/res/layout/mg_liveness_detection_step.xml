@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_pos_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/detection_step_linear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <com.megvii.zhimasdk.view.AutoRatioImageview android:id="@id/detection_step_image" android:layout_width="@dimen/detection_step_image_width" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@drawable/liveness_head" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff04c9b3" android:id="@id/detection_step_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="20.0dip" android:text="眨眼" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/liveness_layout_timeoutRel" android:visibility="visible" android:layout_width="@dimen/liveness_layout_timeoutRel_width" android:layout_height="@dimen/liveness_layout_timeoutRel_width" android:layout_marginLeft="2.0dip" android:layout_marginTop="25.0dip" android:layout_toRightOf="@id/detection_step_linear">
+        <TextView android:textSize="@dimen/liveness_layout_timeout_garden_size" android:textColor="#ff00bee2" android:id="@id/liveness_layout_timeout_garden" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:layout_centerInParent="true" />
+        <com.megvii.zhimasdk.view.CircleProgressBar android:id="@id/liveness_layout_timeout_progressBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

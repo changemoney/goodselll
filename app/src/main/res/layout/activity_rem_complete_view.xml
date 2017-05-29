@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_succeed_comp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/reminder_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/icon_login_close" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/coml_port" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:src="@drawable/icon_login_succeed1" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0dip" android:textColor="#ff404040" android:id="@id/rt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="基本信息填写成功!" android:layout_below="@id/coml_port" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff808080" android:id="@id/rt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:text="80%用户选择️" android:layout_below="@id/rt1" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/toUserInfo" android:background="@drawable/perfection_btn" android:layout_width="224.0dip" android:layout_height="44.0dip" android:layout_marginTop="20.0dip" android:text="继续完善资料" android:layout_below="@id/rt2" android:layout_centerHorizontal="true" />
+</RelativeLayout>

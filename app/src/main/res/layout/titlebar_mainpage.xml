@@ -34,7 +34,7 @@
             android:layout_toRightOf="@id/center_text"
             android:src="@drawable/dropdown" />
 
-        <android.com.goodsell.im.view
+        <com.ganji.im.view.MsgNumberView
             android:id="@id/msg_number_view"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/titlebar_hight"
@@ -52,17 +52,17 @@
             android:layout_toLeftOf="@id/msg_number_view"
             android:layout_toRightOf="@id/title_right_drawable">
 
-            <android.com.goodsell.ui.RoundedRectangleView
+            <com.ganji.android.ui.RoundedRectangleView
                 android:id="@id/center_edit"
                 android:layout_width="fill_parent"
                 android:layout_height="28.0dip"
                 android:layout_centerVertical="true"
-                 /><!-- gj:backColor="#4cffffff"
+                gj:backColor="#4cffffff"
                 gj:text="输入类别或关键字"
                 gj:textColor="#ffffffff"
                 gj:textLeft="27.0dip"
                 gj:textRight="27.0dip"
-                gj:textSize="@dimen/g_text_size_medium" -->
+                gj:textSize="@dimen/g_text_size_medium" />
 
             <ImageView
                 android:id="@id/input_search_icon"

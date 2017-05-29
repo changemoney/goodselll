@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_detail_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/normal_post" android:background="#fff7f7f7" android:layout_width="100.0dip" android:layout_height="121.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/post_img" android:layout_width="100.0dip" android:layout_height="75.0dip" android:src="@drawable/secondhand_bike" android:scaleType="centerCrop" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff161616" android:ellipsize="end" android:id="@id/post_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.5dip" android:layout_marginBottom="2.0dip" android:maxLines="1" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffff7200" android:id="@id/post_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.5dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/more_post" android:background="#fff7f7f7" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="121.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.5dip" android:text="查看更多" android:minLines="2" android:maxEms="2" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="8.5dip" android:layout_marginBottom="30.0dip" android:src="@drawable/second_hand_icon_used_more" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/banner_middle_lv" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_item_jump_entry_area" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/tip_img" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_tl_tonghang" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <View android:id="@id/wc_divider" android:background="#fff3f3f3" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:layout_toRightOf="@id/tip_img" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/wc_arrow" android:layout_toRightOf="@id/wc_divider" android:layout_centerVertical="true">
+            <com.ganji.android.ui.SlideView android:layout_gravity="center_vertical" android:id="@id/slideview" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/wc_arrow" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/arrow_right_myinfo_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff676767" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结果较少？为您推荐" android:singleLine="true" android:drawableLeft="@drawable/icon_house_post_list_recommend" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:gravity="center" android:id="@id/content_item_post_list_building_recommend" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff676767" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房源" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

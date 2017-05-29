@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wuba.api.editor.effects.EffectsMenuButton android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/photo_edit_menu_icon" android:layout_width="@dimen/effect_menu_icon_size" android:layout_height="@dimen/effect_menu_icon_size" />
+    <TextView android:id="@id/photo_edit_menu_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/wb_camera_style_micro_white" />
+</com.wuba.api.editor.effects.EffectsMenuButton>

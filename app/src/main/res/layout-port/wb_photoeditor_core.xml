@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/whole3d" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <com.wuba.api.editor.photo.PhotoViewWrap android:layout_gravity="center" android:id="@id/outer3d" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/outer3D_margintop" android:layout_marginBottom="@dimen/outer3D_marginbottom">
+            <com.wuba.api.editor.photo.PhotoView android:id="@id/photo_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.wuba.api.editor.photo.PhotoViewWrap>
+        <RelativeLayout android:id="@id/sticker_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/effect_tool_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/effect_tool_panel_margintop" android:layout_marginBottom="@dimen/effect_tool_panel_marginbottom" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/effects_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/effects_bar_actions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/effect_anim_view" android:layout_width="fill_parent" android:layout_height="@dimen/effect_anim_view_height">
+            <com.wuba.api.editor.effects.EffectsMenu android:id="@id/effects_menu" android:layout_width="fill_parent" android:layout_height="@dimen/effects_menu_height" android:layout_alignParentBottom="true" style="@style/ActionBarOuter" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_personal_centre_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:gravity="center_vertical" android:id="@id/item_price_name" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="8000元以下" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/price_number_long_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:id="@id/price_number_long" android:background="@drawable/price_bg_long" android:layout_width="0.0dip" android:layout_height="18.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0dip" android:textColor="@color/g_orange" android:gravity="center_vertical" android:id="@id/number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="52120" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/g_orange" android:id="@id/house_price_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个小区" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

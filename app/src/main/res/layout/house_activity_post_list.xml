@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/titlebar" />
+        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:orientation="vertical" android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="bottom|center|right" android:id="@id/float_btn_lv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/float_garield_btn" android:visibility="visible" android:layout_width="69.0dip" android:layout_height="69.0dip" android:src="@drawable/ic_lazyman_find_house" android:scaleType="fitXY" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/float_city_btn" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_list_tab_allcity" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/list_tab_txt_colors" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="全城" />
+                </LinearLayout>
+                <View android:layout_gravity="center" android:background="#ffb3b3b3" android:layout_width="1.0px" android:layout_height="14.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/float_local_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_list_tab_nearby" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/list_tab_txt_colors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="附近" />
+                </LinearLayout>
+                <View android:layout_gravity="center" android:background="#ffb3b3b3" android:layout_width="1.0px" android:layout_height="14.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/float_map_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_list_tab_map_selector" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/list_tab_txt_colors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="地图" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

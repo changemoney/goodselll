@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/input_component_commit"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/input_component_one_button" android:visibility="visible" android:layout_width="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="确定" android:layout_weight="1.0" style="@style/input_component_button_commit" />
+    <Button android:id="@id/input_component_one_button1" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="确定" android:layout_weight="1.0" style="@style/input_component_button_commit" />
+</LinearLayout>

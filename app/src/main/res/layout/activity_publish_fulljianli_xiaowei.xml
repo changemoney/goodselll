@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/pub_margin" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="2-6字，汉字或字母" pub:key="person" pub:label="姓        名" pub:checkString="6#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,6}$)" pub:tip="汉字或字母，长度2-6个！" pub:isRequired="true" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="findjob_sex" pub:label="性        别" pub:tip="必须选择一项！" pub:isRequired="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubWheelView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择出生日期" pub:key="birthdate" pub:label="出生年份" pub:tip="请选择出生日期！" pub:firstdata=",1952,1999,false,37" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubSelectSpinnerView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择学历" pub:key="findjob_degree" pub:label="最高学历" pub:tip="请选择学历！" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubSelectSpinnerView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择工作年限" pub:key="findjob_period" pub:label="工作年限" pub:tip="请选择工作年限！" pub:isRequired="true" />
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/pub_margin" android:layout_marginBottom="@dimen/pub_margin" />
+    <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写正确的手机号" pub:key="phone" pub:label="手  机  号" pub:checkString="11#@#@#3#@#@#^1[34578]\\d{9}$" pub:tip="输入的手机号码有误！" pub:isRequired="false" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写邮箱" pub:key="email" pub:label="邮箱地址\n(选填)" pub:checkString="50#@#@#1#@#@#[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}" pub:tip="您的邮箱地址有误！" pub:isRequired="false" />
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/pub_margin" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择区域" pub:key="findjob_area" pub:label="期望区域" pub:tip="请选择区域！" pub:onclick="selectArea" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择期望薪资" pub:key="findjob_salary" pub:label="期望薪资" pub:tip="请选择期望薪资！" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择职位名称" pub:key="findjob_position" pub:label="期望职位" pub:tip="请选择职位名称！" pub:onclick="selectPositionOfXiaowei" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+    </LinearLayout>
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="添加教育经历，工作经历，自我评价，获得更多机会" pub:key="description" pub:label="求职宣言\n(选填)" pub:checkString="800#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){10,}$" pub:tip="字符长度大于10小于800，不含电话！" pub:reslayout="@layout/pub_input_multiline_bold" pub:isRequired="false" />
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/pub_margin" />
+    <com.ganji.android.publish.ui.PubGridView android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="4" pub:isRequired="false" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/depute_switch_lv" android:background="@drawable/white" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.5dip">
+        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3天内有相似好工作，自动投递" android:layout_weight="1.0" />
+        <include android:id="@id/depute_switch" layout="@layout/ui_switch_view" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/opposite_resume_switch_lv" android:background="@drawable/white" android:paddingLeft="7.0dip" android:paddingTop="7.0dip" android:paddingRight="7.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.5dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我也考虑" />
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/opposite_resume_catecary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全职" />
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工作机会" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:ellipsize="end" android:gravity="center|left" android:id="@id/opposite_resume_postion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="销售全职" android:maxLines="2" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/opposite_resume_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/ui_switch_view" />
+    </LinearLayout>
+</LinearLayout>

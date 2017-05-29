@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/color_left_talk_font" android:layout_gravity="center" android:id="@id/msg" android:background="@drawable/msg_left_talk" android:paddingLeft="@dimen/im_content_padding_right" android:paddingRight="@dimen/im_content_padding_left" style="@style/style_talk_text_content" />
+</LinearLayout>

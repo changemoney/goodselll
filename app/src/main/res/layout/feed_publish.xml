@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_simple" />
+    <FrameLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_feed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.ganji.im.view.feed.FeedPublishEditView android:textSize="@dimen/b_b_text" android:textColor="@color/white" android:textColorHighlight="@color/gray_cac6c3" android:gravity="center|left|top" android:layout_gravity="bottom" android:id="@id/et_feed_content" android:background="#6a000000" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="说点什么吧..." android:maxLines="5" android:minLines="3" android:maxLength="140" android:lineSpacingExtra="8.0dip" android:inputType="textMultiLine" />
+    </FrameLayout>
+</LinearLayout>

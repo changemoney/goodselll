@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/default_titlebar" />
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip">
+        <requestFocus />
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0dip" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="手机绑定" />
+                <LinearLayout android:orientation="vertical" android:paddingTop="33.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/g_light_grey" android:gravity="center" android:id="@id/tv86" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="+86" android:layout_alignParentLeft="true" />
+                            <EditText android:textSize="14.0dip" android:textColorHint="@color/g_light_grey" android:id="@id/phoneNum" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:hint="请输入手机号码" android:singleLine="true" android:maxLength="11" android:layout_toRightOf="@id/tv86" android:inputType="phone" android:imeOptions="actionNext" android:layout_toEndOf="@id/tv86" style="?android:attr/textViewStyle" />
+                            <ImageView android:id="@id/phone_clear_btn" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/close_btn" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip">
+                            <EditText android:textSize="14.0dip" android:textColorHint="@color/g_light_grey" android:id="@id/phoneYanNum" android:background="@null" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请输入短信验证码" android:password="true" android:singleLine="true" android:maxLength="16" android:layout_alignParentLeft="true" android:inputType="number" android:imeOptions="actionNext" style="?android:attr/textViewStyle" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                                <ImageView android:id="@id/password_clear_btn" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/close_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                <Button android:enabled="true" android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/BtnObtainAuthCode" android:background="@drawable/g_yanzhen_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取验证码" android:layout_toRightOf="@id/phone_clear_btn" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" />
+                    <Button android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_verification_code_ok" android:background="@drawable/g_login_btn" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="36.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="36.0dip" android:text="确认绑定" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="36.0dip" android:paddingTop="8.0dip" android:paddingRight="36.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_below="@id/content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/g_orange" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="小驴提示您" android:layout_centerHorizontal="true" />
+                    <RelativeLayout android:background="@drawable/lv_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="12.0dip" android:textColor="@color/medium_gray" android:id="@id/tip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="30.0dip" android:text="1. 绑定手机号后可用于登录您的账号和找回密码\n2. 一个账号仅能绑定一个手机，重复绑定无效" android:layout_toLeftOf="@id/textview_report" android:layout_centerVertical="true" android:lineSpacingExtra="3.0dip" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

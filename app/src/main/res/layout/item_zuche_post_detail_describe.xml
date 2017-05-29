@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_zuche_post_detail_describe" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/post_detail_describe_spacing_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <View android:id="@id/post_detail_describe_padding_top" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <View android:id="@id/post_detail_describe_line_top" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/post_detail_describe_short_line_top" android:background="@color/divider_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:id="@id/detail_describe_top_small_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+            <include layout="@layout/item_post_detail_big_image" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/progress_bar_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/high_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="正在加载中..." />
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="#ff676767" android:id="@id/post_detail_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="" android:lineSpacingExtra="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/post_detail_see_more" android:background="@drawable/bg_item_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0dip" android:textColor="@color/high_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多详情" />
+                <ImageView android:layout_width="9.339996dip" android:layout_height="5.3399963dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_arrow_down_normal" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/detail_describe_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

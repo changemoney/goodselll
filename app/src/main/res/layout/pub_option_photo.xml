@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/pub_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/page_gallery_photo" android:duplicateParentState="true" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="centerInside" />
+</LinearLayout>

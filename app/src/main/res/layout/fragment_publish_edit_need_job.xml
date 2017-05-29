@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/pub_layout_need_job" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ganji.android.publish.ui.PubJobSelectJobsView android:id="@id/pub_perfect_resume_findjob_position" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="findjob_position" pub:label="期望职位" pub:isRequired="true" />
+            <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+            <com.ganji.android.publish.ui.PubInputSelectView android:id="@id/pub_select_area" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="findjob_area" pub:label="期望区域" pub:onclick="selectArea" pub:isRequired="true" />
+            <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+            <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="findjob_salary" pub:label="期望薪资" pub:isRequired="true" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/pub_txt_perfect_resume_edit_click_save" android:background="@drawable/bg_post_detail_footer_green" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="保存" />
+    </LinearLayout>
+</ScrollView>

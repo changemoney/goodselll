@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/default_loading_container" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/submit_comment">
+            <LinearLayout android:orientation="vertical" android:id="@id/scroll_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0dip" android:textColor="#ff404040" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:text="评价：" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip" android:baselineAligned="false">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/jobs_company_comment_good" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/job_company_comment_ic_radiobutton" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/job_company_comment_ic_goodcomment" />
+                            <TextView android:textSize="16.0dip" android:textColor="#ff404040" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="好评" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/jobs_company_comment_medium" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/job_company_comment_ic_radiobutton" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/job_company_comment_ic_mediumcomment" />
+                            <TextView android:textSize="16.0dip" android:textColor="#ff404040" android:gravity="center" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="中评" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/jobs_company_comment_poor" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/job_company_comment_ic_radiobutton" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/job_company_comment_ic_poorcomment" />
+                            <TextView android:textSize="16.0dip" android:textColor="#ff404040" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="差评" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="12.0dip">
+                    <View android:id="@id/divider_left" android:background="@drawable/divider" android:layout_width="0.0dip" android:layout_height="2.0px" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/divider_arrow_imageView" android:background="#fffafafa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jobs_company_comment_divider_arrow" />
+                    <View android:id="@id/divider_right" android:background="@drawable/divider" android:layout_width="0.0dip" android:layout_height="2.0px" android:layout_marginRight="8.0dip" android:layout_weight="5.0" />
+                </LinearLayout>
+                <TextView android:textSize="18.0dip" android:textColor="#ff404040" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="16.0dip" android:text="原因：" />
+                <LinearLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                    <GridView android:id="@id/jobs_company_comment_reasons" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#fffafafa" android:stretchMode="columnWidth" android:numColumns="2" />
+                </LinearLayout>
+                <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+                <TextView android:textSize="18.0dip" android:textColor="#ff404040" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:text="评语：" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/white_btn_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip">
+                    <EditText android:textSize="16.0dip" android:gravity="top" android:id="@id/comment_content_edit_text" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="说点什么吧，至少十个字哦~" android:maxLength="1000" android:layout_weight="1.0" android:inputType="textMultiLine" />
+                    <TextView android:textSize="16.0dip" android:textColor="#ff404040" android:gravity="center|right" android:id="@id/comment_content_character_num" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:text="0/1000" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:id="@id/submit_comment" android:background="#ff404040" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentRight="false" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:background="@drawable/g_green_btn2" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="提交" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

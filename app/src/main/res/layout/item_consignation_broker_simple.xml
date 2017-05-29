@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_yunying" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.ui.CircleImageView2 android:id="@id/broker_head" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/icon_contact_normal" app:civ_border_width="1.0px" app:civ_border_color="#fff2f2f2" />
+    <TextView android:textColor="@color/user_info_text_gray" android:gravity="center_horizontal" android:id="@id/broker_name" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/distance_5dp" android:text="Broker" />
+</LinearLayout>

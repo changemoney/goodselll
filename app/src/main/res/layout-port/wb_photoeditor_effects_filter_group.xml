@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/effects_filter_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/effects_filter_group_marginleft" android:layout_marginRight="@dimen/effects_filter_group_marginleft"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wuba.api.editor.effects.EffectsMenuButton android:id="@id/group1" android:layout_weight="1.0" style="@style/bar_action_effect_filter_group">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_filter_renxiang" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_beauty" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+    <com.wuba.api.editor.effects.EffectsMenuButton android:id="@id/group2" android:layout_weight="1.0" style="@style/bar_action_effect_filter_group">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_filter_huihua" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_black_white" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+    <com.wuba.api.editor.effects.EffectsMenuButton android:id="@id/group3" android:layout_weight="1.0" style="@style/bar_action_effect_filter_group">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_filter_fengjing" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_portray" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+    <com.wuba.api.editor.effects.EffectsMenuButton android:id="@id/group4" android:layout_weight="1.0" style="@style/bar_action_effect_filter_group">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_filter_jingwu" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_classical" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+    <com.wuba.api.editor.effects.EffectsMenuButton android:id="@id/group5" android:layout_weight="1.0" style="@style/bar_action_effect_filter_group">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_detail_filter_huaijiu" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_lomo" style="@style/wb_camera_style_micro_white" />
+    </com.wuba.api.editor.effects.EffectsMenuButton>
+</LinearLayout>

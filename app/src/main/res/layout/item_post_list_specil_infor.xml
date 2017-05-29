@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/infor_thumb" android:background="@drawable/thumb_frame" android:layout_width="@dimen/recommend_house_post_thumb_width" android:layout_height="@dimen/recommend_house_post_thumb_height" android:layout_marginRight="@dimen/post_list_thumb_margin_right" android:src="@drawable/post_list_thumb_loading" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:id="@id/infor_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="标题 " android:singleLine="true" android:layout_toRightOf="@id/infor_thumb" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/g_grey" android:ellipsize="end" android:id="@id/infor_brief" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="内容" android:maxLines="2" android:layout_toRightOf="@id/infor_thumb" android:layout_below="@id/infor_title" />
+</RelativeLayout>

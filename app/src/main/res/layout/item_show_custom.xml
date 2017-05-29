@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/se_group_show_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/leftTextheight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/show_title_tv" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/ui_group_item_show_title_style" />
+    <LinearLayout android:id="@id/show_content_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/leftTextheight" android:layout_toRightOf="@id/show_title_tv" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

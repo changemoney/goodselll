@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/jobs_fragment_hot_category" android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/default_loading_container" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/jobs_part_hot_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/action_host_container" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:background="@drawable/white" android:paddingTop="@dimen/g_widget_margin_2x" android:paddingRight="@dimen/g_widget_margin" android:paddingBottom="@dimen/g_widget_margin" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/top_hot_img1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/g_widget_margin" android:src="@drawable/jobs_hot_img_bg" android:layout_weight="1.0" />
+                <ImageView android:id="@id/top_hot_img2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/g_widget_margin" android:src="@drawable/jobs_hot_img_bg" android:layout_weight="1.0" />
+                <ImageView android:id="@id/top_hot_img3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/g_widget_margin" android:src="@drawable/jobs_hot_img_bg" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_secondhand_tag_normal" android:paddingLeft="9.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/g_widget_margin_2x">
+                <GridView android:id="@id/jobs_content_hot_gridView" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:stretchMode="columnWidth" android:numColumns="3" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

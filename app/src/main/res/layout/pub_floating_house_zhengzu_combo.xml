@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.publish.ui.PubComboLayoutView android:id="@id/pub_floating_comboLayout" android:layout_width="fill_parent" android:layout_height="170.0dip" pub:hint="[请选择,请选择,请选择,请填写,请填写,请选择]" pub:key="[huxing_shi%%%huxing_ting%%%huxing_wei,ceng%%%ceng_total,chaoxiang,price,area,zhuangxiu]" pub:label="[户型,楼层,朝向,租金,面积,装修]" pub:isRequires="[true,true,true,true,true,true]" pub:error="[请选择户型,请选择楼层,请选择朝向,大于0最多7位,大于0最多5位,请选择装修]" pub:showType="[numDataPicker,numDataPicker,text_picker,keyboard,keyboard,text_picker]" pub:isComboHeader="true" pub:checkStringArr="[%%%[1-9]([0-9]){0,6}%[1-9]|[1-9]([0-9])*% ]" />
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="16.0dip" android:textColorHint="#ff333333" android:gravity="center" android:id="@id/pub_floating_info_bar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</LinearLayout>

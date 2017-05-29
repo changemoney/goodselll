@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:id="@id/txt_interview_invitation_title" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.5dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="面试时间" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:id="@id/txt_interview_invitation_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="面试职位" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:id="@id/txt_interview_invitation_job" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联  系  人" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:id="@id/txt_interview_invitation_people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.5dip" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="面试地址" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:id="@id/txt_interview_invitation_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" />
+    </LinearLayout>
+    <View android:id="@id/view_interview_invitation_divider_2" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+    <RelativeLayout android:id="@id/layout_interview_invitation_phone" android:background="@drawable/bg_detail_item" android:paddingLeft="15.0dip" android:paddingTop="18.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:id="@id/txt_interview_invitation_phone_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系电话" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:id="@id/txt_interview_invitation_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:singleLine="true" android:layout_toRightOf="@id/txt_interview_invitation_phone_label" />
+        <ImageView android:layout_gravity="right" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_call_interview_invitation" android:layout_toLeftOf="@id/img_interview_invitation_arrow" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_interview_invitation_arrow" android:layout_width="7.0dip" android:layout_height="14.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/arrow_right_map" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

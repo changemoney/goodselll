@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/chargeBg" android:background="@drawable/user_center_img_coupon_back" android:layout_width="fill_parent" android:layout_height="180.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/cct1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46.0dip" android:layout_marginBottom="20.0dip" android:text="账户余额(元)" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="50.0dip" android:textColor="#ffffffff" android:id="@id/cct2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100.00" android:layout_below="@id/cct1" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/contentContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/default_loading_container" />
+</LinearLayout>

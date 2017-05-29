@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.android.comp.post.filter.QuickFilterBar android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/map_filter_container" android:background="#fff6f6f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip" />
+    <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <RelativeLayout android:id="@id/bmapLayout" android:paddingBottom="54.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:orientation="vertical" android:id="@id/mMapFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:layout_marginBottom="80.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center" android:id="@id/mXiaoWeiLightBtnContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                <TextView android:enabled="false" android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_green" android:gravity="center" android:id="@id/mXiaoWeiLightBtn" android:background="@drawable/xiaowei_light_btn_selector" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点亮\n简历" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/bmapMyLocationLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/myLoc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_bmap_location_bg" />
+                <ProgressBar android:id="@id/myLocProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/loadingLayout" android:background="@drawable/bg_bmap_toast" android:paddingLeft="@dimen/g_widget_margin" android:paddingRight="@dimen/g_widget_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/loadingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/g_widget_margin" style="?android:attr/progressBarStyleSmall" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/loadingText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="加载失败，点击重试" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/resetLoading" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/location_refresh_selector" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/mShopsListViewContainer" android:visibility="gone" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ListView android:id="@id/mShopsListView" android:background="@drawable/xiaowei_shop_popupview_background" android:paddingLeft="1.0dip" android:paddingTop="10.0dip" android:paddingRight="1.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@drawable/xiaowei_shop_popupview_horizontal_line" android:footerDividersEnabled="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:id="@id/mPopUpViewContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <include layout="@layout/xiaowei_bmap_popview" />
+            <TextView android:layout_width="wrap_content" android:layout_height="240.0dip" android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/commentIcon" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="80.0dip" android:layout_marginRight="@dimen/g_widget_margin" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/lay0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay1" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0dip" android:textColor="@color/black" android:id="@id/commentTitle1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="王先生" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/g_grey" android:gravity="center" android:id="@id/praiseLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好评度" />
+                <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/g_orange" android:gravity="center" android:id="@id/praiseRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:text="98%" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/commentTitle2" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="阳光谷底科技发展有限公司" android:maxLines="2" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_grey" android:gravity="center_vertical" android:id="@id/phoneNumber" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="\ 13622259854" android:layout_weight="1.0" />
+                <ImageView android:gravity="center" android:id="@id/callBtn" android:background="@drawable/bg_item_round_transparent" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:src="@drawable/detail_phone" android:scaleType="centerInside" />
+                <ImageView android:gravity="center" android:id="@id/smsBtn" android:background="@drawable/bg_item_round_transparent" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:layout_marginRight="@dimen/g_widget_margin_2x" android:src="@drawable/detail_sms" android:scaleType="centerInside" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/kuaidiQueryLayout" android:background="@color/card_fake_white" android:paddingLeft="@dimen/g_widget_margin" android:paddingTop="@dimen/g_widget_margin" android:paddingRight="@dimen/g_widget_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/textSize" android:textColor="@color/g_dark_grey" android:layout_gravity="left" android:id="@id/kuaidiOrderIdEditText" android:background="@drawable/g_input_bg" android:hint="输入快递单号" android:layout_weight="1.0" style="@style/ui_parent_SingleLine" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/queryBtn" android:background="@drawable/g_green_btn2" android:layout_width="@dimen/g_item_height_large" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="查询" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/creditLay" android:background="@color/card_fake_white" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好  评  度" />
+                <TextView android:textSize="20.0dip" android:textColor="@color/g_orange" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/praiseRate2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="67%" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="诚信等级" />
+                <RatingBar android:id="@id/praiseGrade" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxHeight="10.0dip" android:progressDrawable="@drawable/credit_star_rating_bar" android:minHeight="10.0dip" android:numStars="5" android:rating="0.0" android:isIndicator="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/creditedLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已  认  证 " />
+                <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/g_light_grey" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/personalCredit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="个人" android:drawableLeft="@drawable/ic_personal_credit" />
+                <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/g_light_grey" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/bizCredit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin_2x" android:text="企业" android:drawableLeft="@drawable/ic_biz_credit" />
+                <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/g_light_grey" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/mobileCredit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin_2x" android:text="手机" android:drawableLeft="@drawable/ic_mobile_credit" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <View android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/allTab" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/text_color_grey_turn_green" android:id="@id/allText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部" android:layout_centerInParent="true" />
+            <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:id="@id/divider0" android:background="@color/divider_line" android:layout_width="1.0px" android:layout_height="@dimen/g_text_size_large" />
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/goodTab" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/text_color_grey_turn_green" android:id="@id/goodText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好评" android:layout_centerInParent="true" />
+            <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:id="@id/divider1" android:background="@color/divider_line" android:layout_width="1.0px" android:layout_height="@dimen/g_text_size_large" />
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mediumTab" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/text_color_grey_turn_green" android:id="@id/mediumText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中评" android:layout_centerInParent="true" />
+            <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:id="@id/divider2" android:background="@color/divider_line" android:layout_width="1.0px" android:layout_height="@dimen/g_text_size_large" />
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/badTab" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/text_color_grey_turn_green" android:id="@id/badText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="差评" android:layout_centerInParent="true" />
+            <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/gray" android:gravity="center" android:orientation="vertical" android:id="@id/noDataText" android:padding="@dimen/g_widget_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:layout_marginTop="@dimen/g_widget_margin_2x" android:text="没有评价信息" android:layout_centerVertical="true" />
+</LinearLayout>

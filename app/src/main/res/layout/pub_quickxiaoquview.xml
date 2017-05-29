@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/leftTextheight">
+        <TextView android:id="@id/pub_label" style="@style/ui_item_left_lable_style" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View style="@style/ui_item_vertical_divider_line" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/pub_divider">
+                <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/pub_input" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/paddingLeft5" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/pub_disable_gray" android:gravity="center_vertical" android:id="@id/pub_label1" android:background="@drawable/spinner2_bg_nopressed" android:paddingLeft="@dimen/paddingLeft5" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/pub_label_padding" android:layout_marginBottom="@dimen/pub_label_padding" android:text="快速选择" />
+            </LinearLayout>
+            <include layout="@layout/pub_errorview" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

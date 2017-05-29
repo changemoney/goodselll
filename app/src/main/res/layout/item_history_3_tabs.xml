@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/item_history_3_tabs" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="43.799988dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/filterLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.ganji.android.comp.widgets.BoldTextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiter_button_filter" android:layout_centerInParent="true" />
+            <View android:id="@id/filterUnderLine" android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/searchLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.ganji.android.comp.widgets.BoldTextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_word_text" android:layout_centerInParent="true" />
+            <View android:id="@id/searchUnderLine" android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/callLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.ganji.android.comp.widgets.BoldTextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拨打" android:layout_centerInParent="true" />
+            <View android:id="@id/callUnderLine" android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

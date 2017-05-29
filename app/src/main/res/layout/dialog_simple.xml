@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center|left" android:id="@id/title_panel" android:background="@drawable/dialog_bg_title" android:paddingLeft="@dimen/g_widget_margin" android:paddingRight="@dimen/g_widget_margin" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_title_height">
+            <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/g_text_size_x_large" android:textColor="@color/dialog_title_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="title" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg_body" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ScrollView android:padding="20.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@id/progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/g_widget_margin" style="@style/android:Widget.ProgressBar.Small" />
+                    <TextView android:textSize="@dimen/g_text_size_x_large" android:textColor="@color/dialog_button_message_color" android:gravity="center" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_panel" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_height" android:weightSum="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/two_btn_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="@dimen/g_text_size_x_large" android:textColor="@color/dialog_button_text_color" android:id="@id/left_btn" android:background="@drawable/dialog_bg_left_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="cancel" android:layout_weight="0.5" />
+                    <View android:background="#ffd8d8d8" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                    <Button android:textSize="@dimen/g_text_size_x_large" android:textColor="@color/dialog_button_text_color" android:id="@id/right_btn" android:background="@drawable/dialog_bg_right_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="ok" android:layout_weight="0.5" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/one_btn_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="@dimen/g_text_size_x_large" android:textColor="@color/g_green" android:id="@id/one_btn" android:background="@drawable/dialog_bg_one_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="ok" android:layout_weight="0.5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/xiaoquSearchInput" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginBottom="1.7999878dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/activity_city_search_input" android:background="@drawable/image_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/logo_search" />
+            <TextView android:textSize="13.0dip" android:textColor="#ffbfbfbf" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="中文/拼音" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/noDataLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lv_no_data" />
+        <TextView android:textColor="@color/gray" android:gravity="center" android:id="@id/noDataTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="没有搜索到对应小区哦！" />
+    </LinearLayout>
+    <com.ganji.android.ui.GJCustomListView android:id="@id/customListView" android:focusable="false" android:focusableInTouchMode="false" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="1.0px" />
+</LinearLayout>

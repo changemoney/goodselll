@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="134.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="30.5dip" android:layout_height="40.0dip" android:src="@drawable/foot_img_def8" android:scaleType="fitCenter" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/g_grey" android:gravity="center" android:id="@id/footer_view_discover" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:text="已经到底，据说发现频道有惊喜" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/jobs_fragment_all_category" android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/default_loading_container" />
+    <com.ganji.android.ui.AlphabetIndexLayout android:id="@id/jobs_fragment_all_category_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

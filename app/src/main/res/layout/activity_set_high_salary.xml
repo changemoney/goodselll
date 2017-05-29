@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <include android:visibility="gone" layout="@layout/default_loading_container" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/g_widget_margin_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ganji.android.job.ui.HighSalaryFilterPanel android:orientation="vertical" android:id="@id/filter_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/float_button_container" android:background="@drawable/divider_at_top" android:clickable="true" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <Button android:textSize="@dimen/g_text_size_large" android:textColor="@color/white" android:id="@id/ok_btn" android:background="@drawable/g_green_btn2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="确认" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

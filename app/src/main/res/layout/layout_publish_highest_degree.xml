@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pub_layout_total_highest_degree" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/pub_layout_menu_highest_degree" android:background="@drawable/bg_detail_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/bg_titlebar_center_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="我的最高学历" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_common_zhankai" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pub_layout_highest_degree" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写" pub:key="school" pub:label="学校名称" pub:checkString="20#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,20}$)#@#@#2" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="请输入2-20个汉字" pub:focusHint="请输入2-20个汉字" pub:moreError="最多20个字" pub:lessError="最少2个字" />
+        <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写" pub:key="specialty" pub:label="专业名称" pub:checkString="20#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,20}$)#@#@#2" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="请输入2-20个汉字" pub:focusHint="请输入2-20个汉字" pub:moreError="最多20个字" pub:lessError="最少2个字" />
+        <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="edu_to_date" pub:label="毕业时间" pub:isRequired="true" />
+        <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+        <include layout="@layout/pub_next_step" />
+    </LinearLayout>
+</LinearLayout>

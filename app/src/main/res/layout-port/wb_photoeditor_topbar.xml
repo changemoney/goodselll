@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="top" android:orientation="horizontal" android:id="@id/b" android:background="@color/effects_ganji_green" android:layout_width="fill_parent" android:layout_height="@dimen/photoeditor_topbar_height" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/topbar_cancel" android:paddingLeft="@dimen/top_bar_marginLeft" android:paddingRight="@dimen/top_bar_marginRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photoedit_topbar_back" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/photoeditor_topbar_text" android:textColor="@color/topbar_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="美化图片" android:layout_centerInParent="true" />
+    <TextView android:enabled="true" android:ellipsize="end" android:gravity="center" android:id="@id/topbar_save" android:paddingLeft="@dimen/topbar_save_paddingleft" android:paddingRight="@dimen/topbar_save_paddingleft" android:layout_width="wrap_content" android:layout_height="@dimen/topbar_save_height" android:minWidth="@dimen/topbar_save_minwidth" android:text="@string/actionbar_save" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ganji_text" />
+</RelativeLayout>

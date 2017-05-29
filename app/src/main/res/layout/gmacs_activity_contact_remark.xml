@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/contact_remark_name_height" android:layout_marginTop="@dimen/contact_remark_first_separator_height">
+        <View style="@style/style_gray_line" />
+        <TextView android:id="@id/tv_remark_name" android:text="@string/remark_name" style="@style/style_remark_text_content" />
+        <EditText android:textColor="@color/gray_808080" android:gravity="center_vertical" android:id="@id/et_remark_name" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_toRightOf="@id/tv_remark_name" style="@style/style_remark_name" />
+    </RelativeLayout>
+    <View style="@style/style_gray_line" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/contact_remark_phone_height" android:layout_marginTop="@dimen/contact_remark_name_separator_height">
+        <View style="@style/style_gray_line" />
+        <TextView android:id="@id/tv_remark_phone" android:text="@string/remark_phone" style="@style/style_remark_text_content" />
+        <EditText android:textColor="@color/gray_808080" android:gravity="center_vertical" android:id="@id/et_remark_phone" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:digits="0123456789+- " android:layout_toRightOf="@id/tv_remark_phone" />
+    </RelativeLayout>
+    <View style="@style/style_gray_line" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/contact_remark_info_height">
+        <TextView android:id="@id/tv_remark_info" android:text="@string/remark_info" style="@style/style_remark_text_content" />
+        <EditText android:textColor="@color/gray_808080" android:gravity="center_vertical" android:id="@id/et_remark_info" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/tv_remark_info" style="@style/style_remark_info" />
+    </RelativeLayout>
+    <View style="@style/style_gray_line" />
+</LinearLayout>

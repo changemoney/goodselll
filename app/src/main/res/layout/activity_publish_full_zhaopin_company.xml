@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff676767" android:id="@id/txt_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="填写职位信息" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="详细信息更吸引人才哦" android:layout_toRightOf="@id/txt_word" />
+    </RelativeLayout>
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="4-18字,不能含电话或特殊字符" pub:key="title" pub:label="标        题" pub:checkString="18#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){4,18}$" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="字符长度4-18，不含电话和特殊符号！" pub:showToast="false" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择月薪" pub:key="price" pub:label="月        薪" pub:tip="请选择月薪！" pub:isRequired="true" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="数字填写,不能是0和负数" pub:key="need_num" pub:label="招聘人数%%%人" pub:checkString="5#@#@#2#@#@#[1-9]|[1-9]([0-9])*" pub:tip="请输入招聘人数" pub:reslayout="@layout/pub_2lable1inputview" pub:isRequired="true" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择区域" pub:key="district_id" pub:label="工作区域" pub:tip="请选择区域！" pub:onclick="selectArea" pub:isRequired="true" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="7-40字,填写详细地址" pub:key="work_address" pub:label="详细地址" pub:checkString="40#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){7,40}$" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="7-40字,不能填写电话和特殊字符！" pub:focusHint="4-20个字符" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写手机或固定电话" pub:key="phone" pub:label="联系电话" pub:checkString="13#@#@#3#@#@#(^1[34578]\\d{9}$|^(0\\d{2,4}-?)?[2-9]\\d{6,7}(-\\d{2,5})?$|^(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}$)#@#@#7" pub:isRequired="true" pub:error="电话号码格式有误" pub:focusHint="请输入正确的电话号码" pub:moreError="电话最多13位" pub:lessError="电话最少7位" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="10-800字,如岗位职责,任职资格,工作时间等,不能填写电话,qq号和特殊字符" pub:key="description" pub:label="职位描述" pub:checkString="800#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){10,}$" pub:reslayout="@layout/pub_input_multiline_bold" pub:isRequired="true" pub:error="10-800字,如岗位职责,任职资格,工作时间等,不能填写电话,qq号和特殊字符" />
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff676767" android:id="@id/txt_word_compnay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="填写公司信息" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="高质量人才更在意公司信息哦" android:layout_toRightOf="@id/txt_word_compnay" android:layout_alignBaseline="@id/txt_word_compnay" />
+    </RelativeLayout>
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="2-30字,请谨慎填写哦,审核通过后无法修改" pub:key="company_name" pub:label="公司名称" pub:checkString="30#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){2,30}$" pub:tip="字数不符，需为2-30字！" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择行业" pub:key="company_biz_type" pub:label="行        业" pub:tip="请选择行业！" pub:isRequired="true" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="10-800字,不能填写职位信息,电话,qq号和特殊字符" pub:key="company_description" pub:label="公司简介" pub:checkString="800#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){30,}$" pub:reslayout="@layout/pub_input_multiline_bold" pub:isRequired="true" pub:error="字符长度大于30小于800，不含电话！" />
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.ganji.android.publish.ui.PublishBottomExitZiZhuView android:id="@id/bussiness_zizhu" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:text="想在海量信息中脱颖而出，试试赶集推广" pub:ganjitextSize="16.0px" />
+</LinearLayout>

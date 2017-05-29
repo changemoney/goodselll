@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_post_detail" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ganji.android.comp.widgets.VerticalSwipeLayout android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="59.0dip" swipe:bottomLoadingLayout="@layout/swipe_pull_loading" swipe:topLoadingLayout="@layout/swipe_pull_loading" xmlns:swipe="http://schemas.android.com/apk/res-auto">
+            <include layout="@layout/house_post_detail_content" />
+        </com.ganji.android.comp.widgets.VerticalSwipeLayout>
+        <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/item_post_detail_footer_house" />
+    </FrameLayout>
+    <include layout="@layout/postdetail_deletedtips_layout" />
+</LinearLayout>

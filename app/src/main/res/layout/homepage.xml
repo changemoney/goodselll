@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@drawable/g_dark_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <include layout="@layout/default_loading_container" />
+    <ScrollView android:orientation="vertical" android:id="@id/content_view" android:background="@drawable/g_fake_white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/lv_page" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/lv_homepage" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include android:id="@id/lv_selected_vechicle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_vehicle_post" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lv_information" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

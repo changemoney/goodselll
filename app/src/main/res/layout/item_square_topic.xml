@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/item_circle_white_bg" android:paddingTop="12.0dip" android:paddingRight="8.0dip" android:paddingBottom="12.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <TextView android:textSize="@dimen/m_text" android:textStyle="bold" android:textColor="@color/black_gray" android:ellipsize="end" android:id="@id/tv_topic_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="注意要开始贴秋膘了" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+            <TextView android:textSize="@dimen/s_text" android:textStyle="bold" android:textColor="@color/gray_808080" android:ellipsize="end" android:id="@id/tv_topic_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#晒晒你正在吃什么#" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/s_text" android:textStyle="bold" android:textColor="@color/gray_808080" android:ellipsize="end" android:id="@id/tv_topic_join" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="132人已参与" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+            <ImageView android:id="@id/img_topic_1" android:background="@color/gray_f3f3f3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            <ImageView android:id="@id/img_topic_2" android:background="@color/gray_f3f3f3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            <ImageView android:id="@id/img_topic_3" android:background="@color/gray_f3f3f3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            <ImageView android:id="@id/img_topic_4" android:background="@color/gray_f3f3f3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

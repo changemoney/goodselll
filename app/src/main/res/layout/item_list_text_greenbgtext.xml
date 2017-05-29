@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_list_text_text_icon" android:background="@drawable/list_item_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:id="@id/textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房产" android:singleLine="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/g_light_grey" android:ellipsize="end" android:id="@id/textviewright" android:paddingLeft="20.0dip" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="50+" android:layout_weight="1.0" />
+    <ImageView android:id="@id/little_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/ic_select_normal" android:layout_centerVertical="true" />
+</LinearLayout>

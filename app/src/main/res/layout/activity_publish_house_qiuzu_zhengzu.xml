@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/pub_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.publish.ui.PubTipView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="post_count_tip" />
+    <include layout="@layout/pub_house_pre_category" />
+    <TextView android:id="@id/subcategory_select_title" android:text="求租类型" style="@style/pub_form_center_title" />
+    <com.ganji.android.publish.ui.FlowRadioAdapterView android:id="@id/subcategory_select_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubComboLayoutView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="[请选择,请选择,请选择]" pub:key="[price,huxing_shi%%%huxing_ting%%%huxing_wei,ruzhu_time]" pub:label="[期望租金,期望户型,期望时间]" pub:floatingLayout="@layout/pub_floating_house_qiuzu_zhengzu_combo" pub:isRequires="[true,true,true]" pub:error="[请选择期望租金,请选择期望户型,请选择期望时间]" pub:showType="[text_picker,numDataPicker,wheel]" />
+    <include layout="@layout/pub_margin_divider" />
+    <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="findjob_area" pub:label="期望位置" pub:tip="请选择区域！" pub:onclick="selectArea" pub:isRequired="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <TextView android:text="我的信息" style="@style/pub_group_title" />
+        <com.ganji.android.publish.ui.PubGridView android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="4" pub:hint="生活照片（最少1张，最多8张）" pub:key="images" pub:tip="上传生活照片" pub:isRequired="false" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="2-6字，汉字或字母" pub:key="person" pub:label="昵称" pub:checkString="6#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,6}$)" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="2-6字，汉字或字母" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="@string/publish_input_phone_hint" pub:key="phone" pub:label="@string/publish_input_phone" pub:checkString="13#@#@#3#@#@#^1[34578]\\d{9}$|^(0\\d{2,4}-?)?[2-9]\\d{6,7}(-\\d{2,5})?$|^(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}$" pub:isRequired="true" pub:error="@string/publish_input_phone_hint" pub:showType="keyboard" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="sex" pub:label="性别" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:id="@id/house_find_roommate_input_select" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="birthday" pub:label="生日" pub:tip="请选择生日！" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:id="@id/pub_career" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="career" pub:label="从事行业" pub:tip="请选择从事行业！" pub:isRequired="true" />
+    </LinearLayout>
+    <com.ganji.android.publish.ui.PubFlowSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin" pub:key="my_tag" pub:label="我的标签（选填）" pub:isRequired="false" pub:maxNum="10" />
+    <com.ganji.android.publish.ui.PubFlowSelectView android:id="@id/findroommate_skill" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin" pub:key="skill" pub:label="我的技能（选填）" pub:isRequired="false" pub:maxNum="3" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin" pub:hint="介绍你自己，描述你期待的房源和室友" pub:key="description" pub:label="补充描述（选填）" pub:checkString="800#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){10,}$" pub:reslayout="@layout/pub_input_multiline_bold" pub:isRequired="false" pub:error="10-800字，不能填写电话、特殊符号" pub:moreError="最多800字" pub:isMoreInput="false" pub:showToastWhenFormatError="true" />
+</LinearLayout>

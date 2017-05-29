@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="67.5dip" android:src="@drawable/default_icon_data_empty" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.5dip" android:text="尚未完善公司信息\n详细的公司信息可以提高招聘成功率" />
+    <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/create_company" android:background="@drawable/post_detail_footer_green" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="27.5dip" android:layout_marginTop="70.5dip" android:layout_marginRight="27.5dip" android:text="立即创建" />
+</LinearLayout>

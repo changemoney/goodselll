@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/title_layout" android:background="@drawable/zf_back" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lazyman_img_publish_guide" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff1e374c" android:id="@id/lazyman_guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您可以放心选择" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff1e374c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="为您匹配到了这些靠谱的经纪人" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

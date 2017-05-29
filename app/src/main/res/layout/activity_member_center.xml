@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <LinearLayout android:id="@id/item_history_3_tabs" android:background="@drawable/bg_gray" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_centerInParent="true">
+                    <RelativeLayout android:orientation="vertical" android:id="@id/issuePostLayout" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:id="@id/issuePostText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已发布" android:layout_centerInParent="true" />
+                        <View android:id="@id/issuePostUnderLine" android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/isauditPostLayout" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="审核中" android:layout_centerInParent="true" />
+                        <View android:id="@id/isauditPostUnderLine" android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/isdelPostLayout" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:id="@id/isdelPostText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="被删除" android:layout_centerInParent="true" />
+                        <View android:id="@id/isdelPostUnderLine" android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

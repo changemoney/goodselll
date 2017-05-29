@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.android.camera.CameraPreviewer android:id="@id/id_cameralib_surfaceview" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:src="@drawable/ic_back_normal" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="80.0dip">
+            <SlidingDrawer android:orientation="horizontal" android:id="@id/drawer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:handle="@id/handle" android:content="@id/content">
+                <ImageView android:id="@id/handle" android:background="@drawable/ic_handle_open" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <HorizontalScrollView android:id="@id/horizontal_Scroll_View" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.ganji.android.ui.GalleryLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gallery_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </SlidingDrawer>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:background="#94f0f0f0" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/g_text_size_medium" android:textColor="@color/text_color_darkgrey" android:id="@id/mCancelBtn" android:background="@drawable/g_white_btn" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="取消" />
+            <ImageButton android:id="@id/id_camera_imagebutton" android:background="@drawable/g_green_btn2" android:paddingLeft="35.0dip" android:paddingRight="35.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_camera_bg" android:layout_centerHorizontal="true" />
+            <Button android:textSize="@dimen/g_text_size_medium" android:textColor="@color/text_color_darkgrey" android:id="@id/id_complete_button" android:background="@drawable/g_white_btn" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="完成" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/post_detail_content_big_img_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_post_detail_big_image" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/high_gray" android:id="@id/detail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="列表就是这样的啊 啊啊啊啊啊 啊啊 啊啊啊啊啊 " android:layout_weight="1.0" />
+            <ImageView android:id="@id/hot_divider" android:background="@drawable/divider_bg" android:layout_width="1.0px" android:layout_height="22.0dip" />
+            <RelativeLayout android:id="@id/detail_love_rl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/detail_love_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_like" android:layout_alignTop="@id/detail_love_num" android:layout_alignBottom="@id/detail_love_num" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/orange" android:id="@id/detail_love_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1" android:layout_toRightOf="@id/detail_love_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/tag_container" android:background="@drawable/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:background="@drawable/divider_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ImageView android:background="@drawable/divider_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/photo_detail_lv" android:background="@drawable/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingTop="7.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/low_gray" android:orientation="horizontal" android:id="@id/detail_from_lable" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="65.0dip" android:layout_height="wrap_content" android:text="来     源" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/high_gray" android:orientation="horizontal" android:id="@id/detail_from" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="老兵装修老兵装修老兵" android:layout_toRightOf="@id/detail_from_lable" />
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/g_green" android:gravity="center" android:orientation="horizontal" android:id="@id/store_detail_btn" android:background="@drawable/white_to_subgray" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="72.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="店铺详情" android:lines="1" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/detail_phone_lv" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/low_gray" android:orientation="horizontal" android:id="@id/detail_phone_lable" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="65.0dip" android:layout_height="wrap_content" android:text="电     话 " android:layout_alignParentLeft="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/phone_container" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_toRightOf="@id/detail_phone_lable" />
+            <LinearLayout android:orientation="vertical" android:id="@id/phone_btn" android:background="@drawable/white_to_subgray" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/detail_phone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/divider_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="2.5dip" android:layout_width="93.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_hot3_jump_entry_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/third_area_item_image" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/third_area_item_new" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_thrid_new" android:layout_toRightOf="@id/third_area_item_image" android:layout_alignTop="@id/third_area_item_image" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff161616" android:id="@id/third_area_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:layout_marginBottom="7.0dip" android:text="卖手机" android:singleLine="true" android:layout_below="@id/third_area_item_image" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

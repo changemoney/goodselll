@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/publishtitle" layout="@layout/titlebar" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/default_loading_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/topcontiionLayout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/publishtitle">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/g_divider_group_bg_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:minHeight="@dimen/leftTextheight">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="fill_parent" android:minHeight="@dimen/leftTextheight" android:text="置顶类别" />
+                <View style="@style/ui_item_vertical_divider_line" />
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center|left" android:id="@id/tc_cate_textview" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="-元" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:id="@id/tc_cate_item_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+                <GridView android:id="@id/tc_cate_group_checkbox" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="2" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textColor="#ffff0000" android:id="@id/tc_cate_error_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="  您还没有选择置顶类别哦！" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/g_divider_group_bg_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/leftTextheight">
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="置顶方式" />
+                <View style="@style/ui_item_vertical_divider_line" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/tc_radiogroup_type" android:background="#ffffffff" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip">
+                    <RadioButton android:textSize="@dimen/pub_text_size" android:textColor="@color/text_color_deepgray_turn_white" android:gravity="center" android:id="@id/tc_radiogroup_radio1_type" android:background="@drawable/item_btn_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="普通置顶" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="@dimen/pub_text_size" android:textColor="@color/text_color_deepgray_turn_white" android:gravity="center" android:id="@id/tc_radiogroup_radio2_type" android:background="@drawable/item_btn_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="高级置顶" android:layout_weight="1.0" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/tc_area" android:background="@drawable/g_divider_group_bg_default" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="区        域" />
+                <View style="@style/ui_item_vertical_divider_line" />
+                <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/tc_city_layout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/tc_checkbox" android:background="@drawable/checkbox_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:ellipsize="end" android:gravity="center" android:id="@id/tc_city_textname" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:text="区域" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/tc_district_layout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/tc_checkbox" android:background="@drawable/checkbox_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:ellipsize="end" android:gravity="center" android:id="@id/tc_district_textname" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:text="区域1区域区域区域区域" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/tc_street_layout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/tc_checkbox" android:background="@drawable/checkbox_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:ellipsize="end" android:gravity="center" android:id="@id/tc_street_textname" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:text="区域2" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textColor="#ffff0000" android:id="@id/tc_error_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="  您还没有选择置顶区域哦！" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/g_divider_group_bg_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="置顶时长" />
+                <View style="@style/ui_item_vertical_divider_line" />
+                <com.ganji.android.ui.CustomSpinner android:id="@id/tc_time_spinner" android:layout_height="@dimen/leftTextheight" style="@style/ui_component_LableSpinner" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/g_divider_group_bg_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="价格总计" />
+                <View style="@style/ui_item_vertical_divider_line" />
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/tc_price_textview" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="0、01元" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/gray" android:gravity="left" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="[高级置顶]服务可以确保您获得列表页上最有利的位置，且更有保障，但价格略贵。" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/order_content_panelbutton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/order_content_publishpanel" layout="@layout/ui_component_publishpanel" />
+    </LinearLayout>
+</RelativeLayout>

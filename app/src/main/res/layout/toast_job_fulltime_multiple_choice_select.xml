@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_corner_alpha_black" android:layout_width="220.0dip" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/toast_imageview" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="220.0dip" android:layout_height="80.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/toast_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最多选择5个职位" />
+    </FrameLayout>
+</FrameLayout>

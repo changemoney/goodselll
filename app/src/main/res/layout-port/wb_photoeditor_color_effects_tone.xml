@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/editor_color_effects_tone" android:background="@color/effects_second_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/editor_color_effects_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SeekBar android:id="@id/seekbar_color_tint" android:paddingLeft="@dimen/seekbar_color_paddingleft" android:paddingRight="@dimen/seekbar_color_paddingleft" android:layout_width="@dimen/wb_seekbar_width" android:layout_height="wrap_content" android:maxHeight="@dimen/fb_seekbar_height" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/color_temperature_pg" android:thumb="@drawable/fb_seekbar_thumb" android:isScrollContainer="true" android:fadeScrollbars="true" />
+</LinearLayout>

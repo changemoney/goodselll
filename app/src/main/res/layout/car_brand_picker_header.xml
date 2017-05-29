@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/group_city_text_color" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="热门品牌" />
+    <com.ganji.android.comp.widgets.GridViewShowAll android:gravity="center" android:id="@id/car_brand_picker_list_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="6.0dip" android:listSelector="@android:color/transparent" android:numColumns="4" />
+</LinearLayout>

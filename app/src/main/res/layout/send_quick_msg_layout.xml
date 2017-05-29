@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/send_quick_msg_layout" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/self_define_quick_content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.5dip" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff67b700" android:gravity="center|left" android:id="@id/self_define_quick_content" android:background="@drawable/bg_send_quick_msg_item" android:paddingLeft="@dimen/im_chat_msg_quick_item_margin_left_right" android:paddingRight="@dimen/im_chat_msg_quick_item_margin_left_right" android:layout_width="fill_parent" android:layout_height="@dimen/im_chat_msg_quick_item_height" android:text="自定义" android:drawableLeft="@drawable/ic_quick_msg_define" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <ListView android:id="@id/quick_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider" android:layout_above="@id/self_define_quick_content_layout" />
+    <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_above="@id/quick_msg" />
+</RelativeLayout>

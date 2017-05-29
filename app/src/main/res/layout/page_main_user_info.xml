@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.ui.PullZoomScrollView android:id="@id/sv_zoom" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" zoom:zoomId="@id/layout_header" zoom:maxZoomHeight="320.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/layout_header" android:layout_width="fill_parent" android:layout_height="@dimen/user_info_blur_background_height">
+                <com.ganji.android.ui.BlurImageView android:id="@id/img_user_bg_blur" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_user_center_default" android:scaleType="centerCrop" />
+                <View android:background="#19000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:id="@id/img_half_oval" android:layout_width="fill_parent" android:layout_height="@dimen/user_half_oval_min_height" android:src="@drawable/bg_half_oval" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+                <com.ganji.android.ui.UserInfoLayoutView android:id="@id/layout_user_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <RelativeLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="20.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/info_setting_lay" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginRight="@dimen/dimen_12dp">
+                        <ImageView android:id="@id/info_setting_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/usercenter_icon_setting" android:scaleType="center" />
+                        <TextView android:textSize="@dimen/dimen_8dp" android:textColor="@color/white" android:id="@id/info_setting_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" />
+                    </LinearLayout>
+                    <com.ganji.im.view.MsgNumberView android:id="@id/info_msg_view" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_post" android:background="@drawable/bg_personal_center_item" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="25.0dip" android:src="@drawable/user_center_icon_yifatiezi" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="已发帖子" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_favourite" android:background="@drawable/bg_personal_center_item" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="25.0dip" android:src="@drawable/user_center_icon_shoucang" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="收藏" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_history" android:background="@drawable/bg_personal_center_item" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="25.0dip" android:src="@drawable/user_center_icon_lishi" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="我的历史" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_management" android:background="@drawable/bg_personal_center_item" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                        <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/user_center_icon_dingyue" />
+                        <ImageView android:layout_gravity="center|right|top" android:id="@id/img_dot" android:background="@drawable/ic_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                    <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="订阅管理" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_message" android:background="@drawable/bg_personal_center_item" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/user_center_icon_jifen" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="积分商城" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_order" android:background="@drawable/bg_personal_center_item" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/usercenter_icon_order" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="我的订单" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <include android:id="@id/area2_item1" layout="@layout/item_userinfo_area2" />
+                <View android:background="#fff3f3f3" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <include android:id="@id/area2_item2" layout="@layout/item_userinfo_area2" />
+            </LinearLayout>
+            <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/area2_item3" layout="@layout/item_userinfo_area2" />
+                <View android:background="#fff3f3f3" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <include android:id="@id/area2_item4" layout="@layout/item_userinfo_area2" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/comment_layout" android:background="@drawable/bg_personal_center_item" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/user_info_text_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="给我们评价" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_myinfo_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+            <RelativeLayout android:id="@id/feedback_layout" android:background="@drawable/bg_personal_center_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/user_info_text_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="用户反馈" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_myinfo_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/tuiguang_line_view" android:background="#ffe6e6e6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+            <RelativeLayout android:id="@id/tuiguang_layout" android:background="@drawable/bg_personal_center_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/user_info_text_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="我的推广" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_myinfo_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        </LinearLayout>
+    </com.ganji.android.ui.PullZoomScrollView>
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/ucenter_lottery_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_15dp">
+        <ImageView android:layout_gravity="center" android:id="@id/icon_choujiang" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    </FrameLayout>
+</FrameLayout>

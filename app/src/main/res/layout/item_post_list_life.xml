@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/post_list_item_life" android:background="@drawable/bg_list_item" android:paddingLeft="12.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/titleLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/thumb" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/title_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.ganji.android.ui.CombinationView android:id="@id/title_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/btn_call" android:background="@drawable/btn_call_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="22.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/thumb" android:layout_width="104.0dip" android:layout_height="78.0dip" android:src="@drawable/post_list_thumb_loading" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="12.0dip" android:layout_toLeftOf="@id/btn_call" android:layout_toRightOf="@id/thumb" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/companyLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <com.ganji.android.ui.CombinationView android:gravity="center_vertical" android:id="@id/labels" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/thirdLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <com.ganji.android.ui.CombinationView android:textColor="#ffff0000" android:gravity="center_vertical" android:id="@id/tags" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-0.5dip" />
+            <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/price_orange" android:ellipsize="end" android:id="@id/mianyi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/districtLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/g_grey" android:ellipsize="end" android:id="@id/district" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="海淀 - 魏公村 " android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/g_grey" android:id="@id/call_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="100人咨询" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/g_grey" android:ellipsize="end" android:id="@id/distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="1.2km" android:singleLine="true" android:drawableLeft="@drawable/ic_loc" android:drawablePadding="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

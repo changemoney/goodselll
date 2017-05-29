@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/talklist_empty_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:src="@drawable/icon_fragment_talklist_empty" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffbfbfbf" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="46.0sp" android:text="呀！你居然没有小伙伴！" android:lineSpacingExtra="4.0sp" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/talklist_empty_btn" android:background="@drawable/bg_go_complete_essential_detail_btn" android:clickable="true" android:layout_width="120.0dip" android:layout_height="33.0dip" android:text="找呀找朋友" />
+</LinearLayout>

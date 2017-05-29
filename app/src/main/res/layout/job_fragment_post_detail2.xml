@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/job_detail_scroll_view" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/job_detail_layout_bottom_footer" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/layout_job_fragment_post_detail2_part_1" />
+            <LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_layout_company_and_recommend" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:orientation="vertical" android:id="@id/job_post_company_all" android:background="@drawable/bg_detail_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip">
+                        <com.ganji.android.comp.widgets.TagLinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:ellipsize="end" android:id="@id/job_company_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                            <com.ganji.android.ui.CombinationView android:gravity="center_vertical" android:id="@id/job_company_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                        </com.ganji.android.comp.widgets.TagLinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="规模  " />
+                            <TextView android:textSize="15.0dip" android:textColor="#ff161616" android:id="@id/job_company_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性质  " />
+                            <TextView android:textSize="15.0dip" android:textColor="#ff161616" android:id="@id/job_company_xingzhi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_map" />
+                </FrameLayout>
+                <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <include layout="@layout/post_detail_warn" />
+                <View android:id="@id/view_divider_other_recommend" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <include layout="@layout/job_post_detail_other_recommend_posts" />
+                <View android:id="@id/view_divider_doumi" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <include layout="@layout/job_post_detail_dou_mi" />
+                <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/job_layout_post_detail_footer" />
+</RelativeLayout>

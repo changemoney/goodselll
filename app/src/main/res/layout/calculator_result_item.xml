@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/g_divider_group_bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ui_component_lable_padding">
+        <TextView android:id="@id/item_name" android:text="还款方式" style="@style/ui_component_LeftLabel_Text" />
+        <View style="@style/ui_item_vertical_divider_line" />
+        <TextView android:gravity="center_vertical" android:id="@id/value" android:layout_marginRight="4.0dip" android:text="万元" style="@style/ui_component_2Label1Inputbox_Input" />
+    </LinearLayout>
+</LinearLayout>

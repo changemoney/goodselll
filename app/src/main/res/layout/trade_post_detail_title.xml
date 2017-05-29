@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.android.ui.TextViewWithImage android:textSize="18.0dip" android:textColor="#ff161616" android:gravity="center" android:id="@id/trade_post_detail_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:maxLines="2" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:gravity="center_horizontal" android:id="@id/trade_post_detail_title_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/trade_post_detail_title_text" />
+    <com.ganji.android.ui.CombinationView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/trade_post_detail_title_tags" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/trade_post_detail_title_info" android:layout_centerHorizontal="true" />
+</RelativeLayout>

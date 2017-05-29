@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/whole3d" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wuba.api.editor.photo.PhotoViewWrap android:layout_gravity="center" android:id="@id/outer3d" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wb_outer3D_margintop" android:layout_marginBottom="@dimen/wb_outer3D_marginbottom">
+        <com.wuba.api.editor.photo.PhotoView android:id="@id/photo_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/photoview_marginleft" android:layout_marginTop="@dimen/photoview_margintop" android:layout_marginRight="@dimen/photoview_marginright" android:layout_marginBottom="@dimen/photoview_marginbottom" />
+    </com.wuba.api.editor.photo.PhotoViewWrap>
+    <RelativeLayout android:id="@id/sticker_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/effect_tool_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wb_outer3D_margintop" android:layout_marginBottom="@dimen/wb_outer3D_marginbottom" />
+    <FrameLayout android:id="@id/effects_bar_actions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/lv_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lvTitlebar" android:background="@color/bg_titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="wrap_content" android:layout_height="@dimen/titlebar_hight" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/bg_titlebar_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/lvTitle" android:layout_width="wrap_content" android:layout_height="@dimen/titlebar_hight" android:layout_marginLeft="96.0dip" android:layout_marginRight="96.0dip" android:text="赶集网" android:singleLine="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/lvLeftImgBtn" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.5dip" android:src="@drawable/arrow_back" android:scaleType="center" />
+        <ImageView android:gravity="center" android:id="@id/lvHead" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:id="@id/lvTitleShadow" android:background="@color/bg_titlebar_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/lvTitlebar" />
+    <com.ganji.android.lifeservice.ui.GJCustomScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/lvScrollView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/lvTitleShadow">
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/lifeServiceScrollViewContainer" android:background="#fff0f0f0" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/lvProgressInfoLayout" android:paddingLeft="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_alignParentLeft="true">
+                    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/lvProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" style="?android:attr/progressBarStyleSmall" />
+                    <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/lvLoadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载中..." />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_alignParentRight="true">
+                    <ImageView android:layout_gravity="center|right" android:id="@id/lvRefreshBtn" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:scaleType="centerCrop" />
+                    <Button android:textSize="14.0dip" android:gravity="center" android:id="@id/lvRightTxtBtn" android:background="@drawable/btn_gray_bg" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginRight="8.0dip" android:text="重选" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@id/lvLoadBottomDivider" android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="50.0dip" />
+            <RelativeLayout android:id="@id/lvInfoLay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lvLoadBottomDivider" android:layout_centerVertical="true">
+                <include layout="@layout/default_loading_container" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/lvContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" />
+        </RelativeLayout>
+    </com.ganji.android.lifeservice.ui.GJCustomScrollView>
+    <ImageView android:gravity="center|top" android:id="@id/lvDescImg" android:background="#04000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_below="@id/lvTitleShadow" />
+</RelativeLayout>

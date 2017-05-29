@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_post_title_item" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="@color/chat_list_time_color" android:layout_gravity="center" android:id="@id/time" android:background="@drawable/bg_chat_time" android:paddingLeft="12.0dip" android:paddingTop="3.0dip" android:paddingRight="12.0dip" android:paddingBottom="3.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/im_chat_msg_item_time_margin_content" android:text="2012" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/left_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="60.0dip" android:layout_below="@id/time" android:layout_alignParentLeft="true">
+        <RelativeLayout android:id="@id/left_head_view" android:layout_width="@dimen/imchat_adapter_head_image_width" android:layout_height="@dimen/imchat_adapter_head_image_height" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/left_head" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_contact_default" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_circle_press" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0dip" android:textColor="#ff808080" android:id="@id/left_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/left_head_view" android:layout_alignTop="@id/left_head_view" />
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/content_item" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/left_head_view" android:layout_below="@id/left_name" />
+    </RelativeLayout>
+</RelativeLayout>

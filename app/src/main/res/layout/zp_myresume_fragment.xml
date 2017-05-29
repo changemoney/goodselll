@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_my_resume_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_my_resume" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/resume_null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="@color/bg_titlebar_center_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您还没有建立个人简历！" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/bg_titlebar_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="10.0dip" android:text="你是应届生？技工？销售？客服？厨师？\n\n想找工作？做兼职？当学徒？找实习？\n\n无论选择哪一种,赶集招聘都能帮你完成心愿！" />
+            <include layout="@layout/jobs_resume_list_header" />
+        </LinearLayout>
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/default_loading_container" />
+</FrameLayout>

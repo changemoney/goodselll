@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/default_loading_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/deliver_scroll" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/deliver_null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="16.0dip" android:textColor="@color/g_orange" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/deliver_hint_text1" android:layout_width="wrap_content" android:layout_height="60.0dip" android:text="您还没有申请任何职位！" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/g_light_grey" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/deliver_hint_text2" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="先建立一份自己的简历，然后才能申请职位哦！" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/g_light_grey" android:gravity="top" android:layout_gravity="center_horizontal" android:id="@id/deliver_hint_text3" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="马上填写简历，开始找到好工作哦！" />
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/create_new_resume" android:background="@drawable/g_green_btn2" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_weight="2.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_add_btn" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="创建新简历" />
+                </LinearLayout>
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/deliver_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="16.0dip" android:textColor="@color/g_orange" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/deliver_count" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="您一共申请了20个职位！" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/g_light_grey" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/deliver_interest" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="您可能感兴趣的职位！" />
+            <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_deliverlist" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ganji.android.ui.GJCustomListView android:id="@id/deliver_listview" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

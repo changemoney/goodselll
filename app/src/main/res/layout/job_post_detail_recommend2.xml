@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_recommend" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_recommend_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/job_high_salary" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:layout_gravity="center" android:id="@id/job_post_detail_recommend_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="高薪急聘" />
+        </FrameLayout>
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_recommend_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

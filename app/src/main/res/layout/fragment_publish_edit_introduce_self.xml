@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/pub_layout_introduce_self" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请简单介绍你自己，突出自身特长和优势，字数小于200字" pub:key="description" pub:label="工作内容" pub:checkString="200#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){0,200}$" pub:tip="请简单介绍你自己，突出自身特长和优势，字数小于200字" pub:reslayout="@layout/pub_1lable1feedboxinputview_perfect_resume_no_label" pub:isRequired="false" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/pub_txt_perfect_resume_edit_click_save" android:background="@drawable/bg_post_detail_footer_green" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="保存" />
+    </LinearLayout>
+</ScrollView>

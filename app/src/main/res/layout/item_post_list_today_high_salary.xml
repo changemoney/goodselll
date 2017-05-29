@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/post_list_item_today_high_salary" android:background="@drawable/white_to_subgray" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_lv" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_post_list_job" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/two_btn_lv" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/post_list_padding_left" android:layout_marginRight="@dimen/post_list_padding_right" android:layout_marginBottom="10.0dip" android:layout_below="@id/top_lv">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/deliver_lv" android:background="@drawable/bg_memcenter_expand_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/icon_deliver_today_high" />
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_dark_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投递简历" />
+        </LinearLayout>
+        <View android:id="@id/divider" android:background="#ffd8d8d8" android:layout_width="1.0px" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/call_lv" android:background="@drawable/bg_memcenter_expand_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/icon_call_today_high" />
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_dark_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拨打电话" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/two_btn_lv" />
+</RelativeLayout>

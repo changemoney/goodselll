@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <ImageView android:id="@id/list_user_avatar" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/avator_avator_default" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:ellipsize="end" android:id="@id/list_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:ellipsize="end" android:id="@id/list_post_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff676767" android:id="@id/list_msg_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff676767" android:id="@id/list_msg_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/right_area" android:layout_width="70.0dip" android:layout_height="70.0dip">
+            <ImageView android:id="@id/list_msg_image" android:background="#fff3f3f3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <TextView android:textSize="10.0dip" android:textColor="#ff161616" android:ellipsize="end" android:gravity="center|left" android:id="@id/list_msg_brief" android:background="#fff3f3f3" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="官方通知" android:maxLines="3" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="73.0dip" />
+</LinearLayout>

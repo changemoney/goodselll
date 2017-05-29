@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/mZucheContainerDevider" android:background="#ffe6e6e6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/g_light_grey" android:id="@id/mName" android:layout_width="85.0dip" android:layout_height="wrap_content" android:text="赶集" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip">
+            <TextView android:textSize="20.0dip" android:textColor="#ffff5600" android:id="@id/mValue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:text="xxxx" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/g_light_grey" android:id="@id/mUnit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="-3.0dip" android:text="xxxx" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff404040" android:id="@id/mText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff404040" android:id="@id/mTextUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

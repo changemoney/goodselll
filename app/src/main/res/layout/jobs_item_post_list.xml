@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/jobs_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:layout_gravity="center" android:id="@id/item_title_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="急找礼品大客户经理最好有资源测试一下" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/price_orange" android:layout_gravity="center" android:id="@id/item_entrust_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="[委托投递]" />
+                <ImageView android:layout_gravity="center" android:id="@id/item_zhong_jie_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/jobs_zhongjie_icon" />
+                <ImageView android:layout_gravity="center" android:id="@id/item_ding_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/jobs_icon_ding" />
+                <ImageView android:layout_gravity="center" android:id="@id/item_hot_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_hot" />
+                <ImageView android:layout_gravity="center" android:id="@id/zhaopinjie_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_zhaopinjie" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <RatingBar android:layout_gravity="center" android:id="@id/item_star" android:clickable="false" android:layout_width="wrap_content" android:layout_height="9.339996dip" android:layout_marginRight="10.0dip" android:progressDrawable="@drawable/credit_star_rating_bar" android:numStars="5" android:isIndicator="true" />
+                    <TextView android:textSize="13.0dip" android:textColor="@color/medium_gray" android:id="@id/item_time_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:lines="1" />
+                    <ImageView android:id="@id/item_near_image_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/selector_jobs_list_item_near" />
+                    <TextView android:textSize="13.0dip" android:textColor="@color/medium_gray" android:ellipsize="end" android:id="@id/item_area_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/price_orange" android:layout_gravity="center" android:id="@id/item_wage_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <TextView android:textSize="13.0dip" android:textColor="@color/medium_gray" android:id="@id/item_description_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="招聘：" android:lines="1" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/medium_gray" android:id="@id/item_need_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/medium_gray" android:id="@id/item_work_years" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lines="1" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/medium_gray" android:ellipsize="end" android:id="@id/item_degree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/company_name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/item_validate_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/jobs_yanzheng_icon" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/tianlv_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/ic_tianlv" />
+                    <TextView android:textSize="13.0dip" android:textColor="@color/medium_gray" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/item_company_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/detele_image_view" android:background="@drawable/btn_close_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/remove_ll" android:visibility="gone" android:clickable="true" android:addStatesFromChildren="false" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/remove_img" android:background="@drawable/btn_close_bg" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/jobs_item_post_list_divider" android:background="@drawable/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

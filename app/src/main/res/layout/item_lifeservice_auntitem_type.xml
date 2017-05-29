@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/aunt_detail" android:layout_width="276.0dip" android:layout_height="433.0dip" android:layout_marginLeft="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/aunt_layout" android:background="@drawable/aunt_shape" android:layout_width="fill_parent" android:layout_height="413.0dip" android:layout_alignParentTop="true">
+        <com.ganji.android.lifeservice.ui.AuntImageView android:id="@id/aunt_image" android:layout_width="fill_parent" android:layout_height="207.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:id="@id/aunt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="#fffd7022" android:layout_gravity="bottom" android:id="@id/aunt_salary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ff676767" android:id="@id/aunt_ex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff676767" android:id="@id/aunt_zhujia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff676767" android:id="@id/aunt_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff676767" android:id="@id/aunt_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff676767" android:id="@id/aunt_xueli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:text="擅长技能" />
+        <LinearLayout android:orientation="vertical" android:id="@id/aunt_skill" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff676767" android:id="@id/nowrite" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/post_detail_bottom_call" android:background="@drawable/bg_post_detail_footer_green" android:layout_width="215.0dip" android:layout_height="40.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/post_detail_bottom_call_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_common_phone" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="联系TA" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/gradename" android:background="#ffff7200" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginTop="15.0dip" android:text="" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

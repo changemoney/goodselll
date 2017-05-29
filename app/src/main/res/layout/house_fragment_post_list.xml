@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/frame_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ganji.android.comp.post.filter.QuickFilterBar android:id="@id/quick_filter_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/location_bar" android:background="@drawable/divider_at_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/location_bar_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:ellipsize="end" android:id="@id/location_bar_txt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:text="北京海淀上地八维学校" android:layout_weight="1.0" />
+                <ImageView android:id="@id/location_bar_btn" android:layout_width="42.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_refresh_normal" android:scaleType="center" />
+            </LinearLayout>
+            <com.ganji.android.ui.swipe.SwipeAndPullToRefreshListView android:id="@id/pulltorefresh" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
+            <include layout="@layout/default_loading_container_for_lazy_find_house" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

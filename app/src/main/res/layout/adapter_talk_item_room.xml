@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:id="@id/room_msg" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="标题" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:id="@id/room_address" android:paddingTop="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:id="@id/price" android:paddingTop="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/room_img" android:layout_width="80.0dip" android:layout_height="60.0dip" android:layout_marginTop="@dimen/g_widget_margin" android:src="@drawable/post_list_thumb_loading" android:scaleType="fitXY" />
+</LinearLayout>

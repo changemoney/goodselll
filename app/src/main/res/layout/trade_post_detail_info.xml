@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingTop="24.0dip" android:paddingRight="12.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/trade_post_detail_info_more" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:id="@id/post_detail_info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基本信息" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/post_detail_info_turn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/arrow_right_small" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff39bc30" android:gravity="center_vertical" android:id="@id/post_detail_info_turn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详细参数" android:layout_toLeftOf="@id/post_detail_info_turn" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_below="@id/trade_post_detail_info_more">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dip" android:textColor="#ffb3b3b3" android:id="@id/mileage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="行驶里程" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff171717" android:id="@id/mileage_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="8.3万公里" android:layout_toRightOf="@id/mileage" />
+            <TextView android:textSize="15.0dip" android:textColor="#ffb3b3b3" android:id="@id/displacement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="排气量" android:layout_below="@id/mileage" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff171717" android:id="@id/displacement_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="10.0dip" android:text="1.8L" android:layout_toRightOf="@id/mileage" android:layout_below="@id/mileage" />
+            <TextView android:textSize="15.0dip" android:textColor="#ffb3b3b3" android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="看车地点" android:layout_below="@id/displacement" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff171717" android:id="@id/location_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="10.0dip" android:text="房山" android:layout_toRightOf="@id/mileage" android:layout_below="@id/displacement" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dip" android:textColor="#ffb3b3b3" android:id="@id/license" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首次上牌" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff171717" android:id="@id/license_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="2014-8" android:layout_toRightOf="@id/license" />
+            <TextView android:textSize="15.0dip" android:textColor="#ffb3b3b3" android:id="@id/gearbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="变速箱" android:layout_below="@id/license" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff171717" android:id="@id/gearbox_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="10.0dip" android:text="手动" android:layout_toRightOf="@id/license" android:layout_below="@id/license" />
+            <TextView android:textSize="15.0dip" android:textColor="#ffb3b3b3" android:id="@id/emission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="排放标准" android:layout_below="@id/gearbox" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff171717" android:id="@id/emission_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="10.0dip" android:text="房山" android:layout_toRightOf="@id/license" android:layout_below="@id/gearbox" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

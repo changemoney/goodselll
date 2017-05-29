@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ganji.im.community.view.WCSendMsgLayout android:orientation="vertical" android:id="@id/send_msg_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/editSendMsgLayout" android:background="@drawable/bg_tab_im_bottom" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <ImageView android:id="@id/header" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_gj_official" />
+        <EditText android:textSize="@dimen/b_b_text" android:layout_gravity="center_vertical" android:id="@id/send_msg_edittext" android:background="@drawable/im_input_bg" android:paddingLeft="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" android:maxLength="1000" android:layout_weight="1.0" android:imeOptions="actionDone" />
+        <ImageView android:id="@id/send_emoji_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_emoji" />
+        <Button android:textSize="@dimen/b_b_text" android:textColor="@drawable/color_send_button" android:id="@id/send_text" android:background="@drawable/bg_im_send" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送" />
+    </LinearLayout>
+    <com.ganji.im.community.view.WCFaceRelativeLayout android:id="@id/FaceRelativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/line_top" style="@style/DottedLine" />
+        <RelativeLayout android:id="@id/face_layout" android:background="#fff6f5f5" android:layout_width="fill_parent" android:layout_height="169.0dip" android:layout_below="@id/line_top" />
+    </com.ganji.im.community.view.WCFaceRelativeLayout>
+</com.ganji.im.community.view.WCSendMsgLayout>

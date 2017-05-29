@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center" android:id="@id/activiy_publish_zizhu_ischeck" android:background="@drawable/checkbox_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:button="@null" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/activiy_publish_zizhu_view" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip">
+        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/g_green" android:gravity="center" android:id="@id/activiy_publish_zizhu_title_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="刷      新" />
+        <TextView android:textSize="@dimen/pub_text_size" android:gravity="center" android:id="@id/activiy_publish_zizhu_intrduce_tv" android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="第一页优先展示" android:layout_weight="0.75" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+            <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/popularize_button" android:gravity="center" android:id="@id/activiy_publish_zizhu_preferential_tv" android:background="@drawable/bg_tab_msg" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

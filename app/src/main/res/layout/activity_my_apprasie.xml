@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <ImageView android:id="@id/good_apprasie_image" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/appraise_happy" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff262626" android:layout_gravity="center_vertical" android:id="@id/good_apprasie_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="赞一下" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@id/good_apprasie_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="非常感谢您的支持，花点时间给我们鼓励下吧。" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+            <Button android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/good_apprasie_button" android:background="@drawable/g_green_btn2" android:layout_width="215.0dip" android:layout_height="40.0dip" android:text="前往应用商店写好评" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <ImageView android:id="@id/bad_apprasie_image" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/appraise_sad" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff262626" android:layout_gravity="center_vertical" android:id="@id/bad_apprasie_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="提意见" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@id/bad_apprasie_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="留下您的宝贵意见，我们会尽最大努力持续改进。" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+            <Button android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/bad_apprasie_button" android:background="@drawable/g_green_btn2" android:layout_width="215.0dip" android:layout_height="40.0dip" android:text="前往用户反馈提意见" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

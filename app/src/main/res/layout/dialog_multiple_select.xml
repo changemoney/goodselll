@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_custom_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mCancelBtn" android:background="@drawable/title_text_button_bg" android:layout_width="50.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/g_widget_margin" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/title_choices" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="对话框标题" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/two_choices_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="109.0dip">
+            <LinearLayout android:id="@id/choice_one_layout" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:layout_gravity="center_vertical" android:id="@id/choice_one_text" android:paddingLeft="15.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对话框选项item1" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/choice_two_layout" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:layout_gravity="center_vertical" android:id="@id/choice_two_text" android:paddingLeft="15.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对话框选项item2" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/choice_three_layout" android:background="@drawable/list_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:layout_gravity="center_vertical" android:id="@id/choice_three_text" android:paddingLeft="15.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对话框选项item3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

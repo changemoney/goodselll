@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_header_city_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/group_city_text_color" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="当前城市" />
+    <FrameLayout android:id="@id/activity_city_gps_framelayout" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/activity_city_gps_loading" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:gravity="center_vertical" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" style="@style/custom_loading" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/city_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="正在获取当前城市..." />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/activity_city_gps_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_fail_location" android:duplicateParentState="true" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/icon_fail" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/city_text_color" android:id="@id/tv_fail" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="获取当前城市失败" android:layout_toRightOf="@id/iv_fail_location" android:layout_centerVertical="true" />
+            <Button android:textSize="16.0dip" android:textColor="#ff39bc30" android:id="@id/btn_retry" android:background="@drawable/bg_history_city_item" android:paddingLeft="16.0dip" android:paddingTop="5.0dip" android:paddingRight="16.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="刷新重试" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/activity_city_gps_linearlayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0dip" android:textColor="@color/city_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/activity_city_gps_textview" android:background="@drawable/bg_history_city_item" android:paddingLeft="22.0dip" android:paddingTop="6.0dip" android:paddingRight="22.0dip" android:paddingBottom="6.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:drawableLeft="@drawable/icon_dizhi_lifeservice" android:drawablePadding="2.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_history_city" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/group_city_text_color" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="最近访问城市" />
+        <com.ganji.android.comp.widgets.GridViewShowAll android:gravity="center" android:id="@id/gv_history_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="6.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="15.0dip" android:verticalSpacing="15.0dip" android:numColumns="3" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/group_city_text_color" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="热门城市" />
+        <com.ganji.android.comp.widgets.GridViewShowAll android:gravity="center" android:id="@id/gv_hot_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="6.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="15.0dip" android:verticalSpacing="15.0dip" android:numColumns="3" />
+    </LinearLayout>
+</LinearLayout>

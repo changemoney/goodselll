@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/feed_detail_header" android:background="@color/activity_bg_gray" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_detail_user_layout" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_detail_userbaseinfo_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@id/feed_detail_avatar_iv" android:layout_width="32.0dip" android:layout_height="32.0dip" layout="@layout/circle_layout" />
+                <TextView android:textSize="@dimen/m_text" android:textColor="@color/g_dark_grey" android:id="@id/feed_detail_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="name" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/feed_detail_age_tv" android:background="@drawable/icon_gender_male" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="15.0dip" android:text="18" android:includeFontPadding="false" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/s_text" android:textColor="@color/white" android:gravity="center" android:id="@id/feed_detail_label_tv" android:background="@drawable/bg_group_tag_1" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="label" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/feed_detail_image_and_content_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/feed_detail_user_layout">
+            <ImageView android:id="@id/feed_detail_image_iv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/loadfail_icon" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/b_b_text" android:textColor="@color/g_dark_grey" android:id="@id/feed_detail_content_tv" android:paddingLeft="12.0dip" android:paddingTop="16.0dip" android:paddingRight="12.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="content" />
+            <com.ganji.im.view.TagFlowLayout android:id="@id/tl_topic_tags" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/feed_detail_other_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/feed_detail_image_and_content_layout">
+            <View android:background="@color/group_div_line_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="@dimen/s_text" android:textColor="@color/gray_999999" android:id="@id/feed_detail_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="1分钟前" />
+                <TextView android:textSize="@dimen/s_text" android:textColor="@color/gray_999999" android:id="@id/feed_detail_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="1.2km" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_detail_favor_layout" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/feed_detail_favor_iv" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_feed_favour" />
+                    <TextView android:textSize="@dimen/m_text" android:textColor="@color/gray_999999" android:id="@id/feed_detail_favor_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="56" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_detail_comment_layout" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/feed_detail_comment_iv" android:background="@drawable/icon_feed_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/m_text" android:textColor="@color/gray_999999" android:id="@id/feed_detail_comment_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="123" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/ll_feed_detail_share" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/img_feed_share_2" android:background="@drawable/feed_share_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="20.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/group_div_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <View android:id="@id/feed_detail_peer_line" android:background="@color/group_div_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="13.0dip" android:layout_below="@id/feed_detail_other_layout" />
+        <LinearLayout android:orientation="vertical" android:id="@id/feed_detail_peer_ll" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_below="@id/feed_detail_other_layout_bottom_line">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/m_text" android:textColor="@color/g_grey" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:text="赞过" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/gray_808080" android:gravity="center" android:id="@id/tv_peer_all" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部" android:includeFontPadding="false" android:drawableRight="@drawable/ic_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/peer_pic_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:id="@id/feed_detail_other_layout_bottom_line" android:background="@color/group_div_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/feed_detail_other_layout" />
+        <View android:id="@id/feed_detail_comment_lv_title_tv_top_line" android:background="@color/group_div_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="13.0dip" android:layout_below="@id/feed_detail_other_layout" />
+        <TextView android:textSize="@dimen/m_text" android:textColor="@color/g_grey" android:gravity="center|left" android:id="@id/feed_detail_comment_lv_title_tv" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingTop="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="评论" android:layout_below="@id/feed_detail_comment_lv_title_tv_top_line" />
+        <View android:id="@id/feed_detail_comment_lv_title_tv_bottom_line" android:background="@color/group_div_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="13.0dip" android:layout_below="@id/feed_detail_comment_lv_title_tv" />
+    </LinearLayout>
+</RelativeLayout>

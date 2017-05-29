@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:input="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/titlebar_simple" />
+    <include android:visibility="gone" layout="@layout/im_prompt_container" />
+    <ScrollView android:id="@id/scrollView" android:background="#fff0f0f0" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0" android:layout_below="@id/titlebar" android:isScrollContainer="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/ui_component_group" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/m_text" android:textColor="@color/gray_808080" android:padding="@dimen/all_view_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完善个人资料方便周围人了解你" />
+            <TextView android:textSize="@dimen/b_b_text" android:textColor="@color/black_gray" android:gravity="left" android:id="@id/portrait_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="头像(0/8)" />
+            <com.ganji.im.msg.view.PhotoGridView android:id="@id/create_userinfo_item_photo" android:background="@color/photo_gridview_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="4" />
+            <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <View android:background="@color/group_div_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.ganji.im.msg.view.InputEditItem android:id="@id/create_userinfo_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" input:title="昵        称" input:texthint="2-20个字" input:isReq="true" input:isTrim="true" input:inputTip="需为2-20个字符" input:inputCheck="20#@#@#1#@#@#(^(.){2,20}$)" />
+            <View android:background="@color/group_div_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <View android:background="@color/group_div_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.ganji.im.msg.view.InputTextItem android:id="@id/create_userinfo_item_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" input:title="性        别" input:texthint="性别选择后不允许修改！" input:isReq="true" input:inputTip="性别选择后不允许修改！" />
+            <include layout="@layout/input_margin_divider" />
+            <com.ganji.im.msg.view.InputTextItem android:id="@id/create_userinfo_item_birthday" android:layout_width="fill_parent" android:layout_height="wrap_content" input:title="生        日" input:texthint="请输入" input:isReq="true" input:inputTip="请选择生日" />
+            <include layout="@layout/input_margin_divider" />
+            <com.ganji.im.msg.view.InputTextItem android:id="@id/create_userinfo_item_hometown" android:layout_width="fill_parent" android:layout_height="wrap_content" input:title="家        乡" input:texthint="请输入" input:isReq="true" input:inputTip="请选择家乡" />
+            <include layout="@layout/input_margin_divider" />
+            <com.ganji.im.msg.view.InputTextItem android:id="@id/create_userinfo_item_job" android:layout_width="fill_parent" android:layout_height="wrap_content" input:title="职        业" input:texthint="请选择" input:isReq="true" input:inputTip="请选择职业" />
+            <LinearLayout android:orientation="vertical" android:id="@id/create_userinfo_edit_part" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/input_margin_divider" />
+                <com.ganji.im.msg.view.InputTextItem android:id="@id/create_userinfo_item_industry" android:layout_width="fill_parent" android:layout_height="wrap_content" input:title="行        业" input:texthint="请选择" input:isReq="false" input:inputTip="请选择行业" />
+                <include layout="@layout/input_margin_divider" />
+                <com.ganji.im.msg.view.InputTextItem android:id="@id/create_userinfo_item_active_area" android:layout_width="fill_parent" android:layout_height="wrap_content" input:title="活动区域" input:texthint="请选择" input:isReq="false" input:inputTip="请选择活动区域" />
+                <include layout="@layout/input_margin_divider" />
+                <com.ganji.im.msg.view.InputTextItem android:id="@id/create_userinfo_item_love_status" android:layout_width="fill_parent" android:layout_height="wrap_content" input:title="情感状态" input:texthint="请选择" input:isReq="false" input:inputTip="请选择情感状态" />
+                <View android:background="@color/group_div_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <View android:background="@color/group_div_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <com.ganji.im.msg.view.InputMutiEditItem android:id="@id/create_userinfo_item_person_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" input:title="简        介" input:texthint="介绍下自己，让志趣相投的人找到你" input:isReq="false" input:inputTip="最多200个字符！" input:inputCheck="200#@#@#1#@#@#(^(.){0,200}$)" />
+            </LinearLayout>
+            <View android:background="@color/group_div_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="@dimen/m_text" android:textColor="@color/gray_808080" android:id="@id/tip" android:padding="@dimen/all_view_margin_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="填写后，可为您找到身边的老乡与同行" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ui_component_operate_panel" />
+</LinearLayout>

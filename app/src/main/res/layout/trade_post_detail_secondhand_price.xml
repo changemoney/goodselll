@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0dip" android:textColor="#ffff7200" android:id="@id/second_hand_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffff7200" android:id="@id/second_hand_price_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/second_hand_price" android:layout_alignBaseline="@id/second_hand_price" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffff7200" android:id="@id/second_hand_old" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/second_hand_price_unit" android:layout_alignBaseline="@id/second_hand_price" />
+    <RelativeLayout android:id="@id/second_hand_location_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_alignBottom="@id/second_hand_price" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/second_hand_location_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_dizhi_lifeservice" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:id="@id/second_hand_location_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/second_hand_location_img" />
+    </RelativeLayout>
+</RelativeLayout>

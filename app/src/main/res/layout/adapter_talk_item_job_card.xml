@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="#ff3c3c3c" android:ellipsize="end" android:id="@id/tv_job_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="#ff9a9a9a" android:ellipsize="end" android:id="@id/tv_job_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff9a9a9a" android:ellipsize="end" android:id="@id/tv_job_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:maxLines="1" android:layout_toRightOf="@id/tv_job_area" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <com.ganji.im.view.TagFlowLayout android:id="@id/tl_job_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/vv" android:layout_marginTop="10.0dip" style="@style/DottedLine" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_job_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/g_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看职位详情" />
+        <ImageView android:background="@drawable/ic_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

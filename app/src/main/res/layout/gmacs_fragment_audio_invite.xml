@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_audio_invite_avatar" android:layout_width="@dimen/audio_avatar_size" android:layout_height="@dimen/audio_avatar_size" android:layout_marginTop="120.0dip" android:layout_marginBottom="50.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="24.0dip" android:textColor="@color/white" android:id="@id/tv_audio_invite_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_below="@id/iv_audio_invite_avatar" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/tv_audio_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_audio_invite_name" android:layout_centerHorizontal="true" />
+    <com.wuba.android.wrtckit.view.LoopIncrementsTextView android:textSize="14.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_audio_action" android:layout_below="@id/tv_audio_invite_name" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/rl_audio_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="11.0dip" android:textColor="@color/white" android:id="@id/btn_refuse" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invited_refuse" android:drawableTop="@drawable/gmacs_ic_invited_refuse" android:drawablePadding="14.0dip" />
+        <Button android:textSize="11.0dip" android:textColor="@color/white" android:id="@id/btn_accept" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invited_accept" android:drawableTop="@drawable/gmacs_ic_invited_accept" android:drawablePadding="14.0dip" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/invite_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/list_selector_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_weight="1.0">
+        <com.ganji.im.view.CircleImageView2 android:id="@id/fans_item_avatar" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/dimen_15dp" android:src="@drawable/avatar_gongyouquan" app:civ_border_width="0.5px" app:civ_border_color="#ffd8d8d8" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/gray_161616" android:ellipsize="end" android:id="@id/fans_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赶集网友" android:lines="1" android:maxEms="7" />
+            <ImageView android:id="@id/fans_item_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_3dp" android:src="@drawable/gzdr_icon_boy" android:layout_toRightOf="@id/fans_item_name" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/gray_676767" android:id="@id/fans_item_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:lines="1" android:layout_toRightOf="@id/fans_item_gender" android:layout_alignBaseline="@id/fans_item_name" />
+            <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_676767" android:id="@id/fans_item_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赶集网.北京" android:lines="1" android:layout_below="@id/fans_item_name" />
+            <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_676767" android:id="@id/fans_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刚刚" android:lines="1" android:layout_below="@id/fans_item_name" />
+        </RelativeLayout>
+        <Button android:textSize="13.0sp" android:textColor="@color/green_39bc30" android:gravity="center_vertical" android:id="@id/btn_fans_item" android:background="@drawable/btn_guanzhu_green" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="＋ 关注" android:lines="1" android:layout_weight="0.0" />
+    </LinearLayout>
+    <View android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" />
+</LinearLayout>

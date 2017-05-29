@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/pub_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.publish.ui.PubTipView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="post_count_tip" />
+    <com.ganji.android.publish.ui.PubGridView android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="3" pub:key="images" pub:tip="上传房源照片" pub:isRequired="false" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="大于0的数字" pub:key="price" pub:label="售        价%%%万元" pub:checkString="6#@#@#8194#@#@#[1-9]|[1-9]([0-9]){0,4}|0\\.[1-9]|[1-9]([0-9]){0,3}\\.[0-9]" pub:tip="数字，大于0，最多5位，最多1位小数！" pub:reslayout="@layout/pub_2lable1inputview" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubWheelView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择户型" pub:key="huxing_shi%%%huxing_ting%%%huxing_wei" pub:label="户        型" pub:tip="请选择户型！" pub:firstdata="室,1,99,false,2" pub:seconddata="厅,0,99,false,2" pub:thirddata="卫,0,99,false,2" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="大于0的数字" pub:key="area" pub:label="面        积%%%平米" pub:checkString="4#@#@#2#@#@#[1-9]|[1-9]([0-9])*" pub:tip="请填写大于0的数字" pub:reslayout="@layout/pub_2lable1inputview" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.Pub2WheelView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择楼层" pub:key="ceng%%%ceng_total" pub:label="楼        层" pub:tip="总楼层不能小于所在楼层" pub:firstdata="第%%%层,#@#@#-3#@#@#99#@#@#true#@#@#3" pub:seconddata="共%%%层#@#@#1#@#@#99#@#@#true#@#@#2" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubNormalSpinnerView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="chaoxiang" pub:label="朝        向" pub:tip="必须选择一项！" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubNormalSpinnerView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="zhuangxiu" pub:label="装       修" pub:tip="必须选择一项！" pub:isRequired="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <TextView android:text="补充信息" style="@style/pub_group_title" />
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="点击添加" pub:key="xiaoqu" pub:label="小区名称" pub:checkString="20#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){2,20}$" pub:tip="点击添加" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="findjob_area" pub:label="所在区域" pub:onclick="selectArea" pub:isRequired="true" pub:error="请选择区域！" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0px">
+            <include layout="@layout/pub_margin_divider" />
+        </FrameLayout>
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="6-30字，不能写电话" pub:key="title" pub:label="标题" pub:checkString="30#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){6,30}$" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="字符，长度6-30，不含电话和特殊符号！" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="付款方式，房屋面积，朝向，装修情况，配置等等" pub:key="description" pub:label="房源描述" pub:checkString="800#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){10,}$" pub:reslayout="@layout/pub_input_multiline_normal" pub:isRequired="true" pub:error="10-800字，不能填写电话、特殊符号" pub:moreError="最多800字" pub:isMoreInput="false" pub:showToastWhenFormatError="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <TextView android:text="联系方式" style="@style/pub_group_title" />
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="2-6字，汉字或字母" pub:key="person" pub:label="联系人" pub:checkString="6#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,6}$)" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="2-6字，汉字或字母" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="@string/publish_input_phone_hint" pub:key="phone" pub:label="@string/publish_input_phone" pub:checkString="13#@#@#3#@#@#^1[34578]\\d{9}$|^(0\\d{2,4}-?)?[2-9]\\d{6,7}(-\\d{2,5})?$|^(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}$" pub:isRequired="true" pub:error="@string/publish_input_phone_hint" pub:showType="keyboard" />
+    </LinearLayout>
+    <com.ganji.android.publish.ui.PublishBottomExitZiZhuView android:id="@id/bussiness_zizhu" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:text="想在海量信息中脱颖而出，试试赶集推广" pub:ganjitextSize="16.0px" />
+</LinearLayout>

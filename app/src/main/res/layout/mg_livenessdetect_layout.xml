@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/liveness_layout_rootRel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextureView android:id="@id/liveness_layout_textureview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.megvii.zhimasdk.view.AutoRatioImageview android:id="@id/liveness_layout_head_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/liveness_layout_head_mask" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/liveness_layout_head_mask">
+        <LinearLayout android:orientation="horizontal" android:id="@id/liveness_layout_pageNumLinear" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true">
+            <RelativeLayout android:layout_width="@dimen/liveness_layout_num_image_width" android:layout_height="wrap_content">
+                <com.megvii.zhimasdk.view.AutoRatioImageview android:id="@id/liveness_layout_num_image0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mg_liveness_num_gry" />
+                <TextView android:textSize="@dimen/liveness_layout_num_text_size" android:textColor="#fffcfcfc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="1" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="@dimen/liveness_layout_num_image_width" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip">
+                <com.megvii.zhimasdk.view.AutoRatioImageview android:id="@id/liveness_layout_num_image1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mg_liveness_num_gry" />
+                <TextView android:textSize="@dimen/liveness_layout_num_text_size" android:textColor="#fffcfcfc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="2" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="@dimen/liveness_layout_num_image_width" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip">
+                <com.megvii.zhimasdk.view.AutoRatioImageview android:id="@id/liveness_layout_num_image2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mg_liveness_num_gry" />
+                <TextView android:textSize="@dimen/liveness_layout_num_text_size" android:textColor="#fffcfcfc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="3" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="10.0dip" android:textColor="#ffd5d5d5" android:id="@id/detection_step_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="All Rights Reserved By 芝麻信用" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <include android:id="@id/liveness_layout_first_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/detection_step_name" android:layout_below="@id/liveness_layout_pageNumLinear" android:layout_alignParentBottom="true" layout="@layout/mg_liveness_detection_step" />
+        <include android:id="@id/liveness_layout_second_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/detection_step_name" android:layout_below="@id/liveness_layout_pageNumLinear" android:layout_alignParentBottom="true" layout="@layout/mg_liveness_detection_step" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/liveness_layout_bottom_tips_head" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16.0dip" android:textColor="#ff04c9b3" android:id="@id/liveness_layout_promptText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="请在光线充足的情况下进行检测" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/liveness_phoneimage" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.megvii.zhimasdk.view.AutoRatioImageview android:visibility="visible" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/mg_liveness_logo" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/liveness_layout_cancle" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <com.megvii.zhimasdk.view.AutoRatioImageview android:visibility="visible" android:clickable="false" android:layout_width="15.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/mg_liveness_cancel" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/liveness_layout_progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

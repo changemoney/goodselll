@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.gmacs.view.SendMoreLayout android:orientation="vertical" android:id="@id/send_more_layout" android:layout_width="fill_parent" android:layout_height="223.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line_top" android:background="@color/send_more_layout_divider" style="@style/DottedLine" />
+    <android.support.v4.view.ViewPager android:id="@id/send_more_viewpager" android:paddingLeft="20.0dip" android:paddingTop="14.5dip" android:paddingRight="20.0dip" android:paddingBottom="14.5dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/send_more_view_dot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+</com.android.gmacs.view.SendMoreLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:paddingTop="89.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="67.5dip" android:src="@drawable/default_icon_data_empty" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.5dip" android:text="附近暂时没有物品哦，请看看其它吧～" />
+</LinearLayout>

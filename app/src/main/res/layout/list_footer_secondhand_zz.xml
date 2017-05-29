@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="当前信息量不足，推荐查看全部信息" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:gravity="center" android:id="@id/layout_more" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="立即查看全部" />
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

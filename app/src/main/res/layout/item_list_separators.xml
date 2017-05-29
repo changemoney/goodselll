@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_separator" android:background="@color/gray_f3f3f3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/s_text" android:textColor="@color/g_green" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/tv_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <View style="@style/DottedLine" />
+</LinearLayout>

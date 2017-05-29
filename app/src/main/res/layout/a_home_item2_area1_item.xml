@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_item_jump_entry_area" android:clickable="true" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+        <LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0dip" android:textColor="#ff161616" android:id="@id/txt_banner1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二手优品" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:id="@id/txt_banner1_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="iphone降价百元" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/img_banner1" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_area2_2" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

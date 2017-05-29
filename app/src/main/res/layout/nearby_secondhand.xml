@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/nearby_secondhand_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <include android:id="@id/nearby_secondhand_title" layout="@layout/nearby_item_title" />
+</LinearLayout>

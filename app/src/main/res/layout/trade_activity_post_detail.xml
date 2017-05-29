@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/titlebar" />
+    <com.ganji.android.comp.widgets.VerticalSwipeLayout android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/divider_nothing" android:layout_below="@id/titlebar" swipe:bottomLoadingLayout="@layout/swipe_pull_loading" swipe:centerLoadingLayout="@layout/default_loading_container" swipe:topLoadingLayout="@layout/swipe_pull_loading" xmlns:swipe="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/trade_post_detail_layout" />
+    </com.ganji.android.comp.widgets.VerticalSwipeLayout>
+    <View android:id="@id/divider_nothing" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignParentBottom="true" />
+    <include android:id="@id/person_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/trade_post_detail_bottom" />
+    <include layout="@layout/postdetail_deletedtips_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/item_post_detail_member_center_expande_layout" />
+</RelativeLayout>

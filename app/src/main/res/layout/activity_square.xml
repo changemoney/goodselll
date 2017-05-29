@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_simple" />
+    <include android:visibility="gone" layout="@layout/im_prompt_container" />
+    <FrameLayout android:id="@id/layout_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="112.0dip">
+        <android.support.v4.view.ViewPager android:id="@id/pager_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ganji.im.view.viewpage.CirclePageIndicator android:layout_gravity="bottom|center" android:id="@id/indicator_circle" android:background="@color/transparent" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" app:centered="true" app:fillColor="@color/white" app:pageColor="@color/gray" app:radius="4.0dip" app:snap="false" app:strokeColor="@color/gray" app:strokeWidth="1.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <View style="@style/DottedLine" />
+    <com.ganji.im.view.viewpage.TabPageIndicator android:id="@id/indicator_tab" android:background="@drawable/mito_action_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager android:id="@id/pager_tab" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

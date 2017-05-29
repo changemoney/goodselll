@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/recommend_list_item" android:background="@drawable/list_item_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/high_gray" android:id="@id/txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:text="招聘家具长木工" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/medium_gray" android:id="@id/txt2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="海淀 - 中关村" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/g_orange" android:id="@id/txt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="5000-8000元" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/img_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/arrow_right" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" layout="@layout/titlebar" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/user_request_detail" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/b_b_text" android:textColor="@color/g_dark_grey" android:id="@id/request_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" />
+        <TextView android:textSize="@dimen/s_text" android:textColor="@color/g_light_grey" android:id="@id/request_price_huxing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="@dimen/dimen_15dp" />
+        <View android:background="@color/sub_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" />
+        <RelativeLayout android:id="@id/response_broker_count_layout" android:background="@drawable/bg_yunying" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <RelativeLayout android:id="@id/response_broker_count_num_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/response_image_broker_heartbeat_wave" android:background="@drawable/bg_circle_green_alpha" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_centerInParent="true" />
+                <View android:id="@id/response_image_broker_heartbeat" android:background="@drawable/bg_circle_green" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/s_text" android:textColor="@color/g_light_grey" android:layout_gravity="center_horizontal" android:id="@id/response_text_broker_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="@dimen/dimen_3dp" android:text="正在等待经纪人应答..." android:includeFontPadding="false" android:drawablePadding="@dimen/dimen_3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/data_container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/default_loading_container" />
+            <ScrollView android:id="@id/room_post_scroll_layout" android:paddingTop="@dimen/dimen_8dp" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/lazyman_response_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <View android:background="@color/sub_gray" android:layout_width="30.0dip" android:layout_height="1.0px" />
+                        <TextView android:textColor="@color/g_light_grey" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mini_margin_10" android:layout_marginTop="@dimen/mini_margin_15" android:layout_marginRight="@dimen/mini_margin_10" android:layout_marginBottom="@dimen/mini_margin_15" android:text="经纪人推荐房源" />
+                        <View android:background="@color/sub_gray" android:layout_width="30.0dip" android:layout_height="1.0px" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/room_post_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </ScrollView>
+            <include layout="@layout/lazyman_response_loading" />
+            <include layout="@layout/lazyman_response_empty" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

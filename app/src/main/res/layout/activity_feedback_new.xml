@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/default_loading_container" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/opinion_all_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/white_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.7999878dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/g_green" android:id="@id/ui_component_text" android:layout_height="40.0dip" android:text="反馈类型" style="@style/ui_component_LeftLabel_Text" />
+                        <View android:background="#ffe5e5e5" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="11.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                        <com.ganji.android.ui.CustomSpinner android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ui_component_spinner" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" style="@style/ui_component_LableSpinner" />
+                        <TextView android:textSize="20.0sp" android:textColor="@color/g_red" android:gravity="center" android:id="@id/tvStar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="15.0dip" android:id="@id/tvContentTips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/item_search_bg" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textColor="@color/g_green" android:gravity="center" android:paddingTop="5.0dip" android:layout_height="wrap_content" android:text=" 问题/建议 " style="@style/ui_component_LeftLabel_Text" />
+                    <View android:background="#ffe5e5e5" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <EditText android:textSize="15.0dip" android:textColor="@color/high_gray" android:textColorHint="@color/low_gray" android:gravity="top" android:layout_gravity="center_vertical" android:id="@id/feedback_edittext_content" android:background="@null" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="说点什么吧" android:lines="5" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dip" android:textColor="#ffff0000" android:id="@id/feedback_not_null_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="问题或者改进建议不能为空" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/item_search_bg" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textColor="@color/g_green" android:layout_height="40.0dip" android:text="联系方式" style="@style/ui_component_LeftLabel_Text" />
+                    <View android:background="#ffe5e5e5" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <EditText android:textSize="15.0dip" android:textColor="@color/high_gray" android:textColorHint="@color/low_gray" android:id="@id/feedback_edittext_number" android:background="@null" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="" android:hint="手机号码/邮箱/QQ" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dip" android:textColor="#ffff0000" android:id="@id/number_not_null_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="请填写正确的联系方式" />
+                <View android:layout_width="fill_parent" android:layout_height="50.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/feedback_button_layout" android:background="#fff6f6f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/feedback_button" android:background="@drawable/g_green_btn2" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="4.0dip" android:text="@string/commit" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

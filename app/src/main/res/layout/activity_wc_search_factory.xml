@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/select_edit_liner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/dimen_12dp" android:layout_marginBottom="7.0dip">
+        <EditText android:textSize="@dimen/dimen_14sp" android:id="@id/suggest_select_edit" android:background="@drawable/title_input_bg" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="输入你感兴趣的工厂圈" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/gray_B3B3B3" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:text="取消" android:onClick="cancel" />
+    </LinearLayout>
+    <View android:background="@color/edit_search_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_5dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/search_hotLay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+        <TextView android:textSize="@dimen/dimen_12sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" android:text="  大家都在搜" android:drawableLeft="@drawable/ic_search" />
+        <com.ganji.im.community.view.FlowWrapLayout android:id="@id/hot_flow_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginRight="7.0dip" />
+        <View android:background="@color/divider_search_view" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10dp" android:layout_marginTop="7.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/history_search_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:layout_marginBottom="@dimen/dimen_12dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_676767" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" android:text="最近搜索" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="清空" android:onClick="clearHistory" />
+        </LinearLayout>
+        <ListView android:id="@id/histort_search_lv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView android:id="@id/request_search_lv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_12dp" />
+</LinearLayout>

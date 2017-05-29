@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/nearby_publish_titlebar_total" android:background="@color/bg_titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_hight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/statusbar_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_above="@id/nearby_publish_titlebar" />
+    <RelativeLayout android:id="@id/nearby_publish_titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_hight" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="77.0dip" android:layout_marginRight="77.0dip" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="18.0dip" android:textColor="@color/bg_titlebar_center_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/center_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/bg_titlebar_text_color" android:gravity="center" android:id="@id/right_text_btn" android:background="@android:color/transparent" android:paddingLeft="@dimen/g_widget_margin" android:paddingRight="@dimen/g_widget_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:minWidth="54.0dip" android:minHeight="30.0dip" android:text="确定" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.ganji.im.view.MsgNumberView android:id="@id/near_msg_view" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/bg_titlebar_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

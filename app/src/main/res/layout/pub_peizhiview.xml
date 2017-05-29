@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:gravity="center|top" android:id="@id/pub_label" android:paddingTop="20.0dip" android:text="配套设施" android:layout_alignParentTop="true" style="@style/ui_item_left_lable_style" />
+                <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:id="@id/all_selecte_layout" android:paddingLeft="16.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/pub_label" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/all_selected_checkbox" android:background="@drawable/checkbox_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:paddingLeft="@dimen/pub_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全选" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/ui_item_vertical_divider_line" />
+        <com.ganji.android.ui.UnScrollGridView android:id="@id/ui_component_group_checkbox" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="2.0dip" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="3" />
+    </LinearLayout>
+    <TextView android:id="@id/pub_error" android:paddingLeft="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

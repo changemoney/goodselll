@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textColor="@color/black_gray" android:ellipsize="end" android:gravity="center|left" android:id="@id/item_name_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/g_light_grey" android:ellipsize="end" android:gravity="center|left" android:id="@id/item_address_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+    <RadioButton android:id="@id/item_local_rbtn" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:button="@drawable/group_radio_button" android:layout_weight="0.0" />
+</LinearLayout>

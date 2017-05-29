@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_describe" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/medium_gray" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="职位描述" />
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/high_gray" android:id="@id/job_post_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="" android:lineSpacingExtra="10.0dip" />
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</LinearLayout>

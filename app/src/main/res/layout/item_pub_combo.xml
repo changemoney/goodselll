@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_detail_item" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="85.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/item_pub_combo_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <EditText android:textSize="14.0dip" android:textColor="#ff333333" android:textColorHint="#ffcccccc" android:gravity="center" android:id="@id/item_pub_combo_value" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="请选择" android:layout_below="@id/item_pub_combo_label" android:layout_centerHorizontal="true" />
+        <View android:id="@id/item_pub_combo_under_line" android:background="#ffff7200" android:visibility="invisible" android:layout_width="73.5dip" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/item_pub_combo_value" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:layout_gravity="center|right" android:id="@id/item_pub_combo_divider" android:background="#fff3f3f3" android:layout_width="1.0px" android:layout_height="50.0dip" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="#7d000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rootView" android:background="#ffffffff" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minHeight="300.0dip">
+        <include layout="@layout/titlebar" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.ganji.android.ui.swipe.SwipeListView android:id="@id/listview" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:divider="@color/list_item_divider_gray" android:dividerHeight="1.0px" />
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/default_loading_container" />
+        </RelativeLayout>
+        <Button android:textColor="@color/white" android:id="@id/btn_send" android:background="#ff39bc30" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="新增面试地址" />
+    </LinearLayout>
+</LinearLayout>

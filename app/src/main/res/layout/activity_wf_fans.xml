@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_fans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_simple" />
+    <com.ganji.android.comp.widgets.LoadMoreListView android:id="@id/wf_fans_listview" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#ffffffff" android:dividerHeight="0.0dip" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/im_prompt_container" />
+    <include android:id="@id/wf_fans_nor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/wf_guanzhu_nor" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_post_detail_report" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="@color/g_orange" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="小驴提示您" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:background="@drawable/lv_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="@color/g_green" android:id="@id/textview_report" android:background="@drawable/g_light_green_btn" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="举报" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/medium_gray" android:id="@id/detail_report_describe_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="35.0dip" android:text="让您提前提前汇款或者不见面交易都属于欺诈行为，请您当心不要受骗!如遇到请举报!" android:layout_toLeftOf="@id/textview_report" android:layout_centerVertical="true" android:lineSpacingExtra="3.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/gray_161616" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/wc_topic_item_txt_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="14.5dip" android:layout_marginTop="11.5dip" android:layout_marginRight="15.5dip" android:text="新媒体女性独家面访被男记者性侵报社实习生：没有意识到强奸" android:maxLines="2" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <ImageView android:id="@id/wc_topic_item_img_big" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_marginTop="16.5dip" android:src="@drawable/post_list_noimg" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/wc_topic_item_img_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="84.0dip" android:layout_marginTop="11.5dip">
+            <ImageView android:id="@id/wc_topic_item_img_small_one" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/post_list_noimg" android:scaleType="centerCrop" android:layout_weight="1.0" />
+            <ImageView android:id="@id/wc_topic_item_img_small_two" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:src="@drawable/post_list_noimg" android:scaleType="centerCrop" android:layout_weight="1.0" />
+            <ImageView android:id="@id/wc_topic_item_img_small_three" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:src="@drawable/post_list_noimg" android:scaleType="centerCrop" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_15dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_676767" android:id="@id/wc_topic_item_txt_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginRight="14.0dip" android:text="2568" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/wc_topic_item_img_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/jigongba_btn_comment_nor" android:layout_toLeftOf="@id/wc_topic_item_txt_comment" />
+    </RelativeLayout>
+</LinearLayout>

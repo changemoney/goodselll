@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_post_detail_apply_loan" android:background="@color/white" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="15.0dip" android:textColor="#ffff7200" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="凑钱买房" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="无抵押贷款，最快一天到账" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="#ffff7200" android:gravity="center" android:id="@id/item_post_detail_apply_loan_txt" android:background="@drawable/bg_post_detail_loan" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="申请贷款" />
+</LinearLayout>

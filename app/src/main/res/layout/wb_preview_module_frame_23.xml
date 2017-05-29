@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/frame_layout" android:background="@color/frame_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wuba.camera.PreviewFrameLayout2_3 android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <com.wuba.camera.CameraPreview_23 android:id="@id/preview_glsurface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/wb_preview_surface_view" />
+        <com.wuba.camera.ui.FocusView android:id="@id/focusView" android:visibility="gone" android:layout_width="@dimen/focus_view_width" android:layout_height="@dimen/focus_view_height" />
+    </com.wuba.camera.PreviewFrameLayout2_3>
+    <com.wuba.camera.ui.RenderOverlay android:id="@id/render_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/capture_anim_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textColor="@color/preview_module_text" android:id="@id/fps" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

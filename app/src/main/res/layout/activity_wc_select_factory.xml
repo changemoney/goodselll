@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/select_edit_liner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/dimen_12dp" android:layout_marginBottom="7.0dip">
+        <EditText android:textSize="@dimen/dimen_14sp" android:id="@id/scake_edit" android:background="@drawable/title_input_bg" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="输入你感兴趣的工厂圈" android:maxLines="1" android:drawableRight="@drawable/action_close_normal" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/gray_B3B3B3" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:text="保存" android:onClick="save" />
+    </LinearLayout>
+    <View android:background="@color/edit_search_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_5dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/scake_select_liner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_676767" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:text="猜你想输入的工厂" />
+        <com.ganji.im.community.view.FlowWrapLayout android:id="@id/view_wordwrap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <Button android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择厂圈" android:layout_alignParentBottom="true" android:onClick="jump" />
+</LinearLayout>

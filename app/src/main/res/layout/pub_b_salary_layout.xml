@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/pub_label" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="薪资" />
+        <EditText android:textSize="16.0sp" android:textColor="#ffff7200" android:gravity="center_vertical" android:id="@id/pub_phone_edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:hint="请输入薪资" android:maxLength="9" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/pub_unit" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="单位" />
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pub_radiogroup" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="16.0sp" android:textColorHint="#ff333333" android:gravity="center" android:id="@id/pub_phone_hint" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="请输入" />
+</LinearLayout>

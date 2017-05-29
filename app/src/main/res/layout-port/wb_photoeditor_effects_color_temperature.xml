@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/photoeditor_effects_color_temperature" android:background="@color/effects_second_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/photoeditor_effects_color_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/photoeditor_effects_color_margintop">
+        <TextView android:layout_gravity="center_vertical" android:paddingLeft="@dimen/photoeditor_effects_color_paddingleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_temperature" style="@style/wb_camera_style_micro_white" />
+        <SeekBar android:id="@id/seekbar_color_temperature" android:paddingLeft="@dimen/temperature_seekbar_paddingleft" android:paddingRight="@dimen/temperature_seekbar_paddingleft" android:layout_width="@dimen/adjust_seekbar_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/temperature_seekbar_marginleft" android:maxHeight="@dimen/fb_seekbar_height" android:max="100" android:progressDrawable="@drawable/color_temperature_yg" android:thumb="@drawable/fb_seekbar_thumb" android:isScrollContainer="true" android:fadeScrollbars="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/photoeditor_effects_color_margintop">
+        <TextView android:layout_gravity="center_vertical" android:paddingLeft="@dimen/photoeditor_effects_color_paddingleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_tone" style="@style/wb_camera_style_micro_white" />
+        <SeekBar android:id="@id/seekbar_color_tint" android:paddingLeft="@dimen/temperature_seekbar_paddingleft" android:paddingRight="@dimen/temperature_seekbar_paddingleft" android:layout_width="@dimen/adjust_seekbar_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/temperature_seekbar_marginleft" android:maxHeight="@dimen/fb_seekbar_height" android:max="100" android:progressDrawable="@drawable/color_temperature_pg" android:thumb="@drawable/fb_seekbar_thumb" android:isScrollContainer="true" android:fadeScrollbars="true" />
+    </LinearLayout>
+</LinearLayout>

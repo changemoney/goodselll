@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/response_list_footer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_response_change_button" android:background="@drawable/bg_talk_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/divider" android:layout_width="wrap_content" android:layout_height="1.0px" />
+        <TextView android:textSize="@dimen/b_b_text" android:textColor="@color/g_green" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="换一换" android:layout_centerInParent="true" />
+        <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_response_subscribe" android:background="@color/list_item_background" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/m_text" android:textColor="@color/g_dark_grey" android:gravity="center" android:id="@id/txt_response_subscribe_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="消息推送太频繁？不再接收此类信息" android:singleLine="false" android:layout_weight="1000.0" />
+        <TextView android:textSize="@dimen/m_text" android:id="@id/txt_response_subscribe_button" android:background="@drawable/btn_response_bottom" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="取消订阅" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.gmacs.view.ResizeLayout android:orientation="vertical" android:id="@id/resizeLayout" android:background="@color/chat_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/person_msg_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.android.gmacs.view.listview.XXListView android:id="@id/listview_chat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:transcriptMode="disabled" android:cacheColorHint="@color/transparent" android:divider="@null" android:overScrollMode="never" />
+            <ProgressBar android:id="@id/load_new_msgs_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+        </RelativeLayout>
+        <include layout="@layout/gmacs_layout_chat_bottom" />
+        <include layout="@layout/gmacs_public_account_menu_layout" />
+    </LinearLayout>
+</com.android.gmacs.view.ResizeLayout>

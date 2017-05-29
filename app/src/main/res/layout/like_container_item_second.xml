@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/item" android:background="@drawable/bg_down_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/img" android:layout_width="80.0dip" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/post_list_thumb_loading" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="15.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0dip" android:textColor="#ff161616" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="13.0dip" android:text="二手物品二手物品二手物品二手物品二手物品" android:singleLine="true" />
+                <TextView android:textSize="15.0dip" android:textColor="#ffff7200" android:ellipsize="marquee" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="2.0dip" android:text="12.0万" android:singleLine="true" android:layout_below="@id/title" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/second_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/price">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:ellipsize="marquee" android:gravity="center" android:id="@id/textLable1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="沙发" android:singleLine="true" />
+                        <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:ellipsize="marquee" android:gravity="center" android:id="@id/textLable2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:text="海淀-清河" android:singleLine="true" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/textLable3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="刚刚" android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

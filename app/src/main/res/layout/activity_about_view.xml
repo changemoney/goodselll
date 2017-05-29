@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/loginLinearLayout01" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <ScrollView android:id="@id/scrollViewAbout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/ganji_logo_about" />
+            <View android:background="#ffdcd7d8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <View android:background="#ffdcd7d8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="软件版本 : " />
+                <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:id="@id/version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:id="@id/divider_line1" android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mobile_link_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/gray" android:id="@id/ganji_web_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机访问 : " android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:id="@id/ganjiweb" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="wap.ganji.com" android:layout_weight="1.0" android:layout_toRightOf="@id/ganji_web_text" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <View android:id="@id/divider_line2" android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/weibo_ganji" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/gray" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微        博 : " android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:id="@id/ganjiblog" android:clickable="true" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="\@赶集网" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow_right_medium_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <View android:id="@id/divider_line3" android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/weixin_ganji" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/gray" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信公众号：" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:clickable="true" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="赶集" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/more_apps" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="赶集网 版权所有" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Copyright@2005-2017 Ganji" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

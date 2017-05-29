@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="7.5dip" android:paddingRight="7.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/g_grey" android:id="@id/pub_txt_advantage_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="17.5dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="9.0dip" android:text="请选择您的亮点，已选择3个，最多选择5个！" />
+    <GridView android:id="@id/pub_grid_advantage" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:stretchMode="columnWidth" android:numColumns="3" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/g_grey" android:id="@id/pub_txt_advantage_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="11.5dip" android:text="请选择您的亮点，已选择0个，最多选择5个！" />
+</LinearLayout>

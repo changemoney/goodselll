@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/default_titlebar" />
+    <TextView android:textSize="20.0dip" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="您的帐号已经被锁定" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/black_gray" android:id="@id/styledText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="33.0dip" android:layout_marginRight="36.0dip" android:lineSpacingExtra="7.0dip" />
+    <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/frozenBtn" android:background="@drawable/g_login_btn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="36.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="15.0dip" android:text="发送短信" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/low_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" android:text="资费说明：发送短信赶集网不收取任何费用，您仅需支付由运营商收取的标准短信费。" android:lineSpacingExtra="3.0dip" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/editor_seekbar" android:background="@color/effects_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/common_effectsbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/wb_camera_white" android:gravity="center" android:id="@id/effects_cancel" android:layout_width="50.0dip" android:layout_height="38.0dip" android:layout_marginLeft="5.0dip" android:text="取 消" />
+    <SeekBar android:id="@id/seekbar" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="8.0dip" android:max="100" android:progressDrawable="@drawable/fb_seekbar_style" android:thumb="@drawable/fb_seekbar_thumb" android:layout_weight="1.0" android:layout_centerHorizontal="true" android:isScrollContainer="true" android:fadeScrollbars="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/wb_camera_white" android:gravity="center" android:id="@id/effects_confirm" android:layout_width="50.0dip" android:layout_height="38.0dip" android:layout_marginRight="5.0dip" android:text="确 认" />
+</LinearLayout>

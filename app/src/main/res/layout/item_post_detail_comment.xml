@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_post_detail_comment" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/detail_company_comment_degree" android:background="@drawable/bg_item_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/medium_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好评度 " />
+                <TextView android:textSize="20.0dip" android:textColor="@color/g_orange" android:id="@id/detail_comment_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="0%" />
+                <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/medium_gray" android:gravity="right" android:id="@id/detail_comment_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="好评０人 中评0人 差评0人" android:layout_weight="1.0" />
+                <ImageView android:id="@id/detail_comment_arraw_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/detail_last_comment_content" android:background="@drawable/bg_item_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/high_gray" android:id="@id/detail_comment_username" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/medium_gray" android:id="@id/detail_comment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/medium_gray" android:id="@id/detail_comment_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="" android:lineSpacingExtra="10.0dip" />
+        </LinearLayout>
+        <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</LinearLayout>

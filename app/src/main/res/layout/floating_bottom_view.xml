@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.ui.picker.DatePickerView android:id="@id/date_picker_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ganji.android.ui.picker.SingleListDataPickerView android:id="@id/single_list_data_picker_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:max_height="500.0dip" />
+    <com.ganji.android.ui.picker.NumDataPickerView android:id="@id/num_data_picker_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ganji.android.ui.picker.TextDataPickerView android:id="@id/text_data_picker_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ganji.android.ui.picker.TreeListDataPickerView android:id="@id/tree_list_data_picker_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ganji.android.ui.picker.CarBrandPickerView android:id="@id/car_brand_picker_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:max_height="500.0dip" />
+</LinearLayout>

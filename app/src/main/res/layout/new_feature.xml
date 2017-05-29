@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ganji.android.ui.ObservableScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+        <ImageView android:id="@id/top_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/feature_title" />
+        <RelativeLayout android:id="@id/brand_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/brand_circle" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_circle" />
+            <ImageView android:id="@id/brand_bg" android:background="@drawable/feature_brand_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/brand0" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_brand0" />
+            <ImageView android:id="@id/brand1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_brand1" />
+            <ImageView android:id="@id/brand2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_brand2" />
+            <ImageView android:id="@id/brand3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_brand3" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/feature_arrow_up" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:id="@id/feature_part_txt0" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/feature_part_txt0" />
+        <RelativeLayout android:id="@id/feature_part_container0" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <ImageView android:id="@id/feature_part_container_bg0" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_container_bg0" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/feature_part_pop1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_pop1" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/feature_part_pop2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_pop2" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:id="@id/feature_part_txt1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/feature_part_txt1" />
+        <RelativeLayout android:id="@id/feature_part_container1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <ImageView android:id="@id/feature_part_container_bg1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_container_bg1" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/feature_part_slant" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_slant" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/feature_part_hand" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_hand" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:id="@id/feature_part_txt2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/feature_part_txt2" />
+        <RelativeLayout android:id="@id/feature_part_container2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/feature_part_container_bg2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_container_bg2" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/feature_part_shadow2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_shadow2" />
+            <ImageView android:id="@id/feature_part_sale" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_sale" />
+            <ImageView android:id="@id/feature_part_phone" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_phone" />
+            <ImageView android:id="@id/feature_part_camera" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feature_part_camera" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/feature_dot" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginBottom="75.0dip" android:src="@drawable/feature_arrow_down" />
+    </LinearLayout>
+</com.ganji.android.ui.ObservableScrollView>

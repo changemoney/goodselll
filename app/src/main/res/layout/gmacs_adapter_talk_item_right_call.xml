@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_talk_item_call" android:background="@drawable/gmacs_msg_right_talk" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/tv_msg_call" android:paddingLeft="15.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_call" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gmacs_talk_item_audio_call" android:layout_toRightOf="@id/tv_msg_call" android:layout_centerVertical="true" />
+</RelativeLayout>

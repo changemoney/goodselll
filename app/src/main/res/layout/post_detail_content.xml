@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/post_detail_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.android.ui.ScrollViewExtend android:id="@id/post_detail_scroll_view" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/post_detail_content_big_img_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/item_post_detail_big_image" />
+            </LinearLayout>
+            <include layout="@layout/item_post_detail_title_house" />
+            <include layout="@layout/item_post_detail_house_title_info" />
+            <include layout="@layout/item_post_detail_basic_info" />
+            <include layout="@layout/item_post_detail_auth_icon" />
+            <include layout="@layout/item_post_detail_editor_comment" />
+            <include layout="@layout/item_post_detail_house_owner_comment" />
+            <include layout="@layout/item_post_detail_house_facility" />
+            <include layout="@layout/item_post_detail_car_configuration" />"
+<include layout="@layout/item_post_detail_describe" />
+            <include layout="@layout/item_post_detail_xiaoqu_info_house" />
+            <include layout="@layout/item_post_detail_comment" />
+            <include layout="@layout/item_post_detail_share" />
+            <include layout="@layout/item_post_detail_recommend" />
+            <include layout="@layout/item_post_detial_price_recommend" />
+            <include layout="@layout/item_post_detail_user_post" />
+            <ViewStub android:id="@id/detail_card_title_viewstub" android:layout="@layout/item_post_detail_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+            <ViewStub android:id="@id/detail_card_content_viewstub" android:layout="@layout/item_post_detail_card_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+            <ImageView android:id="@id/detail_card_image" android:background="@drawable/bg_item_round" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:scaleType="fitXY" />
+            <ViewStub android:id="@id/detail_card_image_content" android:layout="@layout/item_post_detail_card_imgcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+            <include layout="@layout/item_post_detail_report_house" />
+            <View android:layout_width="fill_parent" android:layout_height="100.0dip" />
+        </LinearLayout>
+    </com.ganji.android.ui.ScrollViewExtend>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/item_post_detail_member_center_expande_layout" />
+</RelativeLayout>

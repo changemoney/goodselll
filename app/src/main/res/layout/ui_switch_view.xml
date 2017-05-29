@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/regionid" android:background="@drawable/btn_switch_bg" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/openid" android:background="@drawable/btn_switch_open" android:layout_width="55.0dip" android:layout_height="30.0dip" android:text="开启" />
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/closeid" android:background="@drawable/btn_switch_close" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="30.0dip" android:text="关闭" android:layout_alignParentRight="true" />
+</RelativeLayout>

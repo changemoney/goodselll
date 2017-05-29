@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/ll_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:gravity="center_vertical" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="取消" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_menu_title" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:gravity="center|right" android:id="@id/textView8" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="确定" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/data_picker_container" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ganji.android.ui.picker.NumberPicker android:id="@id/np1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="214.0dip" android:layout_weight="1.0" app:selectionDivider="#ffdbdbdb" app:selectionDividerHeight="1.0px" style="@style/NPWidget.Holo.Light.NumberPicker" />
+        <com.ganji.android.ui.picker.NumberPicker android:id="@id/np2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="214.0dip" android:layout_weight="1.0" app:selectionDivider="#ffdbdbdb" app:selectionDividerHeight="1.0px" style="@style/NPWidget.Holo.Light.NumberPicker" />
+        <com.ganji.android.ui.picker.NumberPicker android:id="@id/np3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="214.0dip" android:layout_weight="1.0" app:selectionDivider="#ffdbdbdb" app:selectionDividerHeight="1.0px" style="@style/NPWidget.Holo.Light.NumberPicker" />
+    </LinearLayout>
+</LinearLayout>

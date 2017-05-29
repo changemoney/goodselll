@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.android.comp.post.filter.QuickFilterBar android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/map_filter_container" android:background="#fff6f6f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip" />
+    <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <RelativeLayout android:id="@id/bmapLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:orientation="vertical" android:id="@id/map_fragment" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dip" android:textColor="#ff888888" android:id="@id/bmap_subwayline_cancel" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="清除" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bmap_subwayline_tab_subway" android:background="@color/white" android:padding="10.0dip" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_map_tab_subway" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/list_tab_txt_colors" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="地铁" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/bmapMyLocationLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/myLoc" android:background="@color/white" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/btn_bmap_location_bg" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/loadingLayout" android:background="@drawable/bg_bmap_toast" android:paddingLeft="@dimen/g_widget_margin" android:paddingRight="@dimen/g_widget_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/loadingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/g_widget_margin" style="?android:attr/progressBarStyleSmall" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/loadingText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="加载失败，点击重试" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/resetLoading" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/location_refresh_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/pop_map_list_data" />
+</LinearLayout>

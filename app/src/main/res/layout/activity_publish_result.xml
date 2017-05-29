@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <FrameLayout android:id="@id/frame_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip">
+                    <TextView android:id="@id/mPubSuccessIcon" android:background="@drawable/pub_success_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" />
+                    <TextView android:textSize="@dimen/iconSize" android:textColor="@color/g_green" android:id="@id/mPubSuccessTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_result_tips" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mPublishTipsContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textColor="@color/g_light_grey" android:id="@id/mPublishTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你的帖子成功发布在" />
+                    <TextView android:textColor="@color/g_green" android:id="@id/mPublishCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/distance_5dp" android:text="@string/publish_result_category" />
+                    <TextView android:textColor="#fffd7222" android:id="@id/publish_download_dingdong_link_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/distance_5dp" android:text="随时随地收简历，点击下载您专属的招聘助手>>" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:gravity="center" android:id="@id/mCheckAndManager" android:visibility="visible" android:layout_width="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/publish_result_check_manager" android:layout_weight="1.0" style="@style/ui_component_PublishPanel_Button_free" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mBuyAndRefreshBtnContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mBuyTop" android:background="@drawable/buytopbtn_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+                        <TextView android:textColor="@color/white" android:gravity="center" android:paddingLeft="@dimen/distance_5dp" android:paddingRight="@dimen/distance_5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="置顶" />
+                        <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/white" android:gravity="center" android:paddingRight="@dimen/distance_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[信息顶部展示]" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mBuyRefresh" android:background="@drawable/buyrefreshbtn_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textColor="@color/white" android:gravity="center" android:paddingLeft="@dimen/distance_5dp" android:paddingRight="@dimen/distance_5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刷新" />
+                        <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/white" android:gravity="center" android:paddingRight="@dimen/distance_5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[立即提升排名]" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mRecommendConditionContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <include layout="@layout/item_section_divider" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mRelateRecommend" android:background="@drawable/bg_item_top" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/high_gray" android:gravity="center_vertical" android:id="@id/mRecommendText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="相关推荐" android:singleLine="true" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/mRecommendArrowIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" />
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/divider_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <com.ganji.android.job.ui.JobMyResumeListview android:id="@id/mPostListView" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
+                </LinearLayout>
+                <View android:id="@id/view_place_holder" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layout_send_resume" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/view_divider" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="2.0">
+                <RelativeLayout android:gravity="center" android:id="@id/job_post_publish_select_all" android:background="@drawable/bg_detail_item" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/job_post_publish_img_check" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/icon_job_detail_checkbox" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全选" android:layout_toRightOf="@id/job_post_publish_img_check" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <FrameLayout android:id="@id/job_post_publish_send_all_resume_layout" android:background="@drawable/bg_detail_item" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0">
+                    <View android:layout_gravity="center|left" android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="14.0dip" />
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/job_post_publish_send_all_resume_img" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="30.0dip" android:src="@drawable/bg_post_detail_send_resume" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:gravity="center" android:layout_gravity="center" android:id="@id/job_post_publish_send_all_resume_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一键投递" android:layout_centerVertical="true" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

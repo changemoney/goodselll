@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/data_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/item_broker_info" />
+            <include layout="@layout/item_shop_house_info" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/default_loading_container" />
+</LinearLayout>

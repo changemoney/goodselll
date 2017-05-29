@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/mScrollViewContainer" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/mContentsContainer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/descriptionlable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赶集" />
+                <TextView android:textSize="15.0dip" android:textColor="#ffff7200" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="赶集" />
+                <TextView android:textSize="15.0dip" android:textColor="#ffff7200" android:id="@id/unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="赶集" />
+            </LinearLayout>
+            <include layout="@layout/item_zuche_post_detail_describe" />
+            <View android:id="@id/mAuntLayoutSpace" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/mItemLifeServiceAyiInfoContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/mBaojiaLayoutSpace" android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="报价" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/mItemLifeServiceYueSaoBaoJiaContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

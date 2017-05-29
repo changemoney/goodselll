@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:orientation="vertical" android:background="@drawable/list_selector_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <ImageView android:id="@id/list_user_avatar" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/avator_avator_default" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="#ff676767" android:id="@id/list_msg_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff676767" android:id="@id/list_msg_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/new_msg_count" android:background="@drawable/ic_im_new_msg_count" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right_arrow" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="#ffe6e6e6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="73.0dip" />
+    <View android:id="@id/spacing" android:background="@color/activity_bg_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10dp" />
+</LinearLayout>

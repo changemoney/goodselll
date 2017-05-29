@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/float_city_btn" android:focusable="true" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/list_tab_txt_colors" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全城" android:drawableLeft="@drawable/ic_list_tab_allcity" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+    <View android:layout_gravity="center" android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="14.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/float_local_btn" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/list_tab_txt_colors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="附近" android:drawableLeft="@drawable/ic_list_tab_nearby" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

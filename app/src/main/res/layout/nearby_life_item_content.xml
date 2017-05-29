@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_item_jump_entry_area" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/nearby_life_item_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff404040" android:id="@id/nearby_life_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="16.0dip" android:text="家政服务" />
+</LinearLayout>

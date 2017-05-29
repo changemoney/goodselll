@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_post_detail_describe1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:id="@id/detail_describe_top_small_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/item_post_detail_small_image" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dip" android:textColor="#ff676767" android:id="@id/post_detail_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="" android:maxLines="7" android:lineSpacingExtra="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/post_detail_see_more" android:background="@drawable/bg_item_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/post_des_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_common_zhankai" />
+    </LinearLayout>
+    <View android:id="@id/detail_describe_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

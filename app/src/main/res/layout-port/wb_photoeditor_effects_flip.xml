@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/photoeditor_effects_flip" style="@style/effects_detail_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/bar_action">
+        <ImageView android:src="@drawable/photoedit_detail_rotation_flip_horizontal" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flip_horizontal" style="@style/wb_camera_rotate_style_micro_white" />
+    </LinearLayout>
+    <LinearLayout style="@style/bar_action">
+        <ImageView android:src="@drawable/photoedit_detail_rotation_flip_vertical" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flip_vertical" style="@style/wb_camera_rotate_style_micro_white" />
+    </LinearLayout>
+    <LinearLayout style="@style/bar_action">
+        <ImageView android:src="@drawable/photoedit_detail_rotation_counterclockwise" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rotation_left" style="@style/wb_camera_rotate_style_micro_white" />
+    </LinearLayout>
+    <LinearLayout style="@style/bar_action">
+        <ImageView android:src="@drawable/photoedit_detail_rotation_clockwise" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rotation_right" style="@style/wb_camera_rotate_style_micro_white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/item_imageview_lv" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/item_imageview_bg_lv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/item_imageview_bg" android:background="@drawable/lifeservice_homepage_gridview_default_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/high_gray" android:gravity="center" android:id="@id/item_imageview_bg_other_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="敬请期待" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

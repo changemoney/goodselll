@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activityRootView" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/loan_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/commercial_loan_layout" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商业贷款" android:layout_centerInParent="true" />
+            <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fund_loan_layout" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="公积金贷款" android:layout_centerInParent="true" />
+            <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/composition_loan_layout" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="组合贷款" android:layout_centerInParent="true" />
+            <View android:id="@id/syndicated_loan_line" android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/loan_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

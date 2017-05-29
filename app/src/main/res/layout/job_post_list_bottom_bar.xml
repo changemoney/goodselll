@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/float_filter_button_container" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/float_city_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_list_tab_allcity" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/list_tab_txt_colors" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="全城职位" />
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="14.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/float_local_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_list_tab_nearby" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/list_tab_txt_colors" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="附近职位" />
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="14.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/float_job_high_quality_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_list_tab_high_quality" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/list_tab_txt_colors" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="放心企业" />
+    </LinearLayout>
+</LinearLayout>

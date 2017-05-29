@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/job_resume_detail_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.android.ui.ScrollViewExtend android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/layout_job_fragment_post_detail2_part_1" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_my_post_detail_content_old" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/item_post_detail_title" />
+                <include layout="@layout/item_post_detail_basic_info" />
+                <include layout="@layout/item_post_detail_job_company_introduce_and_resume_old" />
+                <include layout="@layout/job_my_post_detail_contact" />
+                <include layout="@layout/item_post_detail_user_post" />
+                <include layout="@layout/item_post_detail_blank" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.ganji.android.ui.ScrollViewExtend>
+    <include layout="@layout/item_post_detail_member_center_expande_layout" />
+</LinearLayout>

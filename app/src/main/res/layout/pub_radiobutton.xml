@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textSize="@dimen/pub_text_size" android:textColor="@color/text_color_deepgray_turn_white" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="false" android:button="@null" android:text="全天" android:lines="1" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

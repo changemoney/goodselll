@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_simple" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:visibility="gone" layout="@layout/fragment_talklist_empty" />
+        <ListView android:id="@id/all_talks" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_view_no_back" android:divider="@color/group_div_line_color" android:dividerHeight="1.0px" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/conversation_list_connection_status_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gmacs_connection_status_img" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="2.0dip" android:src="@drawable/gmacs_ic_disconnect" android:scaleType="centerInside" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/gray_9a9a9a" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/gmacs_connection_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:includeFontPadding="false" />
+</LinearLayout>

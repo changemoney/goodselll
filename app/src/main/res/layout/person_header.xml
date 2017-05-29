@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:circle="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.ui.BlurImageView android:id="@id/background_info" android:layout_width="fill_parent" android:layout_height="160.0dip" android:src="@drawable/bg_user_center_default" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/myinfo" android:background="@drawable/user_business_card" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="78.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="#ff161616" android:gravity="center" android:id="@id/contact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:text="赶集网友" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_auth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/contact" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/email_yan" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0dip" android:textColor="#fff19137" android:gravity="center" android:background="@drawable/list_tag_orange" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="邮箱认证" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/companyName_yan" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0dip" android:textColor="#fff19137" android:gravity="center" android:background="@drawable/list_tag_orange" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="企业认证" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/own_yan" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0dip" android:textColor="#fff19137" android:gravity="center" android:background="@drawable/list_tag_orange" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="实名认证" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/phone_yan" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0dip" android:textColor="#fff19137" android:gravity="center" android:background="@drawable/list_tag_orange" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="手机认证" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/ll_auth" android:layout_centerHorizontal="true">
+            <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:id="@id/register_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="43.0dip">
+        <com.ganji.android.ui.CircleBoardImageView android:layout_gravity="center" android:id="@id/ataver" android:layout_width="70.0dip" android:layout_height="70.0dip" circle:boardWidth="3.0dip" circle:boardColor="#b2ffffff" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dip" android:layout_marginRight="5.0dip">
+        <ImageView android:id="@id/biz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_business_tag_person" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/no_data_layout_tip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/myinfo">
+        <include layout="@layout/post_detail_footer" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/tablv" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/myinfo">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:background="@color/g_green" android:layout_width="2.0dip" android:layout_height="17.0dip" android:layout_marginLeft="15.0dip" />
+            <TextView android:textSize="17.0dip" android:textColor="#ff31be21" android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="发布记录" />
+            <TextView android:textSize="17.0dip" android:textColor="#ffb3b3b3" android:id="@id/tips_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+        </LinearLayout>
+        <View android:id="@id/divider" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/tips" />
+    </RelativeLayout>
+</RelativeLayout>

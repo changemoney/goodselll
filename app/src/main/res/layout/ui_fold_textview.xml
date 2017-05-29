@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_ftv_progress_bar_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/g_grey" android:id="@id/txt_ftv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="正在加载中..." />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/high_gray" android:id="@id/txt_ftv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lineSpacingExtra="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_ftv_see_more" android:background="@drawable/bg_item_bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <View android:id="@id/divider_ftv" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0dip" android:textColor="@color/g_grey" android:id="@id/txt_ftv_see_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多详情" />
+            <ImageView android:layout_width="9.339996dip" android:layout_height="5.3399963dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_arrow_down_normal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

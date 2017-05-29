@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_layout_more" android:background="@drawable/bg_detail_item" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/job_item_line" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0dip" android:textColor="#ff39bc30" android:id="@id/item_txt_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多职位" android:layout_centerInParent="true" />
+    <ImageView android:layout_width="8.0dip" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/arrow_right_green" android:layout_toRightOf="@id/item_txt_more" android:layout_centerVertical="true" />
+</RelativeLayout>

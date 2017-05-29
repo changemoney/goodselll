@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip">
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center|left" android:layout_gravity="left" android:id="@id/pub_label" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="工作时间" />
+        <TextView android:textSize="14.0dip" android:textColor="#fff85b58" android:id="@id/pub_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/pub_label" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_color_green_turn_green_pressed" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/all" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="全部" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pub_onclick_lable" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:id="@id/monday" android:layout_marginRight="10.0dip" android:text="周一" style="@style/pub_worktime_button_style" />
+            <TextView android:id="@id/tuesday" android:layout_marginRight="10.0dip" android:text="周二" style="@style/pub_worktime_button_style" />
+            <TextView android:id="@id/wednesday" android:layout_marginRight="10.0dip" android:text="周三" style="@style/pub_worktime_button_style" />
+            <TextView android:id="@id/thursday" android:layout_marginRight="10.0dip" android:text="周四" style="@style/pub_worktime_button_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+            <TextView android:id="@id/friday" android:layout_marginRight="10.0dip" android:text="周五" style="@style/pub_worktime_button_style" />
+            <TextView android:id="@id/saturday" android:layout_marginRight="10.0dip" android:text="周六" style="@style/pub_worktime_button_style" />
+            <TextView android:id="@id/sunday" android:layout_marginRight="10.0dip" android:text="周日" style="@style/pub_worktime_button_style" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

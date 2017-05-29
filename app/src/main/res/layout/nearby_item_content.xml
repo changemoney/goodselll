@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/nearby_item_content" android:layout_width="170.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/nearby_item_content_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/nearby_item_content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出租" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/nearby_item_content_title" android:layout_alignTop="@id/nearby_item_content_title" android:layout_alignBottom="@id/nearby_item_content_title">
+        <ImageView android:id="@id/nearby_item_content_icon" android:background="@drawable/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

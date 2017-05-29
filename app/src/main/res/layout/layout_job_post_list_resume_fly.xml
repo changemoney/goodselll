@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_job_box_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/bg_send_resume_back" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_job_box_invisible" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/bg_send_resume_back" />
+    <ImageView android:id="@id/img_job_resume_0" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_fly_resume" />
+    <ImageView android:id="@id/img_job_resume_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_fly_resume" />
+    <ImageView android:id="@id/img_job_resume_2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_fly_resume" />
+    <ImageView android:id="@id/img_job_resume_3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_fly_resume" />
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/layout_job_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_marginBottom="12.0dip">
+        <ImageView android:id="@id/img_job_box_front" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_send_resume_front" />
+        <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_job_resume_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+    </FrameLayout>
+</FrameLayout>

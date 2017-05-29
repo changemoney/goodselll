@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gj="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/arrow_back" />
+    </LinearLayout>
+    <TextView android:textSize="20.0dip" android:textColor="#ff404040" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="花8秒钟介绍一下自己" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="以帮你更快的认识TA" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ganji.android.ui.CircleImageView android:id="@id/register_avatar" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/icon_login_scamera" />
+        <com.ganji.android.ui.CircleImageView android:id="@id/register_intro" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="68.0dip" android:layout_marginTop="36.0dip" android:src="@drawable/icon_login_scamera" />
+    </RelativeLayout>
+    <EditText android:textSize="14.0sp" android:textColorHint="#ff808080" android:id="@id/change_nickname" android:background="@drawable/transparent" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="36.0dip" android:hint="填写昵称" android:singleLine="true" android:maxLength="20" android:imeOptions="actionDone" />
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" />
+    <TextView android:textSize="14.0sp" android:textColorHint="#ff808080" android:ellipsize="end" android:id="@id/factory_name" android:background="@drawable/transparent" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="36.0dip" android:hint="填写所在公司名称" android:singleLine="true" android:maxLength="23" android:imeOptions="actionDone" />
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" />
+    <RelativeLayout android:id="@id/birthday_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="36.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff808080" android:id="@id/register_birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择生日" />
+        <ImageView android:id="@id/choose_birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="36.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="36.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="36.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择性别" />
+        <com.ganji.android.ui.RoundedRectangleView android:id="@id/gender_man" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="18.0dip" android:layout_toLeftOf="@id/gender_divider" gj:text="男" gj:type="1" gj:textColor="#ffbfbfbf" gj:textSize="14.0dip" gj:backColor="#ffffffff" />
+        <View android:id="@id/gender_divider" android:background="#ffe5e5e5" android:layout_width="1.0px" android:layout_height="18.0dip" android:layout_marginRight="18.0dip" android:layout_toLeftOf="@id/gender_woman" />
+        <com.ganji.android.ui.RoundedRectangleView android:id="@id/gender_woman" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_alignParentRight="true" gj:text="女" gj:type="1" gj:textColor="#ffbfbfbf" gj:textSize="14.0dip" gj:backColor="#ffffffff" />
+    </RelativeLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="36.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="36.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffbfbfbf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="16.0dip" android:text="性别是交友的关键信息，请填写真实性别" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ganji.android.ui.RoundedRectangleView android:id="@id/next_step" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" gj:text="下一步" gj:type="1" gj:textColor="#ffffffff" />
+    </RelativeLayout>
+</LinearLayout>

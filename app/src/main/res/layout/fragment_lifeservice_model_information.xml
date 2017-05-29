@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mContentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/post_detail_scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="55.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/mServiceItemsContainer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/mDividerLine" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="vertical" android:id="@id/mItemZucheListContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff404040" android:id="@id/mServiceDescription" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="服务内容描述" />
+                <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include layout="@layout/item_lifeservice_post_detail_bottom" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mNoDataContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/lv_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/mTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="商家暂未提供该项服务~" />
+    </LinearLayout>
+</LinearLayout>

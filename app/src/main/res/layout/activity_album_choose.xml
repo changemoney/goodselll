@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <View android:background="@drawable/pub_header_gradient" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_above="@id/layout_select_view" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_select_view" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <android.support.v7.widget.RecyclerView android:id="@id/selectView" android:background="@color/white" android:paddingRight="60.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/g_item_height_medium" />
+        <Button android:textColor="@color/white" android:gravity="center" android:id="@id/ok_button" android:background="@drawable/g_green_btn2" android:layout_width="60.0dip" android:layout_height="60.0dip" android:text="确认" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.ganji.android.album.HeaderGridView android:scrollbarStyle="outsideOverlay" android:id="@id/myGrid" android:padding="@dimen/dimen_5dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_marginBottom="70.0dip" android:listSelector="@null" android:cacheColorHint="#00000000" android:horizontalSpacing="@dimen/dimen_5dp" android:numColumns="4" />
+</RelativeLayout>

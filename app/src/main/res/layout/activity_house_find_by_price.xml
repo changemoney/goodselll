@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/house_price_tittle" layout="@layout/titlebar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:visibility="gone" layout="@layout/default_loading_container" />
+        <ScrollView android:id="@id/house_find_by_price_all" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0dip" android:id="@id/city_name_house_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="北京" />
+                    <TextView android:textSize="16.0dip" android:id="@id/month_desc_house_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:text="二手房本月均价" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <TextView android:textSize="20.0dip" android:textColor="@color/g_orange" android:id="@id/house_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="25315" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/g_orange" android:id="@id/house_price_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元/㎡" />
+                    <TextView android:textSize="16.0dip" android:id="@id/up_down_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text=" ( 环比上月  " />
+                    <ImageView android:id="@id/up_down_icon" android:paddingTop="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/up_orange_arrow" />
+                    <TextView android:textSize="16.0dip" android:id="@id/up_down_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="2.0%" />
+                    <TextView android:textSize="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text=")" />
+                </LinearLayout>
+                <com.ganji.android.comp.html5.WebViewWrapper android:id="@id/house_price_trend" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textColor="#ff9c9c9c" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="区县月均价涨幅" />
+                    <View android:id="@id/divider_house_price" android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                    <com.ganji.android.house.ui.HousePriceLayout android:orientation="vertical" android:id="@id/quxian_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textColor="#ff9c9c9c" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="小区按均价分布" />
+                    <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                    <com.ganji.android.house.ui.HousePriceLayout android:orientation="vertical" android:id="@id/price_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

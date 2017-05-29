@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/pub_layout_perfect_resume_header" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="111.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.android.ui.CircleImageView android:id="@id/pub_img_perfect_resume_avatar" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/icon_job_avatar_default_normal" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="bottom|center" android:layout_gravity="center" android:id="@id/mProgressState" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" android:layout_alignBottom="@id/pub_img_perfect_resume_avatar" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/bg_titlebar_text_color" android:layout_gravity="center_horizontal" android:id="@id/pub_txt_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.5dip" android:text="点击修改头像" android:layout_below="@id/pub_img_perfect_resume_avatar" android:layout_centerHorizontal="true" />
+</RelativeLayout>

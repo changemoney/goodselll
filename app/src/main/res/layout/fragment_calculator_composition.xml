@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fragmentRootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="0.0dip">
+        <requestFocus />
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/paddingLeft" android:paddingTop="@dimen/paddingTop" android:paddingRight="@dimen/paddingRight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/way_payment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/ui_component_radiogroup" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/total_businiss_loan" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/ui_component_2label1inputbox" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/total_fund_loan" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/ui_component_2label1inputbox1" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/num_year_ratio" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ui_component_labelspinner" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/rate" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ui_component_3_radiogroup" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/g_item_height_small" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ui_component_publishpanel" />
+    </LinearLayout>
+</RelativeLayout>

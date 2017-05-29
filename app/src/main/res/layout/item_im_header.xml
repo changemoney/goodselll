@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="76.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_item_test_delete_before_publish" android:layout_width="fill_parent" android:layout_height="76.5dip" android:src="@drawable/img_im_test_and_delete_before_publish" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_item_test_delete_before_publish" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+</RelativeLayout>

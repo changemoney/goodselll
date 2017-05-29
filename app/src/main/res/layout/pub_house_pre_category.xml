@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:orientation="horizontal" android:id="@id/deal_type_group" android:background="@color/white" android:padding="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pub_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/radio_deal_rent" android:text="求租" style="@style/pub_house_deal_radio" />
+    <RadioButton android:id="@id/radio_deal_buy" android:layout_marginLeft="@dimen/dimen_15dp" android:text="求购" style="@style/pub_house_deal_radio" />
+</RadioGroup>

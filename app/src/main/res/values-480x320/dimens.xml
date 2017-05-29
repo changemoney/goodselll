@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="birthday_dialog_tv_textSize">16.0dip</dimen>
+    <dimen name="birthday_dialog_tv_width">18.0dip</dimen>
+    <dimen name="im_voice_margin_right_left">15.0dip</dimen>
+    <dimen name="im_voice_max_width">140.0dip</dimen>
+</resources>

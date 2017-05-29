@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_job_post_detail_content_part_1" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="#ff161616" android:gravity="center_horizontal" android:id="@id/job_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="24.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:id="@id/job_publish_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:id="@id/job_browse_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:textSize="17.0dip" android:textColor="#fffd7222" android:id="@id/job_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="招聘人数  " />
+            <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:id="@id/job_need_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学历要求  " />
+            <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:id="@id/job_degree" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="24.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="经验要求  " />
+            <TextView android:textSize="14.0dip" android:textColor="#ff161616" android:id="@id/job_work_years" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/job_address_layout" android:background="@drawable/bg_detail_item" android:paddingLeft="12.0dip" android:paddingTop="15.0dip" android:paddingRight="12.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dip" android:textColor="#ffb3b3b3" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工作地点" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/high_gray" android:gravity="center|left" android:id="@id/job_address_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/job_address_map_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="35.0dip" android:src="@drawable/icon_zp_map" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/job_address_map_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/arrow_right_map" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_layout_welfare" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="公司福利" />
+        <LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_layout_welfare_item" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+        <FrameLayout android:id="@id/job_post_detail_welfare_click" android:background="@drawable/bg_detail_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/job_post_welfare_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_common_zhankai" />
+        </FrameLayout>
+        <View android:id="@id/job_post_detail_welfare_place_holder" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <View android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_describe" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="职位描述" />
+        <LinearLayout android:orientation="vertical" android:id="@id/job_post_detail_describe_click" android:background="@drawable/bg_detail_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dip" android:textColor="#ff676767" android:id="@id/job_post_describe_limited" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="7" android:lineSpacingExtra="8.0dip" />
+                <TextView android:textSize="15.0dip" android:textColor="#ff676767" android:id="@id/job_post_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8.0dip" />
+            </FrameLayout>
+            <ImageView android:id="@id/job_post_describe_arrow" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/icon_common_zhankai" android:scaleType="center" />
+        </LinearLayout>
+        <View android:id="@id/job_post_detail_describe_place_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+    </LinearLayout>
+    <View android:id="@id/view_divider_job_post_detail_part_1_last_one" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

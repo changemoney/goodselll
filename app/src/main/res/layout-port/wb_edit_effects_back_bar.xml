@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/item_list1" android:paddingLeft="@dimen/common_effectsbar_paddingleft" android:layout_width="wrap_content" android:layout_height="@dimen/common_effectsbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.wbsupport.v7.widget.RecyclerView android:id="@id/bar_list" android:paddingTop="@dimen/common_effectsbar_paddingtop" android:paddingBottom="@dimen/common_effectsbar_paddingbottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:id="@id/item_return" android:background="@drawable/return_icon_pressed" android:layout_width="@dimen/item_return_size" android:layout_height="@dimen/item_return_size" android:layout_marginLeft="@dimen/item_return_marginLeft" android:layout_marginTop="@dimen/item_return_marginTop" android:layout_centerVertical="true" />
+</RelativeLayout>

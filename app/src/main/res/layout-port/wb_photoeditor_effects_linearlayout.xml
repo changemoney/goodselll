@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/second_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/second_bar_container_marginbottom" />
+    <LinearLayout android:gravity="center" android:id="@id/first_bar_container" android:background="@color/camera_bottom_wuba_bg" android:layout_width="fill_parent" android:layout_height="@dimen/first_bar_container_height" android:layout_below="@id/second_bar_container" />
+</RelativeLayout>

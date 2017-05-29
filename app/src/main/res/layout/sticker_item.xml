@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:focusable="true" android:layout_width="@dimen/filter_item_width" android:layout_height="@dimen/filter_item_height" android:layout_marginLeft="@dimen/filter_item_margin" android:layout_marginRight="@dimen/filter_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/sticker_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/sticker_icon_bg" android:background="@drawable/bg_sticker_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="right" android:id="@id/new_add" android:background="@drawable/new_add" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/filter_new_add_margintop" android:layout_marginRight="@dimen/filter_new_add_marginright" />
+    <ImageView android:layout_gravity="right" android:id="@id/new_sticker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

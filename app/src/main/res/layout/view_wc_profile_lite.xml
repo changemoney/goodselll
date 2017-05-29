@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_blur_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:background="@color/list_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ganji.im.view.CircleImageView2 android:id="@id/img_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/avatar_gongyouquan" android:layout_centerVertical="true" app:civ_border_width="0.5px" app:civ_border_color="@color/white" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Hi，小芳" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/img_avatar" android:layout_alignTop="@id/img_avatar" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/txt_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:maxLines="1" android:singleLine="true" android:layout_alignLeft="@id/txt_name" android:layout_alignBottom="@id/img_avatar" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/newMsgView" android:background="@drawable/bg_wc_new_msg_notice" android:visibility="gone" android:layout_width="125.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true">
+            <com.ganji.im.view.CircleImageView2 android:id="@id/imgNewMsgAvatar" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="2.5dip" android:src="@drawable/avatar_gongyouquan" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/txtNewMsgCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

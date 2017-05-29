@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/transparent" android:paddingTop="15.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/post_detail_xiaolv" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="没有更多了，继续上推可以看下一条哦～" />
+</LinearLayout>

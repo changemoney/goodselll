@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_list_logo_textview_icon" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ImageView01" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/text_color_black_turn_white" android:ellipsize="end" android:id="@id/textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12123" />
+                    <ImageView android:id="@id/newmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/personal_centre_new" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/text_color_gray_turn_white" android:ellipsize="end" android:id="@id/textViewDescribe" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:lines="1" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/ImageView02" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

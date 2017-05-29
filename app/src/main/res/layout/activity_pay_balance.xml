@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pay_balance_titlebar" layout="@layout/titlebar" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pay_balance_titlebar">
+        <TextView android:textSize="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="购买内容:  刷新置顶 " />
+        <TextView android:textSize="16.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="本次花费:" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip">
+            <TextView android:textSize="14.0dip" android:id="@id/tv_yuan_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22元/25点" />
+            <TextView android:textSize="14.0dip" android:gravity="right" android:id="@id/tv_each_yuan_point" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0.88元/点" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/orange_btn" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0dip" android:id="@id/tv_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="账户余额:  您的赶集账户可用余额70元" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应付金额：" />
+            <TextView android:textSize="16.0dip" android:id="@id/tv_pay_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="22元" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/order_content_panelbutton" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentBottom="true">
+        <include android:id="@id/order_content_ui_component_publishpanel" layout="@layout/ui_component_publishpanel" />
+    </LinearLayout>
+</RelativeLayout>

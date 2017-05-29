@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/aunt_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <com.ganji.android.lifeservice.ui.AuntHorizontalScrollView android:id="@id/item_post_detail_aunt_scroll_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/aunt_count">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item_post_detail_aunt_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.ganji.android.lifeservice.ui.AuntHorizontalScrollView>
+    </RelativeLayout>
+</LinearLayout>

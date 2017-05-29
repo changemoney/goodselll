@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/itemLifeInfoContainer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/g_widget_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/lvDivider0" android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_green" android:gravity="center_vertical" android:id="@id/columnNameText" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:text="生活服务" />
+    <View android:id="@id/lvDivider1" android:background="@color/g_green" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/columnNameText" />
+    <com.ganji.android.ui.GJCustomListView android:id="@id/listView" android:focusable="false" android:focusableInTouchMode="false" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/divider_line" android:dividerHeight="1.0px" android:layout_below="@id/lvDivider1" />
+</RelativeLayout>

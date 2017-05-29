@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.publish.ui.PubComboLayoutView android:id="@id/pub_job_combo" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="[请选择,请选择,请选择]" pub:key="[birthdate,findjob_degree,findjob_period]" pub:label="[出生年份,最高学历,工作年限]" pub:isRequires="[true,true,true]" pub:error="[请选择,请选择,请选择]" pub:showType="[wheel,listOne,listOne]" pub:isComboHeader="true" />
+    <View android:background="@drawable/pub_header_gradient" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_above="@id/job_pub_divider" />
+    <View android:id="@id/job_pub_divider" android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/pub_job_combo" />
+</RelativeLayout>

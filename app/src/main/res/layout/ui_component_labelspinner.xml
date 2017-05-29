@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/g_divider_group_bg_default" android:paddingLeft="@dimen/pub_label_padding" android:paddingTop="@dimen/pub_label_padding" android:paddingRight="@dimen/pub_label_padding" android:paddingBottom="@dimen/pub_label_padding1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+        <TextView android:id="@id/ui_component_text" style="@style/ui_component_LeftLabel_Text" />
+        <View style="@style/ui_item_vertical_divider_line" />
+        <com.ganji.android.ui.CustomSpinner android:gravity="center_vertical" android:id="@id/ui_component_spinner" android:layout_height="wrap_content" android:minHeight="48.0dip" style="@style/ui_component_RightLable_Text" />
+    </LinearLayout>
+    <TextView android:textColor="#ffff0000" android:id="@id/ui_component_error_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.5dip" android:text="  请选择一项！" />
+</LinearLayout>

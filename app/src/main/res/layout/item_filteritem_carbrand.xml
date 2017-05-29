@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:background="@drawable/image_frame" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/g_dark_grey" android:gravity="center" android:id="@id/brand" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="雪弗兰" />
+</LinearLayout>

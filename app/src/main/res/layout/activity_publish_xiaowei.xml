@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="latlng" pub:label="求职地点" pub:tip="请选择求职地点！" pub:onclick="pick_area_forxiaowei" pub:isRequired="true" />
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/pub_margin" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin" android:layout_marginBottom="@dimen/pub_margin">
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="2-6字，汉字或字母" pub:key="person" pub:label="姓        名" pub:checkString="6#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,6}$)" pub:tip="汉字或字母，长度2-6个！" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="findjob_sex" pub:label="性        别" pub:tip="必须选择一项！" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubWheelView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择出生日期" pub:key="birthdate_year_month" pub:label="出生年月" pub:tip="请选择出生日期！" pub:firstdata="年,1952,1999,false,37" pub:seconddata="月,1,12,true,2" pub:isRequired="true" />
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin" android:layout_marginBottom="@dimen/pub_margin">
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.ganji.android.publish.ui.PubCheckBoxAndSpinner android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="category_id%%%findjob_url" pub:label="职位类型%%%求职意向" pub:tip="必须选择一项！" pub:isRequired="true" />
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/pub_margin" />
+    <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写正确的手机号" pub:key="phone" pub:label="手  机  号" pub:checkString="11#@#@#3#@#@#^1[34578]\\d{9}$" pub:tip="输入的手机号码有误！" pub:isRequired="true" />
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/pub_margin" />
+</LinearLayout>

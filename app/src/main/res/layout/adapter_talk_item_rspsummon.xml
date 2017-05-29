@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/summon_card_apply" android:padding="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/summon_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="响应群主召唤，上线了！" />
+</LinearLayout>

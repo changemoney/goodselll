@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/feed_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_topic" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/feed_image" android:layout_alignRight="@id/feed_image" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/b_b_text" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:maxLines="2" />
+            <TextView android:textSize="@dimen/s_text" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tv_feed_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="13.0dip" android:maxLines="2" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/bottle_view_top_layer_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignLeft="@id/feed_image" android:layout_alignTop="@id/feed_image" android:layout_alignRight="@id/feed_image" android:layout_alignBottom="@id/feed_image" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/black_gray" android:gravity="center_horizontal" android:id="@id/tv_mini_message" android:background="@drawable/item_circle_gray_bg" android:paddingLeft="12.0dip" android:paddingTop="3.0dip" android:paddingRight="12.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_below="@id/feed_image" android:layout_centerHorizontal="true" />
+        <include layout="@layout/im_send_down_progress" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/left_failed_down" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_failed_send" android:scaleType="centerCrop" />
+</LinearLayout>

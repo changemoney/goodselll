@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/list_item_divider_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/pub_layout_perfect_resume_degree" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写" pub:key="school" pub:label="学校名称" pub:checkString="20#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,20}$)" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="2-20个汉字" pub:focusHint="2-20个汉字" pub:moreError="最多20个字" pub:lessError="最少2个字" />
+            <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+            <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写" pub:key="specialty" pub:label="专业名称" pub:checkString="20#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,20}$)" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="2-20个汉字" pub:focusHint="2-20个汉字" pub:moreError="最多20个字" pub:lessError="最少2个字" />
+            <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+            <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择" pub:key="edu_to_date" pub:label="毕业时间" pub:isRequired="true" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/pub_txt_perfect_resume_edit_click_save" android:background="@drawable/bg_post_detail_footer_green" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="保存" />
+    </LinearLayout>
+</ScrollView>

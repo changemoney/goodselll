@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:layout_marginBottom="11.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/investment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:id="@id/investment_text" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_below="@id/investment_icon">
+        <TextView android:textSize="12.0dip" android:textColor="#ff262626" android:gravity="center" android:layout_gravity="center" android:id="@id/item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="招商加盟" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="@drawable/bg_yunying" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/investment_icon" android:layout_alignTop="@id/investment_icon" android:layout_alignRight="@id/investment_icon" android:layout_alignBottom="@id/investment_text" />
+</RelativeLayout>

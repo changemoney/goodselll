@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mTabItem" android:layout_width="100.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_color_high_gray_turn_green" android:gravity="center" android:id="@id/mTabItemText" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="ss" />
+    <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

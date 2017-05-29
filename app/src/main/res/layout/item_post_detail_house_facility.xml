@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_post_detail_house_facility" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" />
+        <TableLayout android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*">
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="床" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_chuang_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="床tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 床" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="沙发" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_jiaju_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="沙发tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 沙发" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="衣柜" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_yigui_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="衣柜tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 衣柜" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="冰箱" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_bingxiang_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="冰箱tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 冰箱" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="电视" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_dianshiji_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="电视tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 电视" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="宽带网" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_kuandai_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="宽带网tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 宽带" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="空调" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_kongtiao_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="空调tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 空调" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="暖气" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_nuanqi_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="暖气tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 暖气" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="热水器" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_reshuiqi_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="热水器tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 热水器" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="洗衣机" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_xiyiji_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="洗衣机tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 洗衣机" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="微波炉" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_weibolu_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="微波炉tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 微波炉" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="可做饭" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_kezuofan_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="可做饭tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 可做饭" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="阳台" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_yangtai_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="阳台tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 阳台" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="独立卫生间" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_weishengjian_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:tag="独立卫生间tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 独卫" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_jiaju_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 沙发" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_bingxiang_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 冰箱" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_dianshiji_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 电视" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_fc_kuandai_selector" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_turn_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text=" 宽带" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        <View android:id="@id/post_detail_house_facility_line_bottom" android:background="@color/divider_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</LinearLayout>

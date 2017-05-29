@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/g_divider_group_bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ui_component_lable_padding">
+            <TextView android:id="@id/ui_component_text11" style="@style/ui_component_LeftLabel_Text" />
+            <View style="@style/ui_item_vertical_divider_line" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ui_component_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="4.0dip">
+                <EditText android:id="@id/ui_component_input1" android:background="@null" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" style="@style/ui_component_2Label1Inputbox_Input" />
+                <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/ui_component_text12" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="11.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ffff0000" android:id="@id/ui_component_error_text1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.5dip" android:text="  请选择一项！" />
+</LinearLayout>

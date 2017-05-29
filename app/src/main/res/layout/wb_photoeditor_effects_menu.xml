@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@color/ganji_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:layout_gravity="center" android:scrollbars="none" android:fadingEdgeLength="@dimen/fadingEdgeLength" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hapticFeedbackEnabled="false" android:requiresFadingEdge="none">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/toggles" android:layout_width="fill_parent" android:layout_height="@dimen/toogles_layout_height" />
+    </HorizontalScrollView>
+</LinearLayout>

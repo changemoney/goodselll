@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_root" android:background="@drawable/bg_self_refresh_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_pub_self_refresh_title_selector" android:layout_gravity="center" android:id="@id/tv_label_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="置顶" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_pub_self_refresh_intro_selector" android:layout_gravity="center" android:id="@id/tv_intro" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="第一优先展示" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/iv_discount" android:background="@drawable/ic_discount" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

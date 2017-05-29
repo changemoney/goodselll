@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/feed_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_photo_img" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/b_text" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@id/topic_desc_text" android:background="@color/transparent" android:paddingLeft="18.0dip" android:paddingTop="11.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="注意要开始贴秋膘了" android:maxLines="1" android:lineSpacingExtra="4.0dip" />
+        <TextView android:textSize="@dimen/m_text" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@id/topic_text" android:background="@color/transparent" android:paddingLeft="18.0dip" android:paddingTop="11.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="\#晒晒你正在吃什么#" android:maxLines="1" android:lineSpacingExtra="4.0dip" />
+    </LinearLayout>
+</RelativeLayout>

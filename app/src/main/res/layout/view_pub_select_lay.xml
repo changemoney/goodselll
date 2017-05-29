@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/black_333333" android:id="@id/view_pub_select_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:text="选择性别" />
+        <ImageView android:id="@id/pub_error" android:paddingLeft="@dimen/dimen_5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pub_error" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <RadioGroup android:gravity="center|right" android:orientation="horizontal" android:id="@id/view_pub_select_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:minHeight="50.0dip" />
+</LinearLayout>

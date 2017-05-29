@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/jobs_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/text_color_black_turn_white" android:ellipsize="end" android:layout_gravity="center" android:id="@id/item_title_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="急找礼品大客户经理最好有资源测试一下" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/item_ding_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/jobs_icon_ding" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/text_color_gray_turn_white" android:id="@id/item_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="黄先生" android:lines="1" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/text_color_gray_turn_white" android:ellipsize="end" android:id="@id/item_sex_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="男" android:singleLine="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/text_color_gray_turn_white" android:ellipsize="end" android:id="@id/item_age_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="30岁" android:singleLine="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/text_color_gray_turn_white" android:ellipsize="end" android:id="@id/item_work_years_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="5年" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/text_color_orange_turn_white" android:id="@id/item_wage_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="面议" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/text_color_gray_turn_white" android:id="@id/item_date_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12-24" android:lines="1" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/text_color_gray_turn_white" android:ellipsize="end" android:id="@id/item_area_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="海淀" android:lines="1" />
+                </LinearLayout>
+                <ImageView android:id="@id/image_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/image_logo" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/detele_image_view" android:background="@drawable/btn_close_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

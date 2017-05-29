@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/camera_app_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundProgress="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/wb_preview_module_frame_23" />
+    <FrameLayout android:layout_gravity="center" style="@style/CameraControls">
+        <View android:layout_gravity="bottom" android:id="@id/blocker" android:background="@drawable/switcher_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/switcher_size" />
+    </FrameLayout>
+    <com.wuba.camera.BottomBarWrap android:id="@id/progress_bar_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.wuba.camera.ui.RoundProgressBar android:id="@id/touch_tip" android:background="@drawable/cycle_progress_bar_bg" android:visibility="gone" android:layout_width="@dimen/progressbar_width" android:layout_height="@dimen/progressbar_height" roundProgress:max="100" roundProgress:fill="false" roundProgress:Paint_Width="100" roundProgress:Paint_Color="@color/progress_bar_paint_color" roundProgress:Show_Bottom="false" roundProgress:Inside_Interval="12" />
+    </com.wuba.camera.BottomBarWrap>
+</FrameLayout>

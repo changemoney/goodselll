@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/titlebar" />
+    <ScrollView android:id="@id/ret_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ret_scrollview_container" android:paddingLeft="@dimen/paddingLeft" android:paddingTop="@dimen/paddingTop" android:paddingRight="@dimen/paddingRight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/auto_get_focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip">
+                <requestFocus />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_way_payment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_total_price" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_first_payment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_total_loan" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_rate_businiss_loan" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_rate_fund_loan" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_total_payment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_interest_payment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_months_loan" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_payment_a_month" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_payment_first_a_month" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ret_payment_last_a_month" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/calculator_result_item" />
+            </LinearLayout>
+            <LinearLayout android:padding="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/paddingLeft" android:layout_marginTop="@dimen/g_widget_margin" android:layout_marginRight="@dimen/paddingRight" android:layout_marginBottom="@dimen/g_widget_margin">
+                <TextView android:textSize="16.0sp" android:textColor="@color/g_light_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="以上结果仅供参考" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/FilterHistoryResultsLinearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/medium_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/noFilterHistoryNotice" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="您还没有筛选记录" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/item_listview" />
+</LinearLayout>

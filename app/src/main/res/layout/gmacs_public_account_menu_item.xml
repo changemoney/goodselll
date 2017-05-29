@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider_public_account_menu_item" android:background="@color/gray_bfbfbf" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <FrameLayout android:background="@drawable/gmacs_public_account_menu_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:theme="@android:style/Theme.Light" android:id="@id/btn_public_account_menu_item" android:background="@drawable/gmacs_public_account_menu_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/spinner_public_account_menu_item" android:background="@drawable/gmacs_spinner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

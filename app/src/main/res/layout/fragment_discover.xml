@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ganji.im.widget.PullDownScrollParentView android:orientation="vertical" android:id="@id/mPullDownScrollGrandParentView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.im.view.DiscoverScrollview android:id="@id/mPullDownScrollParentView" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/hasDataLlyt" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0dip" android:textColor="#ffb3b3b3" android:gravity="center_vertical" android:id="@id/searchTv" android:background="@drawable/bg_inputbox" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" android:text="搜索你感兴趣的厂圈" android:drawableLeft="@drawable/ic_search" android:drawablePadding="2.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/hotTopicLlyt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="@dimen/dimen_10dp">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热门话题" />
+                    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/text_look_more" android:layout_gravity="right" android:id="@id/moreHotTopicTv" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" android:drawableRight="@drawable/ic_right_arrow_discover" android:drawablePadding="@dimen/dimen_5dp" />
+                </LinearLayout>
+                <com.ganji.im.view.HotTalkRecyclerView android:id="@id/recyclerView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="143.0dip" android:overScrollMode="never" />
+                <View android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/view_recommend_company_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/folksTalkLlyt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="老乡说" />
+                    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/text_look_more" android:id="@id/moreFolksTalkTv" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" android:drawableRight="@drawable/ic_right_arrow_discover" android:drawablePadding="@dimen/dimen_5dp" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:divider="@drawable/divider_folks_talk_llyt" android:showDividers="middle">
+                    <com.ganji.im.community.view.SquareImageView android:id="@id/squareIvOne" android:padding="1.0px" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                    <com.ganji.im.community.view.SquareImageView android:id="@id/squareIvTwo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                    <com.ganji.im.community.view.SquareImageView android:id="@id/squareIvThree" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                    <com.ganji.im.community.view.SquareImageView android:id="@id/squareIvFour" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.ganji.im.view.DiscoverScrollview>
+</com.ganji.im.widget.PullDownScrollParentView>

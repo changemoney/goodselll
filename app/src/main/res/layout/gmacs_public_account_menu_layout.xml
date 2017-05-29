@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.gmacs.view.PublicAccountMenu android:orientation="horizontal" android:id="@id/public_account_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/gray_f7f7f7" android:layout_width="fill_parent" android:layout_height="53.25dip">
+        <View android:id="@id/line_top" android:background="@color/gray_a5a5a5" android:layout_alignParentTop="true" style="@style/DottedLine" />
+        <ImageView android:id="@id/iv_public_account_keyboard_up" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/gmacs_ic_public_account_keyboard_up" android:layout_below="@id/line_top" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_public_account_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_public_account_keyboard_up" android:layout_below="@id/line_top" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</com.android.gmacs.view.PublicAccountMenu>

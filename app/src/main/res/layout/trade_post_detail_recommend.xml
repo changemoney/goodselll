@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:gravity="center" android:id="@id/post_detail_recommend_title" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="同车型推荐" />
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/recommend_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/trade_post_detail_more_filter" android:background="@drawable/bg_down_view" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:id="@id/trade_post_detail_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" />
+        <ImageView android:layout_width="8.0dip" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/arrow_right_green" />
+    </LinearLayout>
+</LinearLayout>

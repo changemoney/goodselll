@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/pub_layout_avatar" android:layout_width="fill_parent" android:layout_height="111.5dip">
+                <com.ganji.android.publish.ui.PubAvatarView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/pub_avatar" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="avatar" pub:isRequired="false" />
+            </LinearLayout>
+            <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="15.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/bg_titlebar_center_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基本信息" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/pub_btn_perfect_resume_basic_info_edit" android:layout_width="47.0dip" android:layout_height="fill_parent" android:src="@drawable/icon_job_perfect_resume_edit" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="6.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/bg_titlebar_text_color" android:layout_gravity="center_vertical" android:id="@id/pub_txt_perfect_resume_basic_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/pub_img_perfect_resume_basic_info_name_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_perfect_resume_basic_info_line" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/bg_titlebar_text_color" android:layout_gravity="center_vertical" android:id="@id/pub_txt_perfect_resume_basic_info_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/pub_img_perfect_resume_basic_info_sex_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_perfect_resume_basic_info_line" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/bg_titlebar_text_color" android:layout_gravity="center_vertical" android:id="@id/pub_txt_perfect_resume_basic_info_age" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/pub_img_perfect_resume_basic_info_name_age_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_perfect_resume_basic_info_line" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/bg_titlebar_text_color" android:layout_gravity="center_vertical" android:id="@id/pub_txt_perfect_resume_basic_info_degree" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/pub_img_perfect_resume_basic_info_name_degree_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_perfect_resume_basic_info_line" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/bg_titlebar_text_color" android:layout_gravity="center_vertical" android:id="@id/pub_txt_perfect_resume_basic_info_year" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="11.5dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/bg_titlebar_text_color" android:layout_gravity="center_vertical" android:id="@id/pub_txt_perfect_resume_basic_info_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/pub_img_perfect_resume_basic_info_name_phone_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_perfect_resume_basic_info_line" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/bg_titlebar_text_color" android:layout_gravity="center_vertical" android:id="@id/pub_txt_perfect_resume_basic_info_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="6.0dip" />
+            </LinearLayout>
+            <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/bg_titlebar_center_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工作经验" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/text_color_green_turn_green_pressed" android:gravity="center" android:id="@id/pub_btn_perfect_resume_experience_add" android:background="@drawable/bg_corner_green_turn_dark_green" android:layout_width="60.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_job_perfect_resume_edit" android:text="添加" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/pub_layout_perfect_resume_experience" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/bg_titlebar_center_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="教育经历" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/text_color_green_turn_green_pressed" android:gravity="center" android:id="@id/pub_btn_perfect_resume_degree_add" android:background="@drawable/bg_corner_green_turn_dark_green" android:layout_width="60.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_job_perfect_resume_edit" android:text="添加" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/pub_layout_perfect_resume_degree" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="15.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/bg_titlebar_center_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的亮点" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/pub_btn_perfect_resume_advantage_edit" android:layout_width="47.0dip" android:layout_height="fill_parent" android:src="@drawable/icon_job_perfect_resume_edit" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/pub_layout_perfect_resume_advantage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                    <TextView android:id="@id/pub_txt_item_advantage0" style="@style/pub_perfect_resume_advantage_style_main" />
+                    <TextView android:id="@id/pub_txt_item_advantage1" style="@style/pub_perfect_resume_advantage_style_main" />
+                    <TextView android:id="@id/pub_txt_item_advantage2" style="@style/pub_perfect_resume_advantage_style_main" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                    <TextView android:id="@id/pub_txt_item_advantage3" style="@style/pub_perfect_resume_advantage_style_main" />
+                    <TextView android:id="@id/pub_txt_item_advantage4" style="@style/pub_perfect_resume_advantage_style_main" />
+                    <TextView android:id="@id/pub_txt_item_advantage5_holder_place" android:visibility="invisible" style="@style/pub_perfect_resume_advantage_style_main" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="15.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/bg_titlebar_center_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自我介绍" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/pub_btn_perfect_resume_introduce_self_edit" android:layout_width="47.0dip" android:layout_height="fill_parent" android:src="@drawable/icon_job_perfect_resume_edit" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView android:ellipsize="end" android:id="@id/pub_txt_perfect_resume_introduce_self" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="11.5dip" android:maxLines="6" android:lineSpacingExtra="5.0dip" />
+            <View android:background="@color/divider_line_light" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="15.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/bg_titlebar_center_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="求职意向" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/pub_btn_perfect_resume_need_job_add" android:layout_width="47.0dip" android:layout_height="fill_parent" android:src="@drawable/icon_job_perfect_resume_edit" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/bg_titlebar_text_color" android:id="@id/pub_txt_perfect_resume_need_job" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="11.5dip" android:text="销售经理\n北京朝阳区\n5000-8000" android:lineSpacingExtra="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/pub_txt_perfect_resume_edit_click_save" android:background="@drawable/bg_post_detail_footer_green" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="35.5dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="保存简历信息" />
+    </LinearLayout>
+</ScrollView>

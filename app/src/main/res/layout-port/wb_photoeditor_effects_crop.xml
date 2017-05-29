@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/photoeditor_effects_crop" style="@style/effects_detail_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/photoeditor_crop_action_free" android:layout_marginLeft="@dimen/photoeditor_crop_action_free_margin" style="@style/bar_action1">
+        <ImageView android:src="@drawable/photoedit_detail_crop_freeform" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crop_free_transform" style="@style/wb_camera_style_micro_white" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/photoeditor_crop_action_11" style="@style/bar_action1">
+        <ImageView android:src="@drawable/photoedit_detail_crop_square" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crop_square" style="@style/wb_camera_style_micro_white" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/photoeditor_crop_action_9_16" style="@style/bar_action1">
+        <ImageView android:src="@drawable/photoedit_detail_crop_9_16" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crop_9_16" style="@style/wb_camera_style_micro_white" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/photoeditor_crop_action_16_9" style="@style/bar_action1">
+        <ImageView android:src="@drawable/photoedit_detail_crop_16_9" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crop_16_9" style="@style/wb_camera_style_micro_white" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/photoeditor_crop_action_3_4" style="@style/bar_action1">
+        <ImageView android:src="@drawable/photoedit_detail_crop_3_4" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crop_3_4" style="@style/wb_camera_style_micro_white" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/photoeditor_crop_action_4_3" android:layout_marginRight="@dimen/photoeditor_crop_action_free_margin" style="@style/bar_action1">
+        <ImageView android:src="@drawable/photoedit_detail_crop_4_3" style="@style/effects_image" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crop_4_3" style="@style/wb_camera_style_micro_white" />
+    </LinearLayout>
+</LinearLayout>

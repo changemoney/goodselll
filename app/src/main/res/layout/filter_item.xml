@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:layout_width="@dimen/filter_item_width" android:layout_height="@dimen/filter_item_height" android:layout_marginLeft="@dimen/filter_item_margin" android:layout_marginRight="@dimen/filter_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/filter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    <RelativeLayout android:id="@id/filter_icon_bg" android:background="@drawable/bg_filter_item" android:layout_width="fill_parent" android:layout_height="@dimen/filter_icon_bg_height" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_none" android:layout_centerInParent="true" style="@style/filter_item_text" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/new_add" android:background="@drawable/new_add" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/filter_new_add_margintop" android:layout_marginRight="@dimen/filter_new_add_marginright" />
+    <ImageView android:layout_gravity="right" android:id="@id/new_filter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

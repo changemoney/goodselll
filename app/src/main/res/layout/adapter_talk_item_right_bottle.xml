@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bottle_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_photo_img" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/m_text" android:textColor="@color/black_gray" android:ellipsize="end" android:gravity="left" android:id="@id/bottle_text" android:background="@color/white" android:paddingLeft="18.0dip" android:paddingTop="11.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:layout_below="@id/bottle_image" android:lineSpacingExtra="4.0dip" />
+    <TextView android:textSize="@dimen/s_s_text" android:textColor="@color/white" android:gravity="center" android:id="@id/bottle_tag" android:background="@drawable/bg_bottle_view_tag_right" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="漂流瓶" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:background="@drawable/bottle_view_top_layer_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/bottle_image" android:layout_alignBottom="@id/bottle_text" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/life_item_layout" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/label_layout" android:paddingLeft="@dimen/g_widget_margin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_dark_grey" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/cate_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="生活服务" android:singleLine="true" />
+        <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/g_grey" android:ellipsize="end" android:id="@id/first_name" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="八维" android:singleLine="true" android:layout_below="@id/cate_name" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/opt_layout" android:layout_width="wrap_content" android:layout_height="67.0dip">
+        <ImageView android:gravity="center" android:id="@id/call_img" android:background="@drawable/btn_circle_bg" android:focusable="true" android:clickable="true" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/g_green" android:gravity="center" android:id="@id/more_btn" android:background="@drawable/btn_lv_left_round_bg" android:paddingLeft="6.0dip" android:focusable="true" android:clickable="true" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:text="全部商家" android:drawableRight="@drawable/arrow_right_green" android:layout_toRightOf="@id/call_img" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

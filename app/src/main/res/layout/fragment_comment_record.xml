@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ganji.android.ui.GJCustomListView android:id="@id/commentRecordListView" android:focusable="false" android:focusableInTouchMode="false" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/gray" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/noDataTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="没有评价记录" />
+</LinearLayout>

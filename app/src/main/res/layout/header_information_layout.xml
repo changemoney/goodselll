@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/self_info_area" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/group_div_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:minHeight="50.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人资料" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center" android:id="@id/ll_personal_info_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/material_percent" android:background="@drawable/homepage_his_info_yellow" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="18.0dip" android:text="完整度" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/icon_personal_jiantou" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/his_info_area" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ta的资料" android:layout_alignParentLeft="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textSize="12.0dip" android:textColor="#ffbfbfbf" android:layout_gravity="center_vertical" android:id="@id/userinfo_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+                    <View android:layout_gravity="center_vertical" android:id="@id/line" android:background="@color/gray3_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_margin="3.0dip" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ffbfbfbf" android:layout_gravity="center_vertical" android:id="@id/userinfo_active_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.ganji.im.view.TagFlowLayout android:id="@id/his_tags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:paddingTop="18.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:id="@id/tv_feed_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人动态" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffff7200" android:id="@id/feed_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(0)" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rl_add_feed" android:background="#ffd8d8d8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_submit_feed" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_personal_photo" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:paddingTop="8.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发张新动态吧" android:layout_below="@id/iv_submit_feed" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_create_first_feed" android:paddingTop="56.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_create_first_feed_btn" android:background="@drawable/btn_green_fillet" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="102.0dip" android:minHeight="44.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/icon_personal_fabu" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布新动态" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="发条动态，让更多人关注你" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_his_no_feed" android:paddingTop="64.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/emotions_shy" android:minWidth="140.0dip" android:minHeight="140.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:id="@id/tv_his_no_feed" android:paddingTop="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" />
+    </LinearLayout>
+</LinearLayout>

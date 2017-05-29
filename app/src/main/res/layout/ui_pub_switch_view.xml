@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:id="@id/regionid" android:layout_width="50.0dip" android:layout_height="25.0dip" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/openid" android:layout_width="50.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_switch_on" />
+    <ImageView android:id="@id/closeid" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_switch_off" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <ListView android:id="@id/lv_other_recommend_post" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_divider" android:layout_below="@id/titlebar" />
+    <View android:id="@id/view_divider" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/layout_other_recommend_bottom" />
+    <LinearLayout android:id="@id/layout_other_recommend_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="2.0" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/job_post_detail_other_recommend_select_all" android:background="@drawable/bg_item_center" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/job_post_detail_other_recommend_img_check" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/icon_job_detail_checkbox" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全选" />
+            </LinearLayout>
+            <View android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="14.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/job_post_detail_other_recommend_send_all_resume_layout" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/job_post_detail_other_recommend_send_all_resume_txt" android:background="@drawable/bg_post_detail_send_resume" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="一键投递" android:layout_centerVertical="true" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

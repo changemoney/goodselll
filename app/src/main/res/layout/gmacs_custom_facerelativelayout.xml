@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.gmacs.view.emoji.FaceRelativeLayout android:id="@id/FaceRelativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line_top" android:background="@color/gray_a5a5a5" style="@style/DottedLine" />
+    <RelativeLayout android:id="@id/face_layout" android:background="#fff6f5f5" android:layout_width="fill_parent" android:layout_height="169.0dip" android:layout_below="@id/line_top" />
+    <View android:id="@id/line" android:layout_below="@id/face_layout" style="@style/DottedLine" />
+    <HorizontalScrollView android:id="@id/face_indicator" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/line">
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/scroll_bar" android:layout_width="wrap_content" android:layout_height="40.0dip" />
+    </HorizontalScrollView>
+</com.android.gmacs.view.emoji.FaceRelativeLayout>

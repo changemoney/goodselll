@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/mini_margin_10" android:fillViewport="true" android:layout_weight="1.0" android:isScrollContainer="true">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/title_layout" android:background="@drawable/zf_back" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lazyman_img_publish_guide" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0dip" android:textColor="#ff1e374c" android:id="@id/lazyman_guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专业的房屋出售专家" />
+                        <TextView android:textSize="14.0dip" android:textColor="#ff1e374c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快速卖房 一站搞定 交易安全放心" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:gravity="center" android:layout_width="85.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="所在区域" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:gravity="center|left" android:id="@id/consignation_publish_tv_area" android:paddingLeft="13.0dip" android:paddingRight="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="选择所在区域" android:drawableRight="@drawable/list_icon_retune" />
+                    <View android:id="@id/consignation_publish_v_area_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="1.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:gravity="center" android:layout_width="85.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="小区名称" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/consignation_publish_et_xiaoqu" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/paddingLeft5" android:hint="输入小区名称" android:maxLength="20" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/pub_disable_gray" android:gravity="center_vertical" android:id="@id/consignation_publish_tv_fast_select" android:paddingLeft="@dimen/paddingLeft5" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/pub_label_padding" android:layout_marginBottom="@dimen/pub_label_padding" android:text="快速选择" />
+                    </LinearLayout>
+                    <View android:id="@id/consignation_publish_v_xiaoqu_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="1.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:gravity="center" android:layout_width="85.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="户        型" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:gravity="center|left" android:id="@id/consignation_publish_tv_huxing" android:paddingLeft="13.0dip" android:paddingRight="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="选择户型" android:drawableRight="@drawable/list_icon_retune" />
+                    <View android:id="@id/consignation_publish_v_huxing_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:gravity="center" android:layout_width="85.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="面        积" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:padding="@dimen/pub_label_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/consignation_publish_et_area_size" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/paddingLeft5" android:hint="输入数字" android:singleLine="false" android:maxLength="6" android:layout_weight="1.0" android:inputType="number" />
+                        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="11.0dip" android:text="㎡" />
+                    </LinearLayout>
+                    <View android:id="@id/consignation_publish_v_area_size_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="1.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:gravity="center" android:layout_width="85.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="期望售价" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:padding="@dimen/pub_label_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/consignation_publish_et_price" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/paddingLeft5" android:hint="输入数字" android:singleLine="false" android:maxLength="6" android:layout_weight="1.0" android:inputType="number" />
+                        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="11.0dip" android:text="万元" />
+                    </LinearLayout>
+                    <View android:id="@id/consignation_publish_v_price_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/consignation_publish_ll_phone" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="1.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:gravity="center" android:layout_width="85.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="联系方式" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/consignation_publish_et_phone" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/paddingLeft5" android:minHeight="@dimen/leftTextheight" android:hint="请输入手机号" android:singleLine="false" android:maxLength="11" android:layout_toLeftOf="@id/consignation_publish_ll_get_identifying_code" android:inputType="phone" />
+                    <LinearLayout android:gravity="center" android:id="@id/consignation_publish_ll_get_identifying_code" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:minHeight="@dimen/leftTextheight" android:layout_alignParentRight="true">
+                        <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/g_green" android:gravity="center" android:id="@id/consignation_publish_tv_get_identifying_code" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingRight="5.0dip" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取验证码" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/consignation_publish_ll_authorized" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:minHeight="@dimen/leftTextheight" android:layout_alignParentRight="true">
+                        <LinearLayout android:orientation="horizontal" android:background="@drawable/g_green_btn2" android:layout_width="wrap_content" android:layout_height="20.0dip">
+                            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/mobilephone_icon" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="已认证" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:id="@id/consignation_publish_v_phone_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignRight="@id/consignation_publish_et_phone" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/consignation_publish_ll_identifying_code" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:gravity="center" android:layout_width="85.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="验  证  码" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/consignation_publish_et_identifying_code" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/paddingLeft5" android:minHeight="@dimen/leftTextheight" android:hint="输入验证码" android:singleLine="false" android:maxLength="6" android:inputType="phone" />
+                        <View android:id="@id/consignation_publish_v_identifying_code_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input1" android:layout_alignBottom="@id/pub_input1" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View style="@style/line_h" />
+    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/b_text" android:textColor="@color/white" android:id="@id/consignation_publish_btn_send" android:background="@drawable/btn_round_green" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="发送给经纪人" />
+    </FrameLayout>
+</LinearLayout>

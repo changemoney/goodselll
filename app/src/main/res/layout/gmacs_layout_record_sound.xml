@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:padding="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/recording" android:background="@drawable/gmacs_bg_record_sound" android:padding="25.0dip" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="88.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/recordImg" android:background="@drawable/gmacs_anim_recording_sound" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAlignBottom="true" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/failed_record_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gmacs_ic_record_failed_hint" android:baselineAlignBottom="true" />
+            <TextView android:textSize="60.0dip" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/record_countdown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAlignBottom="true" android:text="9" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/record_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/record_slide_up_to_cancel" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/cancel_record" android:background="@drawable/gmacs_bg_record_sound" android:padding="25.0dip" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="88.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gmacs_ic_record_cancel" android:baselineAlignBottom="true" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/record_release_to_cancel" />
+    </LinearLayout>
+</FrameLayout>

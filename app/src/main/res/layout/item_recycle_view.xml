@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_im_scv" android:background="@color/white" android:paddingLeft="@dimen/dimen_10dp" android:paddingTop="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_15dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="95.0dip" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/wc_prompt_container2" />
+</LinearLayout>

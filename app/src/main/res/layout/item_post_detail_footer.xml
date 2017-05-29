@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_post_detail_footer" android:background="@drawable/divider_at_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/detail_footer_person_layout" android:background="@drawable/bg_deep_gray" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="54.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:id="@id/detail_footer_person" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/g_light_grey" android:ellipsize="end" android:gravity="left" android:id="@id/detail_footer_phone_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/detail_footer_credit_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <RatingBar android:id="@id/detail_footer_credit_rating_bar" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="10.0dip" android:progressDrawable="@drawable/credit_star_rating_bar" android:minHeight="10.0dip" android:numStars="5" android:rating="0.0" android:isIndicator="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/g_light_grey" android:ellipsize="end" android:id="@id/detail_footer_credit_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="0人评价" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:id="@id/detail_footer_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/arrow_right_medium_normal" />
+        </LinearLayout>
+        <ImageView android:id="@id/detail_footer_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/arrow_right_medium_normal" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/detail_footer_im_layout" android:background="@drawable/g_light_green_btn" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/detail_footer_im_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_im_offline" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/g_green" android:id="@id/detail_footer_im_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="留言" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/detail_footer_call" android:background="@drawable/g_green_btn2" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/detail_footer_call_img" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_phone_detail" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/phone_text_color" android:id="@id/detail_footer_call_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话" />
+    </LinearLayout>
+</LinearLayout>

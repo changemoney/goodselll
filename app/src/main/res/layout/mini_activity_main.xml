@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/mini_root" android:padding="0.0dip" android:layout_width="@dimen/mini_win_default_width" android:layout_height="@dimen/mini_win_default_height" android:layout_centerVertical="true" android:contentDescription="mini_root"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@id/mini_title_block" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/mini_linBlocksConpent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="mini_linBlocksConpent" />
+    <com.alipay.android.mini.widget.CustomScrollView android:id="@id/mini_scroll_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/mini_scroll_linBlocksConpent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/mini_str_null" />
+    </com.alipay.android.mini.widget.CustomScrollView>
+    <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@id/mini_bottom_block" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

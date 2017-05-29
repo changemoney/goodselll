@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/play_img_layout" android:background="@drawable/msg_left_talk" android:layout_width="@dimen/im_voice_min_width" android:layout_height="@dimen/im_voice_height">
+        <ImageView android:id="@id/play_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_voice_margin_right_left" android:src="@drawable/ic_left_sound3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <include layout="@layout/im_send_down_progress" />
+    </RelativeLayout>
+    <TextView android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/play_img_layout" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/voice_no_read" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_voice_noread" android:scaleType="fitXY" android:layout_toRightOf="@id/duration" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/left_failed_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_failed_send" android:layout_toRightOf="@id/duration" android:layout_centerVertical="true" />
+</RelativeLayout>

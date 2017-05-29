@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/leftTextheight">
+        <TextView android:id="@id/pub_label" style="@style/ui_item_left_lable_style" />
+        <View style="@style/ui_item_vertical_divider_line" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/pub_input1" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/paddingLeft5" android:minHeight="@dimen/leftTextheight" android:singleLine="false" />
+                <View android:id="@id/pub_error1" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input1" android:layout_alignBottom="@id/pub_input1" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="1.0px">
+                <View android:background="#ffffffff" android:layout_width="10.0dip" android:layout_height="1.0px" />
+                <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:id="@id/pub_input2" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingRight="@dimen/paddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/paddingLeft5" android:minHeight="@dimen/leftTextheight" android:singleLine="false" />
+                <View android:id="@id/pub_error2" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input2" android:layout_alignBottom="@id/pub_input2" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/item_webim_no_chat_history" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/nodata_img" android:layout_width="145.0dip" android:layout_height="160.0dip" android:src="@drawable/lv_no_data" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/nodata_txt" android:background="@drawable/g_green_btn2" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="查看身边的热聊群组" android:layout_below="@id/nodata_img" android:layout_centerHorizontal="true" />
+</RelativeLayout>

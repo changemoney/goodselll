@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_dialog_job_send_resume_total" android:background="@drawable/bg_corner_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.5dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="8.5dip" android:src="@drawable/ic_checkbox_checked" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff161616" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="简历投递成功" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ff676767" android:layout_gravity="center_horizontal" android:id="@id/txt_dialog_job_send_resume_successful" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dip" android:text="以下4家公司对你感兴趣,邀请你加入" />
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="17.5dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_dialog_job_send_resume_successful_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_dialog_job_send_resume_successful_accept" android:background="@drawable/bg_post_detail_footer_green" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="7.5dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接受邀请" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_dialog_job_send_resume_successful_cancel" android:background="@drawable/bg_post_detail_white_border" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="7.5dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="#ff676767" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂不考虑" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

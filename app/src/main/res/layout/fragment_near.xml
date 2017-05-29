@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_statusbar_holder" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <include android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_hight" android:layout_below="@id/view_statusbar_holder" layout="@layout/titlebar_nearby_publish" />
+    <RelativeLayout android:id="@id/nearby_network_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar">
+        <ImageView android:id="@id/nearby_network_error_image" android:background="@drawable/default_icon_load_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/g_light_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载失败" android:layout_below="@id/nearby_network_error_image" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.ganji.android.ui.GJCustomListView android:id="@id/nearby_secondhand_content_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar" android:overScrollMode="never" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titlebar" layout="@layout/nearby_secondhand_seletor" />
+</RelativeLayout>

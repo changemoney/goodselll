@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item_list_member_center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/list_member_center_item" android:background="@drawable/list_item_bg" android:paddingTop="16.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:baselineAligned="false">
+        <TextView android:textSize="16.0dip" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/MCItemTitle" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" android:text="标题" android:lines="1" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/refresh_gray" android:orientation="horizontal" android:id="@id/MCNullText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" android:text="当天发布信息数量已超过上限" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="@color/refresh_gray" android:ellipsize="end" android:id="@id/MCItemScanNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/refresh_gray" android:id="@id/MCItemStatus" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/refresh_gray" android:id="@id/MCItemTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="@color/refresh_gray" android:orientation="horizontal" android:id="@id/MCDeleteReasonText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:text="当天发布信息数量已超过上限" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/item_list_member_center_mypost_expande_layout" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

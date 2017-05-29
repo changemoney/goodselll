@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:visibility="gone" layout="@layout/default_loading_container" />
+        <com.ganji.android.ui.GJCustomListView android:id="@id/listView" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
+        <View android:id="@id/mask" android:background="@color/fake_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/footer" android:background="#ffffffff" android:padding="@dimen/g_widget_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/check_all_btn" android:background="@drawable/g_white_btn2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/checkbox" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:layout_marginRight="@dimen/g_widget_margin_2x" android:src="@drawable/checkbox_bg" android:scaleType="center" />
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_dark_grey" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="全部选择" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/delete_btn" android:background="@drawable/g_orange_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="取消收藏" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

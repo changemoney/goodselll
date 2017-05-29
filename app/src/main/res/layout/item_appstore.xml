@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/g_item_height_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/g_item_height_small" android:layout_height="@dimen/g_item_height_small" android:layout_marginLeft="@dimen/g_widget_margin" android:scaleType="fitXY" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/g_dark_grey" android:gravity="center_vertical" android:id="@id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:text="Galaxy Nexus" android:layout_weight="1.0" />
+</LinearLayout>

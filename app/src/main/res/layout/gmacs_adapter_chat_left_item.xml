@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_post_title_item" android:paddingTop="@dimen/im_chat_item_paddingTop" android:paddingBottom="@dimen/im_chat_item_paddingBottom" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0dip" android:textColor="@color/chat_time_text_color" android:layout_gravity="center" android:id="@id/time" android:background="@drawable/gmacs_chat_time_background" android:paddingLeft="6.0dip" android:paddingTop="1.0dip" android:paddingRight="6.0dip" android:paddingBottom="1.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/im_chat_msg_item_time_margin_content" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/left_item_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_chat_left_text_margin_left" android:layout_below="@id/time" android:layout_alignParentLeft="true">
+        <RelativeLayout android:id="@id/left_head_view" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/left_head" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_contact_default" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_circle_press" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/size_s_s" android:textColor="#ff808080" android:id="@id/left_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_chat_name_left_margin_avatar" android:layout_marginTop="3.0dip" android:layout_marginBottom="2.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/left_head_view" />
+        <LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/content_item" android:layout_width="@dimen/im_chat_maxWidth_left" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_chat_content_item_margin_right" android:layout_toRightOf="@id/left_head_view" android:layout_below="@id/left_name" />
+    </RelativeLayout>
+</RelativeLayout>

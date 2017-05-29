@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_pet_home_item_normal" android:layout_width="168.0dip" android:layout_height="168.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="#ffbb572a" android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/txt_name" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="2.5dip" android:layout_marginBottom="4.0dip" android:text="哈士奇" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/img_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_above="@id/txt_name" />
+    <View android:id="@id/xingchong_layout" android:background="@drawable/bg_pet_home_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_item_jump_entry_area" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/item_jump_entry_top_space" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="7.5dip" />
+    <ImageView android:id="@id/item_jump_entry_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="7.5dip" android:src="@drawable/shouye1_icon_ershouwupin" android:scaleType="fitXY" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="#ff161616" android:gravity="center" android:layout_gravity="center" android:id="@id/item_jump_entry_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="生活家政" />
+    </LinearLayout>
+    <View android:id="@id/item_jump_entry_bottom_space" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="9.0dip" />
+</LinearLayout>

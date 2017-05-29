@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <include layout="@layout/default_loading_container" />
+    <RelativeLayout android:background="@drawable/g_dark_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ganji.android.ui.ScrollViewExtend android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer">
+            <LinearLayout android:orientation="vertical" android:id="@id/xiaowei_postdetail_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/post_detail_content_big_img_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/item_post_detail_big_image" />
+                </LinearLayout>
+                <include layout="@layout/item_xiaowei_post_detail_title" />
+                <include layout="@layout/item_xiaowei_post_detail_postition_info" />
+                <include layout="@layout/item_post_detail_xiaoqu_info" />
+                <include layout="@layout/item_xiaowei_post_detail_describe" />
+            </LinearLayout>
+        </com.ganji.android.ui.ScrollViewExtend>
+        <RelativeLayout android:id="@id/footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include layout="@layout/item_post_detail_footer" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

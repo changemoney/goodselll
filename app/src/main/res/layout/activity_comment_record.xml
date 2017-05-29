@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/fake_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="43.0dip" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/called_comment_tab" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通话评价" android:layout_centerInParent="true" />
+            <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/serve_comment_tab" android:clickable="true" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="@color/text_color_grey_turn_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务评价" android:layout_centerInParent="true" />
+            <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <android.support.v4.view.ViewPager android:id="@id/my_comment_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

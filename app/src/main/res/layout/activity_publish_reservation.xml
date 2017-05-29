@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/reservation_banner" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/medium_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:text="1.发布后，赶集将精选3家优质公司为您免费量房报价；" />
+    <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/medium_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="2.该项服务完全免费，您不需支付任何费用。" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin" android:layout_marginBottom="@dimen/pub_margin">
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.ganji.android.publish.ui.PubOnclickView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择区域" pub:key="findjob_area" pub:label="区        域" pub:tip="请选择区域！" pub:onclick="selectArea" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubNormalSpinnerView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择类型" pub:key="house" pub:label="类       型" pub:tip="请选择类型！" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="大于0的数字" pub:key="acreage" pub:label="面        积%%%平米" pub:checkString="5#@#@#3#@#@#[1-9]([0-9]){0,3}|10000" pub:tip="面积范围为1-10000平米" pub:reslayout="@layout/pub_2lable1inputview" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubNormalSpinnerView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择预算" pub:key="budget" pub:label="预        算" pub:tip="请选择预算！" pub:isRequired="true" />
+        <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="方便商家更好的了解您的要求" pub:key="content2" pub:label="备        注 (选填)" pub:checkString="300#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){0,}$" pub:tip="至多输入300个字符" pub:reslayout="@layout/pub_1lable1feedboxinputview" pub:isRequired="false" />
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.ganji.android.publish.ui.PubDecoratePhoneCreditView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="输入手机号%%%输入您手机收到的验证码" pub:key="phone" pub:checkString="13#@#@#3#@#@#^(1(([358][0-9])|(47)|[8][0126789]))\\d{8}$" />
+</LinearLayout>

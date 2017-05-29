@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_personal_centre_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/right_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/left_layout">
+            <LinearLayout android:orientation="horizontal" android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/high_gray" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/rss_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题" android:singleLine="true" />
+                <ImageView android:id="@id/newNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/ic_new" />
+            </LinearLayout>
+            <TextView android:textSize="13.0dip" android:textColor="@color/medium_gray" android:ellipsize="end" android:id="@id/rss_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:text="订阅条件" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="#fffd9904" android:id="@id/rss_rate" android:background="@drawable/rss_time_bg" android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="每小时提醒" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/left_layout" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignBottom="@id/right_layout" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="16.0dip" android:textColor="@color/text_color_green_turn_white" android:layout_gravity="center_vertical" android:id="@id/modify_btn" android:background="@drawable/bg_rss_green" android:paddingLeft="14.0dip" android:paddingTop="6.0dip" android:paddingRight="14.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

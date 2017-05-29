@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/leftfeedboxTextheight">
+        <TextView android:gravity="center" android:id="@id/pub_label" android:paddingTop="5.0dip" android:minHeight="@dimen/leftfeedboxTextheight" style="@style/ui_item_left_lable_style" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" style="@style/ui_item_vertical_divider_line" />
+            <EditText android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:textColorHint="@color/g_light_grey" android:gravity="top" android:id="@id/pub_input" android:background="@null" android:paddingLeft="@dimen/paddingTop" android:paddingTop="5.0dip" android:paddingRight="@dimen/paddingTop" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/paddingLeft5" android:minHeight="@dimen/leftfeedboxTextheight" android:singleLine="false" />
+            <View android:id="@id/pub_error" android:background="@drawable/pub_error_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/pub_input" android:layout_alignBottom="@id/pub_input" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

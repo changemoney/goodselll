@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/toolbar" android:background="@color/photo_ganji_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/control_bar" layout="@layout/wb_photoeditor_topbar" />
+    <RelativeLayout android:id="@id/second_control_bar" android:background="@color/effects_ganji_green" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/photoeditor_topbar_height">
+        <ImageView android:id="@id/second_left_btn" android:paddingLeft="@dimen/filter_top_paddingleft" android:paddingRight="@dimen/filter_top_paddingleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/filter_top_margin" android:src="@drawable/photoedit_effects_cancel" android:minWidth="@dimen/filter_top_minwidth" android:minHeight="@dimen/filter_top_minheight" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/middle_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_location" android:layout_centerInParent="true" style="@style/tencent_camera_style_small_white" />
+        <ImageView android:id="@id/second_right_btn" android:paddingLeft="@dimen/filter_top_paddingleft" android:paddingRight="@dimen/filter_top_paddingleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/filter_top_margin" android:src="@drawable/photoedit_effects_save" android:minWidth="@dimen/filter_top_minwidth" android:minHeight="@dimen/filter_top_minheight" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/wb_photoeditor_core" />
+</RelativeLayout>

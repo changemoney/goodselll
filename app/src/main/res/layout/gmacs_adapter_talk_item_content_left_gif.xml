@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <pl.droidsonroids.gif.GifImageView android:id="@id/gif_view" android:layout_width="124.0dip" android:layout_height="124.0dip" />
+        <include layout="@layout/gmacs_im_send_down_progress" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/left_failed_down" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/gmacs_ic_failed_send" android:scaleType="centerCrop" />
+</LinearLayout>

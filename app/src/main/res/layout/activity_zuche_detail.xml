@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <RelativeLayout android:background="@drawable/g_dark_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/default_loading_container" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/mCommonTabContainer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:baselineAligned="false">
+                <RelativeLayout android:id="@id/mLeftTabItem" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.ganji.android.comp.widgets.BoldTextView android:textSize="14.0dip" android:textColor="@color/text_color_high_gray_turn_green" android:id="@id/mLeftTabItemText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tab1" android:layout_centerInParent="true" />
+                    <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/mRightTabItem" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.ganji.android.comp.widgets.BoldTextView android:textSize="14.0dip" android:textColor="@color/text_color_high_gray_turn_green" android:id="@id/mRightTabItemText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tab2" android:layout_centerInParent="true" />
+                    <View android:background="@drawable/tab_grey_turn_green" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <android.support.v4.view.ViewPager android:id="@id/mViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

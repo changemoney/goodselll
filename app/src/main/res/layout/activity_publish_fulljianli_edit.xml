@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/pub_layout_perfect_resume_basic_info_edit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请输入姓名" pub:key="person" pub:label="姓名" pub:checkString="6#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,6}$)#@#@#2" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="2-6个字符" pub:focusHint="2-6个字符" pub:moreError="最多6个字" pub:lessError="最少2个字" />
+        <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+        <com.ganji.android.publish.ui.PubSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="findjob_sex" pub:label="性别" pub:isRequired="true" />
+        <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+        <com.ganji.android.publish.ui.PubComboLayoutView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" pub:hint="[请选择,请选择,请选择]" pub:key="[birthdate,findjob_degree,findjob_period]" pub:label="[出生年份,最高学历,工作年限]" pub:isRequires="[true,true,true]" pub:error="[请选择,请选择,请选择]" pub:showType="[wheel,listOne,listOne]" />
+        <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+        <com.ganji.android.publish.ui.PubJobPhoneAndCodeView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="phone" />
+        <View android:background="@color/bg_pull_2_refresh_day_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写邮箱" pub:key="email" pub:label="邮箱（选填）" pub:checkString="50#@#@#1#@#@#[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}#@#@#0" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="false" pub:error="您的邮箱地址有误！" pub:moreError="最多50个字" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/depute_switch_lv" android:background="@drawable/white" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.5dip">
+            <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3天内有相似好工作，自动投递" android:layout_weight="1.0" />
+            <include android:id="@id/depute_switch" layout="@layout/ui_switch_view" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/opposite_resume_switch_lv" android:background="@drawable/white" android:paddingLeft="7.0dip" android:paddingTop="7.0dip" android:paddingRight="7.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.5dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我也考虑" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/opposite_resume_catecary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全职" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工作机会" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:ellipsize="end" android:gravity="center|left" android:id="@id/opposite_resume_postion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="销售全职" android:maxLines="2" />
+                </LinearLayout>
+            </LinearLayout>
+            <include android:id="@id/opposite_resume_switch" layout="@layout/ui_switch_view" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sync_to_58_layout" android:background="@drawable/white" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.5dip">
+            <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="发布到58同城，获得更多优秀工作机会！" android:layout_weight="1.0" />
+            <include android:id="@id/depute_switch" layout="@layout/ui_switch_view" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/pub_txt_perfect_resume_edit_click_save" android:background="@drawable/bg_post_detail_footer_green" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="保存" />
+</LinearLayout>

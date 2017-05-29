@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wuba.wbsdkwrapper.ui.CameraFlashModeSelectionView android:id="@id/camera_flash_slection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wuba.camera.ui.RotateImageView android:id="@id/current_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+    <TextView android:textColor="@color/camera_current_flash_text_color" android:id="@id/current_flash_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_current_flash_text_marginleft" android:shadowColor="@color/camera_current_flash_shadow_color" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_toRightOf="@id/current_flash" android:layout_centerVertical="true" />
+</com.wuba.wbsdkwrapper.ui.CameraFlashModeSelectionView>

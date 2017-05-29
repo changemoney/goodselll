@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wuba.wbsdkwrapper.ui.IconBarListView android:gravity="bottom" android:orientation="vertical" android:id="@id/filter_bar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/filter_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/filter_tip_marginleft" android:layout_marginBottom="@dimen/filter_tip_marginbottom">
+        <RelativeLayout android:id="@id/no_filter_effect_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/no_filter_effect_layout_marginleft" android:layout_marginBottom="@dimen/no_filter_effect_layout_marginbottom" android:layout_centerVertical="true">
+            <ImageView android:id="@id/no_filter_effect_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/no_filter_effect_icon_marginleft" android:layout_marginRight="@dimen/no_filter_effect_icon_marginleft" android:src="@drawable/no_filter_effect_tip" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/no_filter_effect_text_size" android:textColor="@color/camera_text_color" android:id="@id/no_filter_effect_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_filter_effect" android:singleLine="true" android:shadowColor="@color/no_filter_effect_shadow_color" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="1.0" android:layout_toRightOf="@id/no_filter_effect_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.wbsupport.v7.widget.RecyclerView android:id="@id/filter_bar_list" android:paddingTop="@dimen/filter_bar_list_paddingtop" android:paddingBottom="@dimen/filter_bar_list_paddingtop" android:layout_width="fill_parent" android:layout_height="@dimen/filter_bar_list_height" android:layout_marginLeft="@dimen/filter_bar_list_marginleft" />
+</com.wuba.wbsdkwrapper.ui.IconBarListView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_im_status" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/layout_im_titlebar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/view_im_status">
+        <com.ganji.im.view.MsgNumberView android:id="@id/im_msg_image_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_12dp" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/right_lay_text_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_12dp" android:layout_marginBottom="@dimen/dimen_3dp" android:layout_toLeftOf="@id/im_msg_image_btn">
+            <ImageView android:id="@id/right_lay_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/title_right_img_selector" android:scaleType="center" />
+            <TextView android:textSize="@dimen/dimen_8dp" android:textColor="@color/titlebar_green" android:id="@id/right_lay_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/right_lay_text_img" android:layout_alignParentLeft="true">
+            <RelativeLayout android:id="@id/favorLayout" android:layout_width="65.0dip" android:layout_height="44.0dip" android:layout_marginLeft="13.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff676767" android:id="@id/favorText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favor" android:layout_centerInParent="true" />
+                <View android:id="@id/redPointView" android:background="@drawable/view_red_point" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="12.0dip" android:layout_toRightOf="@id/favorText" />
+                <View android:id="@id/favorUnderLine" android:background="#ff39bc30" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/circleLayout" android:layout_width="65.0dip" android:layout_height="44.0dip" android:layout_marginLeft="8.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff676767" android:id="@id/circleText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="圈子" android:layout_centerInParent="true" />
+                <View android:id="@id/circleUnderLine" android:background="#ff39bc30" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/discoverLayout" android:layout_width="65.0dip" android:layout_height="44.0dip" android:layout_marginLeft="8.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff676767" android:id="@id/discoverText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discover" android:layout_centerInParent="true" />
+                <View android:id="@id/discoverUnderLine" android:background="#ff39bc30" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/layout_im_titlebar" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/moreview_divider" android:background="@drawable/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/default_list_load_more_height">
+            <include layout="@layout/default_progressbar_small" />
+            <TextView android:textSize="@dimen/g_text_size_large" android:textColor="@color/g_dark_grey" android:id="@id/loading_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" android:text="正在加载..." />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/gmacs_bg_conversation_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/gmacs_item_list_separators" />
+    <View android:id="@id/contact_item_line" android:background="@color/conversation_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/conversation_list_divider_height" android:layout_marginLeft="@dimen/contact_list_margin_left" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <com.android.gmacs.view.NetworkImageView android:id="@id/iv_avatar" android:layout_width="@dimen/avatar_contact_list" android:layout_height="@dimen/avatar_contact_list" android:layout_marginLeft="@dimen/contact_list_margin_left" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:drawShape="@string/drawShape" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff353535" android:id="@id/tv_contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/contact_list_margin_left" android:layout_toRightOf="@id/iv_avatar" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_contact_source" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/tv_contact_name" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_contact_business" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_toRightOf="@id/iv_contact_source" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

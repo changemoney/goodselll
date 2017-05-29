@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:gravity="center_vertical" android:id="@id/input_title_tv" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0" />
+    <ToggleButton android:id="@id/input_toggle_tb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+</LinearLayout>

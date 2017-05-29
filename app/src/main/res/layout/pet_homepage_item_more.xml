@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/seperator" android:background="#fff3f3f3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_more" android:background="@drawable/bg_pet_home_item" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/img_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_fc_zhankai_selector" />
+    </LinearLayout>
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

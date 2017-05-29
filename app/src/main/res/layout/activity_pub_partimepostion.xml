@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <LinearLayout android:gravity="center" android:id="@id/progress_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/default_loading_container" />
+    </LinearLayout>
+    <ScrollView android:id="@id/mPubPartimeScrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/partime_all_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ganji.android.job.ui.PartimeCustomGridView android:id="@id/item_custom_grid_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

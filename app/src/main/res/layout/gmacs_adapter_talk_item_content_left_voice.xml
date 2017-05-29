@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/play_img_layout" android:background="@drawable/gmacs_msg_left_talk" style="@style/style_audio_size_left">
+        <ImageView android:id="@id/play_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/gmacs_ic_left_sound3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <include layout="@layout/gmacs_im_send_down_progress" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/chat_duration_text_color" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="" android:minLines="1" android:layout_toRightOf="@id/play_img_layout" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/voice_no_read" android:background="@drawable/gmacs_ic_voice_noread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/play_img_layout" />
+    <ImageView android:id="@id/left_failed_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/gmacs_ic_failed_send" android:layout_toRightOf="@id/duration" android:layout_centerVertical="true" />
+</RelativeLayout>

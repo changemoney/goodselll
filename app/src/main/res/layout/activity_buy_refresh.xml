@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/buy_refresh_title" layout="@layout/titlebar" />
+    <ScrollView android:id="@id/buy_refresh_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/puy_refresh_publishpanle" android:layout_below="@id/buy_refresh_title">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:id="@id/tv_buy_msg" android:paddingLeft="4.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="刷新信息:  全国/全职求职简历" />
+            <TextView android:textSize="16.0dip" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="刷新点数: " />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/lv_msg_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_divider" android:layout_toRightOf="@id/left_divider" android:layout_below="@id/top_divider" />
+                    <View android:id="@id/top_divider" android:background="@drawable/divider_bg" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+                    <View android:id="@id/bottom_divider" android:background="@drawable/divider_bg" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_below="@id/lv_msg_container" />
+                    <View android:id="@id/left_divider" android:background="@drawable/divider_bg" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_alignTop="@id/lv_msg_container" android:layout_alignBottom="@id/lv_msg_container" android:layout_alignParentLeft="true" />
+                    <View android:id="@id/right_divider" android:background="@drawable/divider_bg" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_alignTop="@id/lv_msg_container" android:layout_alignBottom="@id/lv_msg_container" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应付金额:" />
+                <TextView android:textSize="16.0dip" android:id="@id/tv_pay_money" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22元" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lv_msg_container" android:background="@drawable/g_small_sub_gray" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/pub_disable_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="刷新帖子，位置立即上升" />
+                <LinearLayout android:orientation="vertical" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/pub_disable_gray" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="立即提升排名" android:drawableLeft="@drawable/facility_yes" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/pub_disable_gray" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="每天不限次数" android:drawableLeft="@drawable/facility_yes" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingTop="3.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/pub_disable_gray" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="全国可用" android:drawableLeft="@drawable/facility_yes" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/pub_disable_gray" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="价格低廉" android:drawableLeft="@drawable/facility_yes" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/puy_refresh_publishpanle" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/order_content_ui_component_publishpanel" layout="@layout/ui_component_publishpanel" />
+    </LinearLayout>
+    <include android:id="@id/buy_refresh_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/publishtitle" layout="@layout/default_loading_container" />
+</RelativeLayout>

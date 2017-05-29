@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/pub_recycler_combo" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:stretchMode="columnWidth" android:numColumns="3" />
+    <View android:layout_gravity="bottom" android:id="@id/pub_combo_under_gradient" android:background="@drawable/pub_header_gradient" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <View android:id="@id/pub_combo_under_line" android:background="#ffff7200" android:visibility="invisible" android:layout_width="73.5dip" android:layout_height="1.0dip" />
+</FrameLayout>

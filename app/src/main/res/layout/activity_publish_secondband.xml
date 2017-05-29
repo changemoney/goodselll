@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/page_publish_ui_fenlei_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin" android:layout_marginBottom="@dimen/pub_margin" />
+    <com.ganji.android.publish.ui.NewFieldLinearLayout android:orientation="vertical" android:id="@id/page_publish_ui_new_field_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin" android:layout_marginBottom="@dimen/pub_margin" />
+    <com.ganji.android.publish.ui.PhoneNumberNewFieldLinearLayout android:orientation="vertical" android:id="@id/page_publish_ui_new_field_phonenum_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin" android:layout_marginBottom="@dimen/pub_margin" />
+</LinearLayout>

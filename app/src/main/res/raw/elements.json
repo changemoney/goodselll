@@ -1,0 +1,6127 @@
+{
+  "errcode": 0,
+  "data": {
+    "elements": {
+      "filter": {
+        "elements": [
+          {
+            "wid": 1000,
+            "name": "标准",
+            "type": "filter"
+          },
+          {
+            "wid": 1001,
+            "name": "清新美白",
+            "type": "filter"
+          },
+          {
+            "wid": 1003,
+            "name": "淡雅",
+            "type": "filter"
+          },
+          {
+            "wid": 1007,
+            "name": "清逸",
+            "type": "filter"
+          },
+          {
+            "wid": 1008,
+            "name": "时尚",
+            "type": "filter"
+          },
+          {
+            "wid": 1009,
+            "name": "洛丽塔",
+            "type": "filter"
+          },
+          {
+            "wid": 1010,
+            "name": "暖暖",
+            "type": "filter"
+          },
+          {
+            "wid": 1011,
+            "name": "阳光物语",
+            "type": "filter"
+          },
+          {
+            "wid": 1014,
+            "name": "幻想",
+            "type": "filter"
+          },
+          {
+            "wid": 1015,
+            "name": "古典",
+            "type": "filter"
+          }
+        ]
+      },
+      "sticker": {
+        "elements": [
+          {
+            "wid": 20096,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20096smaimeng01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20096bmaimeng01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20097,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20097smaimeng02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20097bmaimeng02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20098,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20098smaimeng03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20098bmaimeng03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20099,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20099smaimeng04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20099bmaimeng04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20100,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20100smaimeng05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20100bmaimeng05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20101,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20101smaimeng06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20101bmaimeng06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20102,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20102smaimeng07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20102bmaimeng07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20103,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20103smaimeng08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20103bmaimeng08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20104,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20104smaimeng09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20104bmaimeng09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20105,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20105smaimeng10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20105bmaimeng10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20106,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20106smaimeng11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20106bmaimeng11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20107,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20107smaimeng12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20107bmaimeng12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20108,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20108smaimeng13.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20108bmaimeng13.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20109,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20109smaimeng14.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20109bmaimeng14.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20110,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20110smaimeng15.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20110bmaimeng15.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20111,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20111smaimeng16.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20111bmaimeng16.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20112,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20112smaimeng17.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20112bmaimeng17.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20113,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20113smaimeng18.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20113bmaimeng18.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20114,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20114smaimeng19.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20114bmaimeng19.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20115,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20115smaimeng20.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20115bmaimeng20.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20116,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20116smaimeng21.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20116bmaimeng21.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20117,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20117smaimeng22.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20117bmaimeng22.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20118,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20118smaimeng23.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20118bmaimeng23.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20119,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20119smaimeng24.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20119bmaimeng24.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20120,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20120smaimeng25.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20120bmaimeng25.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20121,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20121smaimeng26.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20121bmaimeng26.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20122,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20122smaimeng27.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20122bmaimeng27.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20123,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20123smaimeng28.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20123bmaimeng28.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20124,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20124smaimeng29.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20124bmaimeng29.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20125,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20125smaimeng30.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20125bmaimeng30.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20126,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20126smaimeng31.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20126bmaimeng31.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20127,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20127smaimeng32.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20127bmaimeng32.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20128,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20128smaimeng33.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20128bmaimeng33.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20129,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20129smaimeng34.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20129bmaimeng34.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20130,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20130smaimeng35.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20130bmaimeng35.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20131,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20131smaimeng36.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20131bmaimeng36.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20132,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20132smaimeng37.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20132bmaimeng37.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20133,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20133smaimeng38.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20133bmaimeng38.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20134,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20134seye01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20134beye01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20135,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20135seye02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20135beye02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20136,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20136seye03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20136beye03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20137,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20137seye04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20137beye04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20138,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20138seye05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20138beye05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20139,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20139seye06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20139beye06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20140,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20140seye07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20140beye07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20141,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20141seye08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20141beye08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20142,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20142seye09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20142beye09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20143,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20143seye10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20143beye10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20144,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20144seye11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20144beye11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20145,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20145seye12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20145beye12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20146,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20146seye13.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20146beye13.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20147,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20147seye14.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20147beye14.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20148,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20148seye15.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20148beye15.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20149,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20149seye16.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20149beye16.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20150,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20150seye17.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20150beye17.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20151,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20151seye18.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20151beye18.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20152,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20152seye19.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20152beye19.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20153,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20153seye20.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20153beye20.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20154,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20154seffects01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20155beffects02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20155,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20155seffects02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20154beffects01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20156,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20156seffects03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20156beffects03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20157,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20157seffects04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20157beffects04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20158,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20158seffects05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20158beffects05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20159,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20159seffects06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20159beffects06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20160,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20160seffects07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20160beffects07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20161,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20161seffects08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20161beffects08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20162,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20162seffects09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20162beffects09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20163,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20163seffects10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20163beffects10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20164,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20164seffects11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20164beffects11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20165,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20165seffects12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20165beffects12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20166,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20166sfushi01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20166bfushi01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20167,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20167sfushi02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20167bfushi02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20168,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20168sfushi03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20168bfushi03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20169,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20169sfushi04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20169bfushi04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20170,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20170sfushi05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20170bfushi05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20171,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20171sfushi06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20171bfushi06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20172,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20172sfushi07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20172bfushi07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20173,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20173sfushi08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20173bfushi08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20174,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20174sfushi09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20174bfushi09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20175,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20175sfushi10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20175bfushi10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20176,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20176sfushi11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20176bfushi11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20177,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20177sfushi12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20177bfushi12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20178,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20178sdonkey01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20178bdonkey01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20179,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20179sdonkey02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20179bdonkey02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20180,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20180sdonkey03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20180bdonkey03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20181,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20181sdonkey04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20181bdonkey04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20182,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20182sdonkey05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20182bdonkey05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20183,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20183sdonkey06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20183bdonkey06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20184,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20184sdonkey07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20184bdonkey07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20185,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20185sdonkey08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20185bdonkey08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20186,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20186sdonkey09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20186bdonkey09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20187,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20187sdonkey10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20187bdonkey10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20188,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20188sdonkey11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20188bdonkey11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20189,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20189sdonkey12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20189bdonkey12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20190,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20190sborder01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20190bborder01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20191,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20191sborder02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20191bborder02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20192,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20192sborder03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20192bborder03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20193,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20193sborder04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20193bborder04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20194,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20194sborder05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20194bborder05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20195,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20195sborder06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20195bborder06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20196,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20196sborder07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20196bborder07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20197,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20197sborder08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20197bborder08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20198,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20198sborder09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20198bborder09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20199,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20199sborder10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20199bborder10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20200,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20200sborder11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20200bborder11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20201,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20201sborder12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20201bborder12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20000,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20000scity01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20000bcity01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20001,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20001scity02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20001bcity02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20002,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20002scity03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20002bcity03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20003,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20003scity04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20003bcity04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20004,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20004scity05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20004bcity05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20005,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20005scity06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20005bcity06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20006,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20006scity07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20006bcity07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20007,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20007scity08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20007bcity08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20008,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20008scity09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20008bcity09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20009,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20009scity10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20009bcity10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20010,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20010scity11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20010bcity11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20011,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20011scity12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20011bcity12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20012,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20012sfestival01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20012bfestival01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20013,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20013sfestival02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20013bfestival02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20014,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20014sfestival03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20014bfestival03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20015,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20015sfestival04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20015bfestival04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20016,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20016sfestival05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20016bfestival05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20017,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20017sfestival06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20017bfestival06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20018,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20018sfestival07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20018bfestival07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20019,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20019sfestival08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20019bfestival08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20020,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20020sfestival09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20020bfestival09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20021,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20021sfestival10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20021bfestival10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20022,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20022sfestival11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20022bfestival11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20023,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20023sfestival12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20023bfestival12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20024,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20024sfood01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20024bfood01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20025,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20025sfood02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20025bfood02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20026,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20026sfood03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20026bfood03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20027,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20027sfood04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20027bfood04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20028,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20028sfood05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20028bfood05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20029,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20029sfood06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20029bfood06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20030,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20030sfood07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20030bfood07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20031,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20031sfood08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20031bfood08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20032,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20032sfood09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20032bfood09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20033,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20033sfood10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20033bfood10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20034,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20034sfood11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20034bfood11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20035,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20035sfood12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20035bfood12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20036,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20036shello201601.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20036bhello201601.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20037,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20037shello201602.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20037bhello201602.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20038,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20038shello201603.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20038bhello201603.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20039,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20039shello201604.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20039bhello201604.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20040,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20040shello201605.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20040bhello201605.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20041,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20041shello201606.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20041bhello201606.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20042,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20042shello201607.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20042bhello201607.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20043,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20043shello201608.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20043bhello201608.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20044,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20044shello201609.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20044bhello201609.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20045,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20045shello201610.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20045bhello201610.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20046,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20046shello201611.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20046bhello201611.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20047,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20047shello201612.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20047bhello201612.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20048,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20048slovers01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20048blovers01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20049,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20049slovers02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20049blovers02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20050,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20050slovers03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20050blovers03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20051,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20051slovers04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20051blovers04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20052,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20052slovers05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20052blovers05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20053,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20053slovers06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20053blovers06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20054,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20054slovers07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20054blovers07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20055,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20055slovers08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20055blovers08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20056,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20056slovers09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20056blovers09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20057,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20057slovers10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20057blovers10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20058,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20058slovers11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20058blovers11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20059,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20059slovers12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20059blovers12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20060,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20060sweather01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20060bweather01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20061,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20061sweather02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20061bweather02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20062,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20062sweather03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20062bweather03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20063,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20063sweather04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20063bweather04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20064,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20064sweather05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20064bweather05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20065,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20065sweather06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20065bweather06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20066,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20066sweather07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20066bweather07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20067,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20067sweather08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20067bweather08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20068,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20068sweather09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20068bweather09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20069,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20069sweather10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20069bweather10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20070,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20070sweather11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20070bweather11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20071,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20071sweather12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20071bweather12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20072,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20072spopular01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20072bpopular01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20073,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20073spopular02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20073bpopular02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20074,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20074spopular03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20074bpopular03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20075,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20075spopular04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20075bpopular04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20076,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20076spopular05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20076bpopular05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20077,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20077spopular06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20077bpopular06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20078,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20078spopular07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20078bpopular07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20079,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20079spopular08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20079bpopular08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20080,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20080spopular09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20080bpopular09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20081,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20081spopular10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20081bpopular10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20082,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20082spopular11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20082bpopular11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20083,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20083spopular12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20083bpopular12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20084,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20084smood01.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20084bmood01.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20085,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20085smood02.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20085bmood02.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20086,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20086smood03.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20086bmood03.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20087,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20087smood04.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20087bmood04.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20088,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20088smood05.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20088bmood05.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20089,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20089smood06.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20089bmood06.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20090,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20090smood07.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20090bmood07.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20091,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20091smood08.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20091bmood08.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20092,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20092smood09.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20092bmood09.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20093,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20093smood10.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20093bmood10.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20094,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20094smood11.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20094bmood11.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          },
+          {
+            "wid": 20095,
+            "type": "sticker",
+            "designwidth": 1080,
+            "designheight": 1080,
+            "icon": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/s/id20095smood12.png",
+            "editalbe": true,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "items": [
+              {
+                "type": "img",
+                "wid": 1,
+                "rect": {
+                  "w": 0,
+                  "h": 0,
+                  "y": 0,
+                  "x": 0
+                },
+                "defaultvalue": "http://pic1.58cdn.com.cn/brandads/staticfiles/sdk/b/id20095bmood12.png",
+                "valuesource": "none",
+                "editable": false,
+                "arrange": "h"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "msg": "success",
+  "vid": 0
+}

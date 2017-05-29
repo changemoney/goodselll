@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_item_title" android:background="@drawable/list_selector_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_alignParentTop="true" style="@style/DottedLine" />
+    <ImageView android:id="@id/img_mark_head" android:background="@drawable/icon_mark_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/m_text" android:textColor="@color/black_gray" android:id="@id/tv_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="我的好友" android:layout_toRightOf="@id/img_mark_head" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/m_text" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@id/tv_mark_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="全部" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:layout_alignParentBottom="true" style="@style/DottedLine" />
+</RelativeLayout>

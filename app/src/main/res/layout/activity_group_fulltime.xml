@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_simple" />
+    <LinearLayout android:gravity="center" android:id="@id/progress_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/im_prompt_container" />
+    </LinearLayout>
+    <ScrollView android:id="@id/mFullTimeScrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/fulltime_all_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/group_local_serch_bar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

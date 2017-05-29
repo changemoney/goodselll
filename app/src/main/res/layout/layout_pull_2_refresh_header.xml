@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/main_page_pull_2_refresh_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_refresh_light" android:layout_width="fill_parent" android:layout_height="404.0dip" android:layout_marginTop="@dimen/main_page_pull_2_fresh_ball_margin_original_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_refresh_light" android:layout_width="360.0dip" android:layout_height="360.0dip" android:src="@drawable/icon_pull_2_refresh_light" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout_refresh_ball" android:layout_width="fill_parent" android:layout_height="404.0dip" android:layout_marginTop="@dimen/main_page_pull_2_fresh_ball_margin_original_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_refresh_ball" android:layout_width="@dimen/main_page_pull_2_refresh_ball_width" android:layout_height="@dimen/main_page_pull_2_refresh_ball_height" android:layout_marginTop="@dimen/main_page_pull_2_refresh_ball_margin_top" android:src="@drawable/icon_pull_2_refresh_ball" />
+        <com.ganji.android.ui.HeaderFlyingView android:layout_gravity="center" android:id="@id/view_refresh_header_flying" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:id="@id/img_refresh_cloud_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="108.0dip" android:layout_marginBottom="@dimen/main_page_pull_2_fresh_small_cloud_margin_bottom" android:src="@drawable/icon_pull_2_refresh_cloud_small" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/img_refresh_cloud_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="74.0dip" android:layout_marginBottom="@dimen/main_page_pull_2_fresh_big_cloud_margin_bottom" android:src="@drawable/icon_pull_2_refresh_cloud_big" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

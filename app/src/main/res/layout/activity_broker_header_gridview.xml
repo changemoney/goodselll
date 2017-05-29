@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/g_dark_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <include layout="@layout/default_loading_container" />
+    <GridView android:id="@id/broker_header_gridview" android:padding="15.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="15.0dip" android:verticalSpacing="15.0dip" android:numColumns="3" />
+    <RelativeLayout android:gravity="center" android:id="@id/no_response_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/m_text" android:textColor="@color/g_dark_grey" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无经纪人应答您的需求" android:drawableTop="@drawable/lazyman_broker_list_empty" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

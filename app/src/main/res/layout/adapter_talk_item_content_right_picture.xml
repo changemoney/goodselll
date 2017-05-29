@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/right_failed_send" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_failed_send" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/msg_right_talk" android:paddingLeft="@dimen/im_picture_content_padding_left" android:paddingTop="@dimen/im_picture_content_padding_top" android:paddingRight="@dimen/im_picture_content_padding_right" android:paddingBottom="@dimen/im_picture_content_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/adapter_talk_item_content_picture" />
+    </LinearLayout>
+</LinearLayout>

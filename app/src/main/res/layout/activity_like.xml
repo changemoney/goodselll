@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <include layout="@layout/default_loading_container" />
+    <ScrollView android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/listview" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#fff3f3f3" android:dividerHeight="1.0px" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/moreLv" android:background="@drawable/bg_down_view" android:paddingTop="23.0dip" android:paddingBottom="23.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textColor="#ff39bc30" android:gravity="center" android:id="@id/des" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="更多北京二手车/40万" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

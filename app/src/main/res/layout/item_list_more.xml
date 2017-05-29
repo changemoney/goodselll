@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item_list_more" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/moreview_divider" android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <com.ganji.android.ui.MoreView android:id="@id/moreView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

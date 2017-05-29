@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.publish.ui.PubGridView android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="4" pub:isRequired="false" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="如宠物特点等" pub:key="title" pub:label="标 题" pub:checkString="30#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){6,30}$#@#@#6" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="6-30个字符" pub:focusHint="6-30个字符" pub:moreError="最多30个字" pub:lessError="最少6个字" pub:showToast="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="大于0的数字" pub:key="price" pub:label="价        格" pub:checkString="5#@#@#2#@#@#[1-9]([0-9]){0,4}" pub:isRequired="true" pub:error="只能填数字，最多5位 ！" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="如宠物习性等" pub:key="description" pub:label="描述(选填)" pub:checkString="800#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){0,800}$#@#@#0" pub:reslayout="@layout/pub_input_multiline_bold" pub:isRequired="false" pub:isMoreInput="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请输入汉字或者字母" pub:key="person" pub:label="联系人" pub:checkString="6#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,6}$)#@#@#2" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="2-6个字符" pub:focusHint="2-6个字符" pub:moreError="最多6个字" pub:lessError="最少2个字" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写手机或固定电话" pub:key="phone" pub:label="联系电话" pub:checkString="13#@#@#3#@#@#(^1[34578]\\d{9}$|^(0\\d{2,4}-?)?[2-9]\\d{6,7}(-\\d{2,5})?$|^(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}$)#@#@#7" pub:isRequired="true" pub:error="电话号码格式有误" pub:focusHint="请输入正确的电话号码" pub:moreError="电话最多13位" pub:lessError="电话最少7位" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择交易地点" pub:key="findjob_area" pub:label="区域" pub:tip="请选择交易地点" pub:onclick="selectArea" pub:isRequired="true" />
+    </LinearLayout>
+    <com.ganji.android.publish.ui.PublishBottomExitZiZhuView android:id="@id/bussiness_zizhu" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:text="想在海量信息中脱颖而出，试试赶集推广" pub:ganjitextSize="16.0px" />
+</LinearLayout>

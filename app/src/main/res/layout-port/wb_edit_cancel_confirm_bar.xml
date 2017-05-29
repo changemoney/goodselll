@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/effects_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/common_effectsbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/wb_camera_white" android:gravity="center" android:id="@id/effects_cancel" android:layout_width="50.0dip" android:layout_height="38.0dip" android:layout_marginLeft="25.0dip" android:text="取 消" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/wb_camera_white" android:gravity="center" android:id="@id/effects_confirm" android:layout_width="50.0dip" android:layout_height="38.0dip" android:layout_marginRight="25.0dip" android:text="确 认" android:layout_alignParentRight="true" />
+</RelativeLayout>

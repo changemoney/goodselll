@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.publish.ui.PubComboLayoutView android:id="@id/pub_floating_comboLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="[请填写,请填写]" pub:key="[price,area]" pub:label="[售价,面积]" pub:isRequires="[true,true]" pub:error="[请填写,请填写]" pub:showType="[keyboard,keyboard]" pub:isComboHeader="true" />
+    <View android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="16.0dip" android:textColorHint="#ff333333" android:gravity="center" android:id="@id/pub_floating_info_bar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</LinearLayout>

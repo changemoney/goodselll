@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/post_list_item_job" android:background="@drawable/list_item_bg" android:paddingLeft="@dimen/post_list_padding_left" android:paddingTop="@dimen/post_list_padding_top" android:paddingRight="@dimen/post_list_padding_right" android:paddingBottom="@dimen/post_list_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/g_text_size_large" android:id="@id/mUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="姓名" />
+        <TextView android:textSize="@dimen/g_text_size_large" android:id="@id/mGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="性别" />
+        <TextView android:textSize="@dimen/g_text_size_large" android:id="@id/mAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="年龄" />
+        <TextView android:textSize="@dimen/g_text_size_large" android:id="@id/mTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职位名称" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:id="@id/mJobType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="全职" />
+        <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:id="@id/mDegree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="本科" />
+        <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:id="@id/mPeriod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="5-8" />
+        <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:id="@id/mSalary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="面议" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:id="@id/mPublishTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="4小时前" />
+        <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:id="@id/mPlace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="期望工作地点：海淀" />
+    </LinearLayout>
+</LinearLayout>

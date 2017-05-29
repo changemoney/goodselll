@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <com.ganji.android.publish.ui.PubTipView android:id="@id/pub_car_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:key="post_count_tip" pub:isRequired="false" />
+    <com.ganji.android.publish.ui.PubGridView android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="4" pub:isRequired="false" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <com.ganji.android.publish.ui.PubInputSelectView android:id="@id/pub_sort_name" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="点击添加车型信息" pub:key="sort_name" pub:label="车型" pub:tip="请选择品牌车型！" pub:onclick="pickSortName" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="点击添加颜色信息" pub:key="car_color" pub:label="颜色" pub:tip="请选择颜色！" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubComboLayoutView android:id="@id/pub_car_combo" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="[请选择,请填写,请填写]" pub:key="[license_year_math,road_haul,price]" pub:label="[上牌时间,行驶里程,售卖价格]" pub:isRequires="[true,true,true]" pub:error="[请选择,最多2位小数且2位整数,最多4位整数且2位小数]" pub:showType="[wheel,keyboard,keyboard]" pub:checkStringArr="[%[1-9]([0-9])?|[0-9]\\.[1-9][0-9]{0,1}|[0-9]\\.[0-9][1-9]|[1-9][0-9]{0,1}\\.[1-9][0-9]{0,1}|[1-9][0-9]{0,1}\\.[0-9][0-9]%[1-9][0-9]{2,7}]" />
+    </LinearLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="车辆情况，转让方式，转让原因等，10-800字" pub:key="description" pub:label="车辆描述（选填）" pub:checkString="800#@#@#1#@#@#%%%%%%.*(1[3458]\\d{9}|(0\\d{2,4}-)?[2-9]\\d{6,7}(-\\d{2,5})?|(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}).*######^(.){10,800}$" pub:reslayout="@layout/pub_input_multiline_bold" pub:isRequired="false" pub:moreError="最多输入800个字" pub:isMoreInput="false" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff333333" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="联系方式" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请输入汉字或字母" pub:key="person" pub:label="联系人" pub:checkString="6#@#@#1#@#@#(^[\\u4E00-\\u9FA5\\uF900-\\uFA2Da-zA-Z]{2,6}$)#@#@#2" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="请输入汉字或字母" pub:focusHint="2-6个字符" pub:moreError="最多6个字" pub:lessError="最少2个字" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubPhoneInputView android:id="@id/pub_car_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="输入正确手机号码" pub:key="phone" pub:label="手机号码" pub:checkString="13#@#@#3#@#@#^1[34578]\\d{9}$|^(0\\d{2,4}-?)?[2-9]\\d{6,7}(-\\d{2,5})?$|^(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}$" pub:tip="输入的手机或固定电话号码有误！" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubCodeInputView android:id="@id/pub_car_code" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请输入验证码" pub:key="yzCode" pub:label="验证码" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:id="@id/car_district_view" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="添加详细看车地址" pub:key="car_district" pub:label="看车地址" pub:tip="请选择看车地点！" pub:onclick="pickCarDistrict" pub:isRequired="true" />
+    </LinearLayout>
+    <com.ganji.android.publish.ui.PublishBottomExitZiZhuView android:id="@id/bussiness_zizhu" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:text="想在海量信息中脱颖而出，试试赶集推广" pub:ganjitextSize="16.0px" />
+</LinearLayout>

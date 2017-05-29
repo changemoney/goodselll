@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wc_reply_item" android:background="@color/white" android:paddingLeft="63.0dip" android:paddingRight="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/gray_161616" android:id="@id/wc_details_reply_txt" android:background="@color/activity_bg_gray" android:paddingLeft="9.5dip" android:paddingTop="@dimen/dimen_3dp" android:paddingRight="@dimen/dimen_wc_item_margin" android:paddingBottom="@dimen/dimen_3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dip" />
+    <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_B3B3B3" android:id="@id/wc_details_reply_more" android:paddingTop="@dimen/dimen_15dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="查看更多评论 ＞" />
+</LinearLayout>

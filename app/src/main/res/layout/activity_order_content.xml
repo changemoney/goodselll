@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/publishtitle" layout="@layout/titlebar" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/default_loading_container" />
+    <ScrollView android:id="@id/order_content_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/order_content_panelbutton" android:layout_below="@id/publishtitle">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/gray" android:gravity="center" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="置顶详情" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/g_divider_group_bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.7999878dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="fill_parent" android:text="置顶信息" />
+                    <View style="@style/ui_item_vertical_divider_line" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center|left" android:id="@id/tc_description" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:minHeight="@dimen/leftTextheight" android:text="小两居出租了" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="置顶类别" />
+                    <View style="@style/ui_item_vertical_divider_line" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/tc_cate" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="租房" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="置顶方式" />
+                    <View style="@style/ui_item_vertical_divider_line" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/tc_type" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="普通置顶" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/lv_tc_address" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="区        域" />
+                    <View style="@style/ui_item_vertical_divider_line" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/tc_address" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="北京-海淀-中关村" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageView android:id="@id/divider_tc_address" android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="置顶时长" />
+                    <View style="@style/ui_item_vertical_divider_line" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/tc_time" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="一天" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+            <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/gray" android:gravity="center" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="结算信息" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/g_divider_group_bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.7999878dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="订  单  号" />
+                    <View style="@style/ui_item_vertical_divider_line" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/order_id" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="324324" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="订单状态" />
+                    <View style="@style/ui_item_vertical_divider_line" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/order_status" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="待支付" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="价格总计" />
+                    <View style="@style/ui_item_vertical_divider_line" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/order_price" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="171.4元" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="1.7999878dip" android:paddingTop="1.0dip" android:paddingRight="1.7999878dip" android:paddingBottom="1.7999878dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:gravity="center" android:layout_width="@dimen/pub_label_width" android:layout_height="@dimen/leftTextheight" android:text="账户余额" />
+                    <View style="@style/ui_item_vertical_divider_line" />
+                    <TextView android:textSize="@dimen/pub_text_size" android:textColor="@color/black_gray" android:id="@id/remain_sum" android:layout_width="wrap_content" android:layout_height="@dimen/leftTextheight" android:layout_marginLeft="12.0dip" android:text="0、01元" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/order_content_panelbutton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentBottom="true">
+        <include android:id="@id/order_content_ui_component_publishpanel" layout="@layout/ui_component_publishpanel" />
+    </LinearLayout>
+</RelativeLayout>

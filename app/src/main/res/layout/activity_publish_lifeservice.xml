@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pub="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="如蚂蚁搬家、安家家政等" pub:key="title" pub:label="店铺名称" pub:checkString="20#@#@#1#@#@#(^(.){4,20}$)#@#@#4" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="4-20个字" pub:focusHint="4-20个字" pub:moreError="最多20个字" pub:lessError="最少4个字" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:id="@id/pub_select_category" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择服务类别" pub:key="minor_category_id" pub:label="服务类别" pub:tip="请选择服务类别！" pub:editPostEnable="false" pub:isRequired="true" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:id="@id/pub_select_area" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请选择营业区域" pub:key="findjob_area" pub:label="营业区域" pub:tip="请选择营业区域！" pub:onclick="selectArea" pub:isRequired="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请输入详细地址" pub:key="address" pub:label="详细地址" pub:checkString="20#@#@#1#@#@#(^(.){4,20}$)#@#@#4" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="4-20个字" pub:focusHint="4-20个字" pub:moreError="最多20个字" pub:lessError="最少4个字" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputSelectView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="请填写手机或固定电话" pub:key="phone" pub:label="联系电话" pub:checkString="13#@#@#3#@#@#(^1[34578]\\d{9}$|^(0\\d{2,4}-?)?[2-9]\\d{6,7}(-\\d{2,5})?$|^(?!\\d+(-\\d+){3,})[48]00(-?\\d){7,10}$)#@#@#7" pub:tip="请输入电话号码！" pub:isRequired="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin">
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="展示您特色或优势的信息" pub:key="propagandize" pub:label="服务特色" pub:checkString="40#@#@#1#@#@#(^(.){4,40}$)#@#@#4" pub:reslayout="@layout/pub_1label3inputview" pub:isRequired="true" pub:error="4-40个字" pub:focusHint="4-40个字" pub:moreError="最多40个字" pub:lessError="最少4个字" />
+        <include layout="@layout/pub_margin_divider" />
+        <com.ganji.android.publish.ui.PubInputView android:layout_width="fill_parent" android:layout_height="wrap_content" pub:hint="店铺的主营项目、基本报价、当前规模和经营理念等，以便更多的客户了解您的店铺，增强点击效果！" pub:key="description" pub:label="店铺描述（选填）" pub:checkString="800#@#@#1#@#@#(^(.){0,800}$)#@#@#0" pub:reslayout="@layout/pub_input_multiline_normal" pub:isRequired="false" pub:moreError="最多输入800个字" pub:isMoreInput="false" />
+    </LinearLayout>
+    <com.ganji.android.publish.ui.PublishBottomExitZiZhuView android:id="@id/bussiness_zizhu" android:layout_width="fill_parent" android:layout_height="wrap_content" pub:text="想在海量信息中脱颖而出，试试赶集推广" pub:ganjitextSize="16.0px" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/job_browse_record" android:background="@drawable/white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:id="@id/job_browse_record_clear" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/close_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/job_browse_record_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/category_history_clear" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/cate_browsed_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g_widget_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/job_view_main_header_browse_divider" android:background="@drawable/divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <GridView android:id="@id/job_grid_main_header_eight_icons" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="6.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:stretchMode="columnWidth" android:numColumns="4" />
+    <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/job_txt_main_header_create_resume" android:background="@drawable/bg_post_detail_footer_green" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="28.0dip" android:layout_marginRight="28.0dip" android:layout_marginBottom="20.0dip" android:text="开始创建简历,开始求职之旅" />
+    <View android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:layout_gravity="center_horizontal" android:id="@id/job_txt_main_header_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="热门工作" />
+    <GridView android:id="@id/job_grid_main_header_hot_jobs" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:stretchMode="columnWidth" android:numColumns="3" />
+    <RelativeLayout android:id="@id/job_layout_main_header_see_more_jobs" android:background="@drawable/bg_detail_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/titlebar_green" android:id="@id/job_txt_main_header_more_jobs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看全部职位" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="5.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/arrow_right_green" android:layout_toRightOf="@id/job_txt_main_header_more_jobs" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/card_fake_white" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/job_layout_main_header_list_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0dip" android:textColor="#ff161616" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="猜你喜欢" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffb3b3b3" android:layout_gravity="center" android:id="@id/job_txt_main_header_list_header_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:layout_marginBottom="13.5dip" android:text="为你智能推荐更多内容" />
+    </LinearLayout>
+</LinearLayout>

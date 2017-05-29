@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_post_detail_xiaoqu_house_num" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/detail_xiaoqu_house_num_arrow_1" android:background="@drawable/color_white_turn_grey" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="@color/g_orange" android:id="@id/detail_xiaoqu_house_num_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/g_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="套" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/high_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二手房 " />
+                <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_map" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/divider_line" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/detail_xiaoqu_house_num_arrow_2" android:background="@drawable/color_white_turn_grey" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="@color/g_orange" android:id="@id/detail_xiaoqu_house_num_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/g_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="套" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/high_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出租房 " />
+                <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_map" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/divider_line" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/detail_xiaoqu_house_num_arrow_3" android:background="@drawable/color_white_turn_grey" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="@color/g_orange" android:id="@id/detail_xiaoqu_house_num_text_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/g_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="套" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/high_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="合租房 " />
+                <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_map" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

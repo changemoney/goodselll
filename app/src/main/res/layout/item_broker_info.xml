@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_broker_info" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_bi_avatar" android:background="@drawable/thumb_frame" android:layout_width="60.0dip" android:layout_height="80.0dip" android:src="@drawable/ic_broker_avatar_default" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/g_text_size_large" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@id/txt_bi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赶集经纪人" android:singleLine="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_bi_ic" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="8.0">
+                        <ImageView android:id="@id/img_bi_ic" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_auth_ic" android:scaleType="fitXY" />
+                        <TextView android:textSize="11.0dip" android:textColor="@color/g_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份证验证" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_bi_bc" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="7.0">
+                        <ImageView android:id="@id/img_bi_bc" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_auth_bc" android:scaleType="fitXY" />
+                        <TextView android:textSize="11.0dip" android:textColor="@color/g_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名片验证" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/g_grey" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="诚信等级" android:singleLine="true" />
+                <RatingBar android:layout_gravity="center_vertical" android:id="@id/rb_bi_star_level" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxHeight="10.0dip" android:progressDrawable="@drawable/credit_star_rating_bar" android:minHeight="10.0dip" android:numStars="5" android:rating="0.0" android:isIndicator="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/g_grey" android:ellipsize="end" android:id="@id/txt_bi_company" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bi_contact" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_bi_im" android:background="@drawable/g_light_green_btn" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_im_offline" />
+            <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/g_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微聊" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_bi_phone" android:background="@drawable/g_light_green_btn" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_phone_offline" />
+            <TextView android:textSize="@dimen/g_text_size_medium" android:textColor="@color/g_green" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_comment_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_comment" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/g_grey" android:layout_gravity="center_vertical" android:id="@id/txt_comment_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1000.0" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_comment_level" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/g_text_size_small" android:textColor="@color/g_grey" android:layout_gravity="bottom" android:id="@id/txt_comment_level_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好评度" />
+                <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/orange" android:layout_gravity="center_vertical" android:id="@id/txt_comment_level_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="100%" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bi_sercice" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/g_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务商圈" />
+        <TextView android:textSize="@dimen/card_content_font" android:layout_gravity="center_vertical" android:id="@id/txt_bi_service" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1000.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_info" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="@dimen/card_content_font" android:textColor="@color/g_grey" android:layout_gravity="center_vertical" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="自我介绍" android:singleLine="true" />
+        <com.ganji.android.ui.FoldTextView android:layout_gravity="center_vertical" android:id="@id/ftv_info_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

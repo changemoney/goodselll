@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/item_circle_white_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/line_top" android:visibility="gone" style="@style/DottedLine" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_feed_top" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:layout_below="@id/line_top">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_contact" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/layout_contact_avatar" android:layout_width="32.0dip" android:layout_height="32.0dip" layout="@layout/circle_layout" />
+            <TextView android:textSize="@dimen/m_text" android:textColor="@color/black_gray" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/all_view_margin_left" android:maxWidth="100.0dip" android:text="我澳督府速度" android:singleLine="true" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_gender_age" android:background="@drawable/icon_gender_male" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/all_view_margin_left" android:text="18" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/m_text" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_new_lable" android:background="@drawable/bg_group_tag_1" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/all_view_margin_left" android:text="湖北老乡" />
+        <View android:visibility="gone" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/m_text" android:textColor="@color/g_green" android:gravity="center" android:id="@id/tv_lable" android:background="@drawable/bg_group_tag_1" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="湖北老乡" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/layout_feed_body" android:background="@color/gray_f3f3f3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_feed_top" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_feed_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_below="@id/layout_feed_top">
+        <ImageView android:id="@id/img_feed" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/tv_mask_layer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/g_dark_grey" android:ellipsize="end" android:id="@id/tv_feed_content" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="小鲜肉陈学冬和李冰冰华丽撞衫，到底是陈学冬穿了女装，还是李冰冰穿了男装？如今男女装之间的界限愈加模糊，混穿已经不是什么奇怪的事了。  小鲜肉陈学冬和李冰冰华丽撞衫，到底是陈学冬穿了女装，还是李冰冰穿了男装？如今男女装之间的界限愈加模糊，混穿已经不是什么奇怪的事了。小鲜肉陈学冬和李冰冰华丽撞衫，到底是陈学冬穿了女装，还是李冰冰穿了男装？如今男女装之间的界限愈加模糊，混穿已经不是什么奇怪的事了。" android:maxLines="5" android:maxLength="140" android:shadowColor="#46000000" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="1.0" android:lineSpacingExtra="3.0dip" />
+            <com.ganji.im.view.TagFlowLayout android:id="@id/tv_topic" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+        </LinearLayout>
+        <View android:background="@color/group_div_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_feed_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_feed_body">
+        <TextView android:textSize="@dimen/s_text" android:textColor="@color/gray_999999" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="25分钟前" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/s_text" android:textColor="@color/gray_999999" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/all_view_margin_left" android:text="300m" android:singleLine="true" android:layout_toRightOf="@id/tv_time" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/m_text" android:textColor="@color/gray_999999" android:gravity="center_vertical" android:id="@id/tv_feed_comment" android:paddingLeft="12.0dip" android:layout_width="72.0dip" android:layout_height="48.0dip" android:text="0" android:singleLine="true" android:drawableLeft="@drawable/icon_feed_comment" android:drawablePadding="8.0dip" android:layout_toLeftOf="@id/ll_feed_share" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_favour" android:layout_width="88.0dip" android:layout_height="48.0dip" android:layout_toLeftOf="@id/tv_feed_comment">
+            <ImageView android:id="@id/img_feed_favour" android:background="@drawable/icon_feed_favour" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" />
+            <TextView android:textSize="@dimen/m_text" android:textColor="@color/gray_999999" android:id="@id/tv_feed_favour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ll_feed_share" android:layout_width="40.0dip" android:layout_height="48.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/img_feed_share" android:background="@drawable/feed_share_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:visibility="gone" android:layout_below="@id/layout_feed_bottom" style="@style/DottedLine" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_item_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+        <RelativeLayout android:id="@id/mImageContainer" android:background="#ffe6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/mImage" android:layout_width="104.0dip" android:layout_height="78.0dip" android:src="@drawable/post_list_thumb_loading" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="16.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/b_b_text" android:textColor="#ff181818" android:ellipsize="end" android:id="@id/mName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赶集" android:lines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0dip" android:textColor="#ffff7200" android:id="@id/mPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="100000" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/s_text" android:textColor="#ffb3b3b3" android:id="@id/mworkyears" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="三年工作经验" android:lines="1" />
+                <TextView android:textSize="@dimen/s_text" android:textColor="#ffb3b3b3" android:id="@id/mages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:lines="1" />
+                <TextView android:textSize="@dimen/s_text" android:textColor="#ffb3b3b3" android:id="@id/mHomeTown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="湖南" android:lines="1" />
+                <TextView android:textSize="@dimen/s_text" android:textColor="#ffb3b3b3" android:id="@id/meducation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="本科" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/detail_title_info_content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>
