@@ -54,12 +54,12 @@
                 android:textSize="14.0dip" />
         </LinearLayout>
 
-        <com.ganji.android.ui.FlowLayout xmlns:f="http://schemas.android.com/apk/res/com.ganji.android"
+        <!-- <com.ganji.android.ui.FlowLayout xmlns:f="http://schemas.android.com/apk/res/com.ganji.android"
             android:id="@id/comment_describe"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10.0dip"
-            f:orientation="horizontal" />
+            f:orientation="horizontal" /> -->
     </LinearLayout>
 
     <TextView

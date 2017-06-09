@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.ganji.android.ui.FlowLayout android:id="@id/tag_flow_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" attr:layout_horizontalSpacing="7.5dip" attr:layout_verticalSpacing="5.0dip"
-      xmlns:attr="http://schemas.android.com/apk/res/com.ganji.android" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- <com.ganji.android.ui.FlowLayout xmlns:attr="http://schemas.android.com/apk/res/com.ganji.android"
+        android:id="@id/tag_flow_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        attr:layout_horizontalSpacing="7.5dip"
+        attr:layout_verticalSpacing="5.0dip" /> -->
 </LinearLayout>

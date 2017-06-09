@@ -9,14 +9,11 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-//import com.ganji.android.DontPreverify;
-//import com.ganji.android.comp.utils.j;
-//import com.ganji.android.dexannotation.MainDex;
-//import java.io.PrintStream;
+
 
 public class BaseActivity extends FragmentActivity
 {
-   // protected a mActivityInterceptor;
+    //protected LoginInterceptor mActivityInterceptor;
 
     public BaseActivity()
     {
@@ -32,10 +29,10 @@ public class BaseActivity extends FragmentActivity
 
     protected void onActivityResult(int paramInt1, int paramInt2, Intent paramIntent)
     {
-//        if ((this.mActivityInterceptor != null) && (this.mActivityInterceptor.a(paramInt1, paramInt2, paramIntent)));
-//        while (true)
-//        {
-//            return;
+        //if ((this.mActivityInterceptor != null) && (this.mActivityInterceptor.a(paramInt1, paramInt2, paramIntent)));
+        //while (true)
+        //{
+            //return;
             super.onActivityResult(paramInt1, paramInt2, paramIntent);
         //}
     }
@@ -90,13 +87,13 @@ public class BaseActivity extends FragmentActivity
 //            this.mActivityInterceptor.d();
     }
 
-//    public boolean onKeyDown(int paramInt, KeyEvent paramKeyEvent)
-//    {
-//        super.onKeyDown(paramInt, paramKeyEvent);
-////        if ((this.mActivityInterceptor != null) && (this.mActivityInterceptor.a(paramInt, paramKeyEvent)));
-////        for (boolean bool = true; ; bool = super.onKeyDown(paramInt, paramKeyEvent))
-////            return bool;
-//    }
+    //public boolean onKeyDown(int paramInt, KeyEvent paramKeyEvent)
+    //{
+        //super.onKeyDown(paramInt, paramKeyEvent);
+        //if ((this.mActivityInterceptor != null) && (this.mActivityInterceptor.a(paramInt, paramKeyEvent)));
+//        for (boolean bool = true; ; bool = super.onKeyDown(paramInt, paramKeyEvent))
+//            return bool;
+    //}
 
     protected void onNewIntent(Intent paramIntent)
     {

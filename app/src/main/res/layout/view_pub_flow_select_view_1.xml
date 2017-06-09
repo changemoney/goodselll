@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pub_flow_select_title_lay" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_15dp">
-        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/pub_flow_select_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-        <ImageView android:id="@id/pub_error" android:paddingLeft="@dimen/dimen_5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pub_error" android:layout_toRightOf="@id/pub_flow_select_title_tv" android:layout_centerVertical="true" />
-        <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/green_39bc30" android:id="@id/pub_flow_select_title_change" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_B3B3B3" android:id="@id/pub_flow_select_title_max" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/pub_flow_select_title_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <TextView
+            android:id="@id/pub_flow_select_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ff333333"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:id="@id/pub_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pub_flow_select_title_tv"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:src="@drawable/ic_pub_error"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/pub_flow_select_title_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/green_39bc30"
+            android:textSize="@dimen/dimen_14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/pub_flow_select_title_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_B3B3B3"
+            android:textSize="@dimen/dimen_12sp"
+            android:visibility="gone" />
     </RelativeLayout>
-    <View android:id="@id/divider_line" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="0.0dip" />
-    <com.ganji.android.ui.FlowLayout android:id="@id/pub_flow_select_flow" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_15dp" attr:layout_horizontalSpacing="7.5dip" attr:layout_verticalSpacing="5.0dip"
-      xmlns:attr="http://schemas.android.com/apk/res/com.ganji.android" />
+
+    <View
+        android:id="@id/divider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:background="#fff3f3f3" />
+
+    <!-- <com.ganji.android.ui.FlowLayout xmlns:attr="http://schemas.android.com/apk/res/com.ganji.android"
+        android:id="@id/pub_flow_select_flow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        attr:layout_horizontalSpacing="7.5dip"
+        attr:layout_verticalSpacing="5.0dip" /> -->
 </LinearLayout>

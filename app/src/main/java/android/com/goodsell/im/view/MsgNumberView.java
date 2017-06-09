@@ -1,5 +1,6 @@
 package android.com.goodsell.im.view;
 
+import android.com.goodsell.R;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -8,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import sell.android.com.goodselll.R;
 
 public class MsgNumberView extends LinearLayout
 {

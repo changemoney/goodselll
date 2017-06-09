@@ -345,7 +345,7 @@
         <enum name="singleChoice" value="1" />
     </attr>
     <attr name="fastScrollAlwaysVisible" format="boolean" />
-    <attr name="navigationMode">
+    <!--<attr name="navigationMode">
         <enum name="normal" value="0" />
         <enum name="listMode" value="1" />
         <enum name="tabMode" value="2" />
@@ -358,7 +358,7 @@
         <flag name="showHome" value="0x00000002" />
         <flag name="showTitle" value="0x00000008" />
         <flag name="useLogo" value="0x00000001" />
-    </attr>
+    </attr>-->
     <attr name="subtitle" format="string" />
     <attr name="titleTextStyle" format="reference" />
     <attr name="subtitleTextStyle" format="reference" />
@@ -407,13 +407,13 @@
     <attr name="strokeColor" format="color" />
     <attr name="strokeWidth" format="dimension" />
     <attr name="buttonTint" format="color" />
-    <attr name="buttonTintMode">
+    <!--<attr name="buttonTintMode">
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="text_color" format="color" />
     <attr name="text_size" format="dimension" />
     <attr name="show_button_cancel" format="boolean" />
@@ -450,12 +450,12 @@
     <attr name="ganjitextColor" format="color" />
     <attr name="ganjitextSize" format="dimension" />
     <attr name="measureWithLargestChild" format="boolean" />
-    <attr name="showDividers">
+    <!--<attr name="showDividers">
         <flag name="none" value="0x00000000" />
         <flag name="beginning" value="0x00000001" />
         <flag name="end" value="0x00000004" />
         <flag name="middle" value="0x00000002" />
-    </attr>
+    </attr>-->
     <attr name="dividerPadding" format="dimension" />
     <attr name="lpkey" format="string" />
     <attr name="defaultValue" format="reference|string" />
@@ -467,13 +467,13 @@
     <attr name="overScrollHeader" format="reference|color" />
     <attr name="overScrollFooter" format="reference|color" />
     <attr name="maxWidth" format="dimension" />
-    <attr name="showAsAction">
+    <!--<attr name="showAsAction">
         <flag name="always" value="0x00000002" />
         <flag name="collapseActionView" value="0x00000008" />
         <flag name="ifRoom" value="0x00000001" />
         <flag name="never" value="0x00000000" />
         <flag name="withText" value="0x00000004" />
-    </attr>
+    </attr>-->
     <attr name="actionLayout" format="reference" />
     <attr name="actionViewClass" format="string" />
     <attr name="actionProviderClass" format="string" />
@@ -595,9 +595,9 @@
     <attr name="actionBarSplitStyle" format="reference" />
     <attr name="actionBarTheme" format="reference" />
     <attr name="actionBarWidgetTheme" format="reference" />
-    <attr name="actionBarSize" format="dimension">
+    <!--<attr name="actionBarSize" format="dimension">
         <enum name="wrap_content" value="0" />
-    </attr>
+    </attr>-->
     <attr name="actionBarDivider" format="reference" />
     <attr name="actionBarItemBackground" format="reference" />
     <attr name="actionMenuTextAppearance" format="reference" />
@@ -834,13 +834,13 @@
     </attr>
     <attr name="theme" format="reference" />
     <attr name="backgroundTint" format="color" />
-    <attr name="backgroundTintMode">
+    <!--<attr name="backgroundTintMode">
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="animateLayoutChanges" format="boolean" />
     <attr name="clipChildren" format="boolean" />
     <attr name="clipToPadding" format="boolean" />
