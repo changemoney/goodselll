@@ -1,8 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/action_all_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/action_default_image" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/action_defualt" android:scaleType="fitXY" />
-    <ImageView android:id="@id/action_load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/action_load_fail" android:scaleType="fitXY" />
-    <Button android:textSize="14.0dip" android:textColor="@color/text_color_deepgray_turn_white" android:layout_gravity="bottom|center|right" android:id="@id/action_load_fail_button" android:background="@drawable/btn_gray_blue" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="26.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="16.0dip" android:text="重新加载" />
-    <include android:id="@id/action_top_all_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/action_top_view" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/action_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@id/action_default_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/action_defualt"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@id/action_load_fail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/action_load_fail"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@id/action_load_fail_button"
+        android:layout_width="wrap_content"
+        android:layout_height="26.0dip"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/btn_gray_blue"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:text="重新加载"
+        android:textColor="@color/text_color_deepgray_turn_white"
+        android:textSize="14.0dip"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/action_top_all_layout"
+        layout="@layout/action_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
 </FrameLayout>

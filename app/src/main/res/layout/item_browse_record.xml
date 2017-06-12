@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView android:textColor="#ff676767" android:visibility="invisible" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="手机/配件" android:singleLine="true" style="@style/hot_item"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/hot_item"
+    android:layout_marginLeft="2.0dip"
+    android:layout_marginRight="2.0dip"
+    android:singleLine="true"
+    android:text="手机/配件"
+    android:textColor="#ff676767"
+    android:visibility="invisible" />

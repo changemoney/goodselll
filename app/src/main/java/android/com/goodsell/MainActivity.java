@@ -17,25 +17,35 @@ import android.widget.TabHost.TabSpec;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
+import android.com.goodsell.utils.Callback;
+
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class MainActivity extends BaseActivity {
 
-    public static class TabManager implements TabHost.OnTabChangeListener, TabHost.TabContentFactory {
 
-        private Context mContext;
+public class MainActivity extends BaseActivity implements Callback {
 
-        public TabManager(Context context) {
-            //super();
-            mContext = context;
-        }
+    public void onCallback (){
 
-        public View createTabContent(String arg) {
-            View view = new View(mContext);
-            view.setMinimumWidth(0);
-            view.setMinimumHeight(0);
-            return view;
+    }
+
+
+    public static class TabManager implements TabHost.OnTabChangeListener {
+
+        class TabContent implements TabHost.TabContentFactory {
+            private Context mContext;
+
+            public TabContent(Context context) {
+                mContext = context;
+            }
+
+            public View createTabContent(String arg) {
+                View view = new View(mContext);
+                view.setMinimumWidth(0);
+                view.setMinimumHeight(0);
+                return view;
+            }
         }
 
         static class FragmentPage {
@@ -46,15 +56,16 @@ public class MainActivity extends BaseActivity {
             private FragmentPage fp;
             private int e;
 
-            FragmentPage(String name, Class clas, int count, int arg4) {
+            FragmentPage(String name, Class cl, int count, int arg4) {
                 super();
                 this.name = name;
-                this.c = clas;
+                this.c = cl;
                 this.count = count;
                 this.e = arg4;
             }
 
             static String getTag(FragmentPage fp) {
+
                 return fp.name;
             }
 
@@ -68,10 +79,12 @@ public class MainActivity extends BaseActivity {
             }
 
             static int getCount(FragmentPage fp) {
-                return 5;//fp.c;
+
+                return fp.count;
             }
 
             static Class getClassName(FragmentPage fp) {
+
                 return fp.c;
             }
         }
@@ -82,7 +95,7 @@ public class MainActivity extends BaseActivity {
         private TabHost mTabHost;
         private int count;
         private HashMap mMap;
-        //private x f;
+        private Callback callBack;
 
         public TabManager(FragmentActivity fragmentActivity, TabHost tabHost, int count) {
             super();
@@ -93,10 +106,10 @@ public class MainActivity extends BaseActivity {
             mTabHost.setOnTabChangedListener(this);
         }
 
-        public void addTab(TabSpec tabSpec, Class clas, int arg7, int arg8) {
-            tabSpec.setContent(new TabManager(mFragmentActivity));
+        public void addTab(TabSpec tabSpec, Class cl, int arg7, int arg8) {
+            tabSpec.setContent(new TabContent(mFragmentActivity));
             String tag = tabSpec.getTag();
-            FragmentPage fm = new FragmentPage(tag, clas, arg7, arg8);
+            FragmentPage fm = new FragmentPage(tag, cl, arg7, arg8);
             FragmentPage.getFrontFragment(fm, mFragmentActivity.getSupportFragmentManager().findFragmentByTag(tag));
             if (FragmentPage.getBackFragment(fm) != null && !FragmentPage.getBackFragment(fm).isDetached()) {
                 FragmentTransaction ft = mFragmentActivity.getSupportFragmentManager().beginTransaction();
@@ -108,21 +121,30 @@ public class MainActivity extends BaseActivity {
             mTabHost.addTab(tabSpec);
         }
 
+        public void addTab(Callback callBack) {
+            this.callBack = callBack;
+        }
+
+        static HashMap getMap(TabManager manager) {
+            return manager.mMap;
+        }
+
         private void setFragmentUserVisibleHint(FragmentPage fp) {
             if (mMap != null) {
                 Iterator iterator = mMap.entrySet().iterator();
                 while (iterator.hasNext()) {
-                    Object object = iterator.next().getClass();
+                    Object object = iterator.next();
+                    System.out.println("setFragmentUserVisibleHint object"+object.toString());
                     if (object == null) {
                         continue;
                     }
 
-//                    if (fp.getBackFragment(((FragmentPage) object)) == null) {
-//                        continue;
-//                    }
+                    if (fp.getBackFragment(((FragmentPage) object)) == null) {
+                        continue;
+                    }
 
-                    //boolean v1 = (((FragmentPage) object)) == fp ? true : false;
-                    //fp.getBackFragment(((FragmentPage) object)).setUserVisibleHint(v1);
+                    boolean isVisibleHint = object == fp ;
+                    fp.getBackFragment(((FragmentPage) object)).setUserVisibleHint(isVisibleHint);
                 }
             }
         }
@@ -150,20 +172,20 @@ public class MainActivity extends BaseActivity {
                         //goto label_45;
                     }
 
-//                    FragmentPage.getFrontFragment(((FragmentPage) object), Fragment.instantiate(mFragmentActivity, FragmentPage.getClassName(((FragmentPage) object)).getName(), null));
-//                    ft.add(count, FragmentPage.getBackFragment(((FragmentPage) object)), FragmentPage.getTag(((FragmentPage) object)));
+                    FragmentPage.getFrontFragment(((FragmentPage) object), Fragment.instantiate(mFragmentActivity, FragmentPage.getClassName(((FragmentPage) object)).getName(), null));
+                    ft.add(count, FragmentPage.getBackFragment(((FragmentPage) object)), FragmentPage.getTag(((FragmentPage) object)));
                 }
 
-                label_45:
+                //label_45:
                 mfp = ((FragmentPage) object);
                 ft.commitAllowingStateLoss();
                 mFragmentActivity.getSupportFragmentManager().executePendingTransactions();
                 this.setFragmentUserVisibleHint(((FragmentPage) object));
-//                if (this.f == null) {
-//                    return;
-//                }
-//
-//                this.f.onCallback();
+                if (this.callBack == null) {
+                    return;
+                }
+
+                this.callBack.onCallback();
             }
         }
 
@@ -251,9 +273,9 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_fragment_tabs);
-        this.mTabHost = (TabHost) this.findViewById(R.id.tabhost);
-        this.n = (ImageView) this.findViewById(R.id.tabs_bg);
-        //this.tab = this.findViewById(16908307);
+        this.mTabHost = (TabHost)findViewById(R.id.tabhost);
+        this.n = (ImageView)findViewById(R.id.tabs_bg);
+        this.tab = (TabWidget)findViewById(R.id.tabs);
         this.c = (ImageView)this.findViewById(R.id.tab_center);
         //this.c.setOnClickListener(new View.OnClickListener() {
         //public void onClick(View arg4) {
@@ -282,13 +304,8 @@ public class MainActivity extends BaseActivity {
         this.b = (ImageView)v5.findViewById(R.id.myinfo_msg_count);
         this.i = (TextView)v4.findViewById(R.id.circle_msg_count);
         this.h =  v4.findViewById(R.id.circle_red_point);
-//        this.mTabManager.a(this.mTabHost.newTabSpec("catalog").setIndicator(v1), com.ganji.android.d.a.class, 1, 495);
-//        this.mTabManager.a(this.mTabHost.newTabSpec("nearby").setIndicator(v2), com.ganji.android.d.c.class, 2, 503);
-//        this.mTabManager.a(this.mTabHost.newTabSpec("publish").setIndicator(v3), com.ganji.android.d.d.class, 3, 504);
-//        this.mTabManager.a(this.mTabHost.newTabSpec("im").setIndicator(v4), com.ganji.im.d.c.class, 4, 507);
-//        this.mTabManager.a(this.mTabHost.newTabSpec("center").setIndicator(v5), f.class, 5, 506);
 
-        mTabManager.addTab(this.mTabHost.newTabSpec("catalog").setIndicator(v1), null, 1, 495);
+        mTabManager.addTab(this.mTabHost.newTabSpec("catalog").setIndicator(v1), CatalogFragment.class, 1, 495);
         mTabManager.addTab(this.mTabHost.newTabSpec("nearby").setIndicator(v2), null, 2, 503);
         mTabManager.addTab(this.mTabHost.newTabSpec("publish").setIndicator(v3), null, 3, 504);
         mTabManager.addTab(this.mTabHost.newTabSpec("im").setIndicator(v4), null, 4, 507);
